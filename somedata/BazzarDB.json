@@ -1,0 +1,4981 @@
+[{
+  "quick_status": {
+    "buyPrice": 4.273431993126545,
+    "sellVolume": 2116870,
+    "sellMovingWeek": 26226154,
+    "productId": "INK_SACK:3",
+    "sellOrders": 48,
+    "buyOrders": 1610,
+    "sellPrice": 2.4,
+    "buyVolume": 4581263,
+    "buyMovingWeek": 8433709
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3.2,
+    "sellVolume": 5237110,
+    "sellMovingWeek": 86304536,
+    "productId": "INK_SACK:4",
+    "sellOrders": 92,
+    "buyOrders": 217,
+    "sellPrice": 2.026149199489245,
+    "buyVolume": 2437832,
+    "buyMovingWeek": 17084413
+  }
+},{
+  "quick_status": {
+    "buyPrice": 29.697274270253917,
+    "sellVolume": 2537012,
+    "sellMovingWeek": 2173931,
+    "productId": "CORRUPTED_BAIT",
+    "sellOrders": 96,
+    "buyOrders": 2518,
+    "sellPrice": 10.222753832085676,
+    "buyVolume": 4644848,
+    "buyMovingWeek": 1814267
+  }
+},{
+  "quick_status": {
+    "buyPrice": 200.95008376727154,
+    "sellVolume": 22240675,
+    "sellMovingWeek": 19613636,
+    "productId": "TARANTULA_WEB",
+    "sellOrders": 645,
+    "buyOrders": 3071,
+    "sellPrice": 131.13052511876077,
+    "buyVolume": 25528438,
+    "buyMovingWeek": 7367860
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1090108.0880952382,
+    "sellVolume": 3933,
+    "sellMovingWeek": 991,
+    "productId": "HORNS_OF_TORMENT",
+    "sellOrders": 97,
+    "buyOrders": 320,
+    "sellPrice": 730417.4529411765,
+    "buyVolume": 1701,
+    "buyMovingWeek": 1176
+  }
+},{
+  "quick_status": {
+    "buyPrice": 98995.00012210013,
+    "sellVolume": 565653,
+    "sellMovingWeek": 7320,
+    "productId": "JERRY_BOX_GREEN",
+    "sellOrders": 418,
+    "buyOrders": 276,
+    "sellPrice": 10599.525020735753,
+    "buyVolume": 81668,
+    "buyMovingWeek": 25510
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1215649.042307692,
+    "sellVolume": 8009,
+    "sellMovingWeek": 8933,
+    "productId": "DARK_ORB",
+    "sellOrders": 448,
+    "buyOrders": 305,
+    "sellPrice": 1174645.6165137617,
+    "buyVolume": 1264,
+    "buyMovingWeek": 9322
+  }
+},{
+  "quick_status": {
+    "buyPrice": 40909.535659574474,
+    "sellVolume": 677635,
+    "sellMovingWeek": 93656,
+    "productId": "ENCHANTED_GOLDEN_CARROT",
+    "sellOrders": 298,
+    "buyOrders": 130,
+    "sellPrice": 13264.062776575696,
+    "buyVolume": 57269,
+    "buyMovingWeek": 160243
+  }
+},{
+  "quick_status": {
+    "buyPrice": 179.76088911543573,
+    "sellVolume": 4696709,
+    "sellMovingWeek": 6252470,
+    "productId": "ENCHANTED_MELON",
+    "sellOrders": 219,
+    "buyOrders": 1092,
+    "sellPrice": 153.84345113297314,
+    "buyVolume": 1585209,
+    "buyMovingWeek": 5083464
+  }
+},{
+  "quick_status": {
+    "buyPrice": 604999.2970588235,
+    "sellVolume": 926191,
+    "sellMovingWeek": 2295,
+    "productId": "ENCHANTED_MYCELIUM_CUBE",
+    "sellOrders": 283,
+    "buyOrders": 59,
+    "sellPrice": 135156.0028364514,
+    "buyVolume": 731,
+    "buyMovingWeek": 3318
+  }
+},{
+  "quick_status": {
+    "buyPrice": 370972.5284501061,
+    "sellVolume": 3454913,
+    "sellMovingWeek": 27993,
+    "productId": "ENCHANTED_BLAZE_ROD",
+    "sellOrders": 668,
+    "buyOrders": 922,
+    "sellPrice": 29397.726037224405,
+    "buyVolume": 154468,
+    "buyMovingWeek": 45259
+  }
+},{
+  "quick_status": {
+    "buyPrice": 677.6905063908673,
+    "sellVolume": 9667565,
+    "sellMovingWeek": 3832347,
+    "productId": "FLAWED_JASPER_GEM",
+    "sellOrders": 292,
+    "buyOrders": 340,
+    "sellPrice": 615.2433152311243,
+    "buyVolume": 501725,
+    "buyMovingWeek": 82844
+  }
+},{
+  "quick_status": {
+    "buyPrice": 657.3771170903326,
+    "sellVolume": 6157909,
+    "sellMovingWeek": 1648573,
+    "productId": "ENCHANTED_BROWN_MUSHROOM",
+    "sellOrders": 299,
+    "buyOrders": 579,
+    "sellPrice": 596.122803597161,
+    "buyVolume": 1001380,
+    "buyMovingWeek": 469813
+  }
+},{
+  "quick_status": {
+    "buyPrice": 66383.37027027027,
+    "sellVolume": 543984,
+    "sellMovingWeek": 12106,
+    "productId": "GOBLIN_EGG_YELLOW",
+    "sellOrders": 397,
+    "buyOrders": 102,
+    "sellPrice": 21415.769322506978,
+    "buyVolume": 3593,
+    "buyMovingWeek": 4938
+  }
+},{
+  "quick_status": {
+    "buyPrice": 277.7638615861047,
+    "sellVolume": 2366871,
+    "sellMovingWeek": 3656616,
+    "productId": "FLAWED_AMBER_GEM",
+    "sellOrders": 62,
+    "buyOrders": 432,
+    "sellPrice": 238.7675631340384,
+    "buyVolume": 727265,
+    "buyMovingWeek": 64490
+  }
+},{
+  "quick_status": {
+    "buyPrice": 4087.3547741739917,
+    "sellVolume": 1054407,
+    "sellMovingWeek": 24969,
+    "productId": "ENCHANTED_GLISTERING_MELON",
+    "sellOrders": 279,
+    "buyOrders": 281,
+    "sellPrice": 1297.1474980621824,
+    "buyVolume": 101729,
+    "buyMovingWeek": 24720
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3.997988437364391,
+    "sellVolume": 1419063,
+    "sellMovingWeek": 17254075,
+    "productId": "PRISMARINE_SHARD",
+    "sellOrders": 37,
+    "buyOrders": 313,
+    "sellPrice": 2.4973555656874873,
+    "buyVolume": 2094368,
+    "buyMovingWeek": 2544408
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2558.51442755197,
+    "sellVolume": 2392920,
+    "sellMovingWeek": 150382,
+    "productId": "PROTECTOR_FRAGMENT",
+    "sellOrders": 363,
+    "buyOrders": 379,
+    "sellPrice": 2309.9155726172285,
+    "buyVolume": 127605,
+    "buyMovingWeek": 70315
+  }
+},{
+  "quick_status": {
+    "buyPrice": 25636.46344762504,
+    "sellVolume": 2595027,
+    "sellMovingWeek": 361776,
+    "productId": "ENCHANTED_MELON_BLOCK",
+    "sellOrders": 1216,
+    "buyOrders": 695,
+    "sellPrice": 25050.687565475095,
+    "buyVolume": 143988,
+    "buyMovingWeek": 128850
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1366243.3692307693,
+    "sellVolume": 97,
+    "sellMovingWeek": 420,
+    "productId": "ROCK_GEMSTONE",
+    "sellOrders": 27,
+    "buyOrders": 105,
+    "sellPrice": 988385.5,
+    "buyVolume": 498,
+    "buyMovingWeek": 748
+  }
+},{
+  "quick_status": {
+    "buyPrice": 190517.37319587628,
+    "sellVolume": 71526,
+    "sellMovingWeek": 10418,
+    "productId": "POWER_CRYSTAL",
+    "sellOrders": 767,
+    "buyOrders": 43,
+    "sellPrice": 124554.70545087484,
+    "buyVolume": 3849,
+    "buyMovingWeek": 40683
+  }
+},{
+  "quick_status": {
+    "buyPrice": 14.274475029538726,
+    "sellVolume": 8534533,
+    "sellMovingWeek": 194023876,
+    "productId": "DIAMOND",
+    "sellOrders": 243,
+    "buyOrders": 838,
+    "sellPrice": 7.5,
+    "buyVolume": 4268299,
+    "buyMovingWeek": 11066226
+  }
+},{
+  "quick_status": {
+    "buyPrice": 615.1708343624956,
+    "sellVolume": 1256506,
+    "sellMovingWeek": 75438,
+    "productId": "SHARK_FIN",
+    "sellOrders": 161,
+    "buyOrders": 661,
+    "sellPrice": 348.9310424025895,
+    "buyVolume": 947758,
+    "buyMovingWeek": 91982
+  }
+},{
+  "quick_status": {
+    "buyPrice": 20556.34756871036,
+    "sellVolume": 928908,
+    "sellMovingWeek": 127379,
+    "productId": "WISE_FRAGMENT",
+    "sellOrders": 416,
+    "buyOrders": 336,
+    "sellPrice": 18996.134954193094,
+    "buyVolume": 34793,
+    "buyMovingWeek": 86067
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2.998943022216241,
+    "sellVolume": 4907132,
+    "sellMovingWeek": 84775614,
+    "productId": "COBBLESTONE",
+    "sellOrders": 90,
+    "buyOrders": 1478,
+    "sellPrice": 2.2572994989956094,
+    "buyVolume": 7547093,
+    "buyMovingWeek": 26366979
+  }
+},{
+  "quick_status": {
+    "buyPrice": 298280.014,
+    "sellVolume": 1053364,
+    "sellMovingWeek": 23730,
+    "productId": "REFINED_MITHRIL",
+    "sellOrders": 414,
+    "buyOrders": 215,
+    "sellPrice": 19701.592408376964,
+    "buyVolume": 4654,
+    "buyMovingWeek": 30108
+  }
+},{
+  "quick_status": {
+    "buyPrice": 8866732.672727272,
+    "sellVolume": 146369,
+    "sellMovingWeek": 782,
+    "productId": "PERFECT_RUBY_GEM",
+    "sellOrders": 28,
+    "buyOrders": 52,
+    "sellPrice": 12723.652703089441,
+    "buyVolume": 378,
+    "buyMovingWeek": 681
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2450.4566242210785,
+    "sellVolume": 792115,
+    "sellMovingWeek": 1534525,
+    "productId": "ENCHANTED_PUFFERFISH",
+    "sellOrders": 119,
+    "buyOrders": 459,
+    "sellPrice": 2354.5173612363947,
+    "buyVolume": 178614,
+    "buyMovingWeek": 298201
+  }
+},{
+  "quick_status": {
+    "buyPrice": 225999.5,
+    "sellVolume": 17188,
+    "sellMovingWeek": 3592,
+    "productId": "END_STONE_SHULKER",
+    "sellOrders": 804,
+    "buyOrders": 137,
+    "sellPrice": 154024.98392370573,
+    "buyVolume": 1057,
+    "buyMovingWeek": 3971
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3.169576270161778,
+    "sellVolume": 4870131,
+    "sellMovingWeek": 62552718,
+    "productId": "POTATO_ITEM",
+    "sellOrders": 87,
+    "buyOrders": 1149,
+    "sellPrice": 1.5679551239747336,
+    "buyVolume": 15398309,
+    "buyMovingWeek": 36689572
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2293.778618023677,
+    "sellVolume": 6710632,
+    "sellMovingWeek": 3941266,
+    "productId": "ENCHANTED_HARD_STONE",
+    "sellOrders": 413,
+    "buyOrders": 269,
+    "sellPrice": 1877.758604005701,
+    "buyVolume": 156680,
+    "buyMovingWeek": 996462
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2482.402211621856,
+    "sellVolume": 1249460,
+    "sellMovingWeek": 5069,
+    "productId": "ENCHANTED_HUGE_MUSHROOM_1",
+    "sellOrders": 228,
+    "buyOrders": 256,
+    "sellPrice": 2072.7798436918492,
+    "buyVolume": 76742,
+    "buyMovingWeek": 868
+  }
+},{
+  "quick_status": {
+    "buyPrice": 22727.485012285008,
+    "sellVolume": 66580,
+    "sellMovingWeek": 64053,
+    "productId": "ENDER_MONOCLE",
+    "sellOrders": 894,
+    "buyOrders": 2145,
+    "sellPrice": 10253.918857142855,
+    "buyVolume": 19777,
+    "buyMovingWeek": 64885
+  }
+},{
+  "quick_status": {
+    "buyPrice": 448836.1202059202,
+    "sellVolume": 13238455,
+    "sellMovingWeek": 8111,
+    "productId": "REFINED_DIAMOND",
+    "sellOrders": 904,
+    "buyOrders": 109,
+    "sellPrice": 25701.297974903882,
+    "buyVolume": 6256,
+    "buyMovingWeek": 14392
+  }
+},{
+  "quick_status": {
+    "buyPrice": 530.397481017669,
+    "sellVolume": 8263648,
+    "sellMovingWeek": 27813823,
+    "productId": "ENCHANTED_COBBLESTONE",
+    "sellOrders": 544,
+    "buyOrders": 3887,
+    "sellPrice": 511.16151647095046,
+    "buyVolume": 6945378,
+    "buyMovingWeek": 8765938
+  }
+},{
+  "quick_status": {
+    "buyPrice": 256135.8,
+    "sellVolume": 12752,
+    "sellMovingWeek": 8400,
+    "productId": "HAZMAT_ENDERMAN",
+    "sellOrders": 338,
+    "buyOrders": 185,
+    "sellPrice": 167808.02995951418,
+    "buyVolume": 849,
+    "buyMovingWeek": 8435
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1335543.6261904761,
+    "sellVolume": 9695,
+    "sellMovingWeek": 8142,
+    "productId": "LUXURIOUS_SPOOL",
+    "sellOrders": 825,
+    "buyOrders": 545,
+    "sellPrice": 1252405.995673077,
+    "buyVolume": 2014,
+    "buyMovingWeek": 14164
+  }
+},{
+  "quick_status": {
+    "buyPrice": 342.784140969163,
+    "sellVolume": 8798089,
+    "sellMovingWeek": 779272,
+    "productId": "FLAWED_OPAL_GEM",
+    "sellOrders": 286,
+    "buyOrders": 644,
+    "sellPrice": 249.9488909222583,
+    "buyVolume": 337144,
+    "buyMovingWeek": 24254
+  }
+},{
+  "quick_status": {
+    "buyPrice": 19999.995746268658,
+    "sellVolume": 3238910,
+    "sellMovingWeek": 11783,
+    "productId": "ENCHANTED_HUGE_MUSHROOM_2",
+    "sellOrders": 635,
+    "buyOrders": 17,
+    "sellPrice": 2497.365711681724,
+    "buyVolume": 8784,
+    "buyMovingWeek": 9200
+  }
+},{
+  "quick_status": {
+    "buyPrice": 10.967388097233863,
+    "sellVolume": 2119894,
+    "sellMovingWeek": 7075951,
+    "productId": "PORK",
+    "sellOrders": 68,
+    "buyOrders": 20,
+    "sellPrice": 7.099999999999999,
+    "buyVolume": 631554,
+    "buyMovingWeek": 5228279
+  }
+},{
+  "quick_status": {
+    "buyPrice": 41.99519816565128,
+    "sellVolume": 3658331,
+    "sellMovingWeek": 2018268,
+    "productId": "ICE_BAIT",
+    "sellOrders": 134,
+    "buyOrders": 791,
+    "sellPrice": 16.7,
+    "buyVolume": 3710351,
+    "buyMovingWeek": 1150840
+  }
+},{
+  "quick_status": {
+    "buyPrice": 4.396037126347878,
+    "sellVolume": 1659714,
+    "sellMovingWeek": 29885743,
+    "productId": "LOG_2:1",
+    "sellOrders": 37,
+    "buyOrders": 300,
+    "sellPrice": 2.211779254070838,
+    "buyVolume": 3281926,
+    "buyMovingWeek": 8214033
+  }
+},{
+  "quick_status": {
+    "buyPrice": 436943.9610453131,
+    "sellVolume": 1300076,
+    "sellMovingWeek": 130985672,
+    "productId": "ENCHANTED_SNOW_BLOCK",
+    "sellOrders": 75,
+    "buyOrders": 1412,
+    "sellPrice": 586.7664160314558,
+    "buyVolume": 9371727,
+    "buyMovingWeek": 16529896
+  }
+},{
+  "quick_status": {
+    "buyPrice": 16623.59037969127,
+    "sellVolume": 5612718,
+    "sellMovingWeek": 148673,
+    "productId": "CHEESE_FUEL",
+    "sellOrders": 1111,
+    "buyOrders": 1080,
+    "sellPrice": 3003.505184221301,
+    "buyVolume": 670785,
+    "buyMovingWeek": 153373
+  }
+},{
+  "quick_status": {
+    "buyPrice": 0,
+    "sellVolume": 8208,
+    "sellMovingWeek": 0,
+    "productId": "KUUDRA_MANDIBLE",
+    "sellOrders": 255,
+    "buyOrders": 0,
+    "sellPrice": 157502.55698924733,
+    "buyVolume": 0,
+    "buyMovingWeek": 0
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1439125.4529585799,
+    "sellVolume": 38708,
+    "sellMovingWeek": 551,
+    "productId": "JERRY_BOX_GOLDEN",
+    "sellOrders": 917,
+    "buyOrders": 953,
+    "sellPrice": 1124169.518973747,
+    "buyVolume": 16764,
+    "buyMovingWeek": 3327
+  }
+},{
+  "quick_status": {
+    "buyPrice": 59993.39815789474,
+    "sellVolume": 1269,
+    "sellMovingWeek": 5874,
+    "productId": "PUMPKIN_GUTS",
+    "sellOrders": 14,
+    "buyOrders": 45,
+    "sellPrice": 34707.4,
+    "buyVolume": 12913,
+    "buyMovingWeek": 13688
+  }
+},{
+  "quick_status": {
+    "buyPrice": 39998.63125,
+    "sellVolume": 2071147,
+    "sellMovingWeek": 29750,
+    "productId": "BLAZE_ROD_DISTILLATE",
+    "sellOrders": 479,
+    "buyOrders": 34,
+    "sellPrice": 3725.31721885951,
+    "buyVolume": 1524,
+    "buyMovingWeek": 31651
+  }
+},{
+  "quick_status": {
+    "buyPrice": 729499.0555555555,
+    "sellVolume": 4259,
+    "sellMovingWeek": 1793,
+    "productId": "ACACIA_BIRDHOUSE",
+    "sellOrders": 160,
+    "buyOrders": 339,
+    "sellPrice": 364500.8598290598,
+    "buyVolume": 2461,
+    "buyMovingWeek": 4918
+  }
+},{
+  "quick_status": {
+    "buyPrice": 0,
+    "sellVolume": 0,
+    "sellMovingWeek": 0,
+    "productId": "ENCHANTED_CARROT_ON_A_STICK",
+    "sellOrders": 0,
+    "buyOrders": 0,
+    "sellPrice": 0,
+    "buyVolume": 0,
+    "buyMovingWeek": 0
+  }
+},{
+  "quick_status": {
+    "buyPrice": 696.4339136006836,
+    "sellVolume": 2510755,
+    "sellMovingWeek": 1272778,
+    "productId": "ENCHANTED_ENDSTONE",
+    "sellOrders": 359,
+    "buyOrders": 865,
+    "sellPrice": 634.1949559319812,
+    "buyVolume": 573188,
+    "buyMovingWeek": 1107670
+  }
+},{
+  "quick_status": {
+    "buyPrice": 45162.39408797418,
+    "sellVolume": 1359394,
+    "sellMovingWeek": 534095,
+    "productId": "ENCHANTED_LAPIS_LAZULI_BLOCK",
+    "sellOrders": 1141,
+    "buyOrders": 1541,
+    "sellPrice": 8296.386076616622,
+    "buyVolume": 201723,
+    "buyMovingWeek": 197182
+  }
+},{
+  "quick_status": {
+    "buyPrice": 744.4085031000886,
+    "sellVolume": 1866351,
+    "sellMovingWeek": 1387531,
+    "productId": "ENCHANTED_SAND",
+    "sellOrders": 276,
+    "buyOrders": 370,
+    "sellPrice": 593.0452088915725,
+    "buyVolume": 222799,
+    "buyMovingWeek": 1270326
+  }
+},{
+  "quick_status": {
+    "buyPrice": 714999.1854838709,
+    "sellVolume": 2541295,
+    "sellMovingWeek": 6568,
+    "productId": "COLOSSAL_EXP_BOTTLE",
+    "sellOrders": 981,
+    "buyOrders": 49,
+    "sellPrice": 26275.915878410626,
+    "buyVolume": 1721,
+    "buyMovingWeek": 9971
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1014.4523346481973,
+    "sellVolume": 290309,
+    "sellMovingWeek": 11984802,
+    "productId": "ENCHANTED_STRING",
+    "sellOrders": 44,
+    "buyOrders": 2585,
+    "sellPrice": 965.5034866988894,
+    "buyVolume": 2138318,
+    "buyMovingWeek": 3831780
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2024.7900762852403,
+    "sellVolume": 5560156,
+    "sellMovingWeek": 4367233,
+    "productId": "DERELICT_ASHE",
+    "sellOrders": 508,
+    "buyOrders": 677,
+    "sellPrice": 1515.9899641807233,
+    "buyVolume": 741495,
+    "buyMovingWeek": 2765345
+  }
+},{
+  "quick_status": {
+    "buyPrice": 0,
+    "sellVolume": 2395,
+    "sellMovingWeek": 189,
+    "productId": "MOIL_LOG",
+    "sellOrders": 52,
+    "buyOrders": 82,
+    "sellPrice": 0,
+    "buyVolume": 378,
+    "buyMovingWeek": 102
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1632.4281356662952,
+    "sellVolume": 2026839,
+    "sellMovingWeek": 2420088,
+    "productId": "ENCHANTED_ACACIA_LOG",
+    "sellOrders": 243,
+    "buyOrders": 2105,
+    "sellPrice": 1308.8124548347732,
+    "buyVolume": 1372363,
+    "buyMovingWeek": 1732699
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1956878.307142857,
+    "sellVolume": 476848,
+    "sellMovingWeek": 6627,
+    "productId": "MAGMA_FISH_GOLD",
+    "sellOrders": 121,
+    "buyOrders": 83,
+    "sellPrice": 511427.0166131622,
+    "buyVolume": 570,
+    "buyMovingWeek": 13630
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5.778450468210941,
+    "sellVolume": 2713998,
+    "sellMovingWeek": 20841614,
+    "productId": "SAND",
+    "sellOrders": 75,
+    "buyOrders": 550,
+    "sellPrice": 4.158704424333385,
+    "buyVolume": 2473240,
+    "buyMovingWeek": 13421854
+  }
+},{
+  "quick_status": {
+    "buyPrice": 979995,
+    "sellVolume": 171882,
+    "sellMovingWeek": 1789,
+    "productId": "SOUL_FRAGMENT",
+    "sellOrders": 91,
+    "buyOrders": 13,
+    "sellPrice": 126723.6237889489,
+    "buyVolume": 331,
+    "buyMovingWeek": 3081
+  }
+},{
+  "quick_status": {
+    "buyPrice": 4893530.574358975,
+    "sellVolume": 44198,
+    "sellMovingWeek": 2915,
+    "productId": "PLASMA_BUCKET",
+    "sellOrders": 1840,
+    "buyOrders": 382,
+    "sellPrice": 2656054.219468085,
+    "buyVolume": 3135,
+    "buyMovingWeek": 4138
+  }
+},{
+  "quick_status": {
+    "buyPrice": 204.23062192602077,
+    "sellVolume": 10068310,
+    "sellMovingWeek": 17272047,
+    "productId": "ANCIENT_CLAW",
+    "sellOrders": 419,
+    "buyOrders": 1095,
+    "sellPrice": 189.16040852334422,
+    "buyVolume": 1851903,
+    "buyMovingWeek": 1779746
+  }
+},{
+  "quick_status": {
+    "buyPrice": 536.8543224896922,
+    "sellVolume": 3551498,
+    "sellMovingWeek": 21004038,
+    "productId": "ENCHANTED_LAPIS_LAZULI",
+    "sellOrders": 209,
+    "buyOrders": 3523,
+    "sellPrice": 493.5474820143885,
+    "buyVolume": 4920628,
+    "buyMovingWeek": 7377494
+  }
+},{
+  "quick_status": {
+    "buyPrice": 273.0800678564406,
+    "sellVolume": 913975,
+    "sellMovingWeek": 18809590,
+    "productId": "ENCHANTED_GHAST_TEAR",
+    "sellOrders": 54,
+    "buyOrders": 4869,
+    "sellPrice": 242.9,
+    "buyVolume": 9662803,
+    "buyMovingWeek": 15452851
+  }
+},{
+  "quick_status": {
+    "buyPrice": 481.70965427670234,
+    "sellVolume": 2437241,
+    "sellMovingWeek": 10055519,
+    "productId": "ENCHANTED_COCOA",
+    "sellOrders": 105,
+    "buyOrders": 1234,
+    "sellPrice": 452.958856769607,
+    "buyVolume": 2070983,
+    "buyMovingWeek": 1461049
+  }
+},{
+  "quick_status": {
+    "buyPrice": 27.916829056417715,
+    "sellVolume": 2489426,
+    "sellMovingWeek": 4980194,
+    "productId": "MELON_BLOCK",
+    "sellOrders": 61,
+    "buyOrders": 795,
+    "sellPrice": 15.75262793410118,
+    "buyVolume": 2051405,
+    "buyMovingWeek": 5844908
+  }
+},{
+  "quick_status": {
+    "buyPrice": 699998.0238095238,
+    "sellVolume": 1590,
+    "sellMovingWeek": 439,
+    "productId": "AMBER_MATERIAL",
+    "sellOrders": 177,
+    "buyOrders": 283,
+    "sellPrice": 458678.2734939759,
+    "buyVolume": 863,
+    "buyMovingWeek": 167
+  }
+},{
+  "quick_status": {
+    "buyPrice": 48.07411989696355,
+    "sellVolume": 3968666,
+    "sellMovingWeek": 1150499,
+    "productId": "CARROT_BAIT",
+    "sellOrders": 176,
+    "buyOrders": 262,
+    "sellPrice": 15.004720536516169,
+    "buyVolume": 454026,
+    "buyMovingWeek": 1312253
+  }
+},{
+  "quick_status": {
+    "buyPrice": 22498.577288732395,
+    "sellVolume": 918514,
+    "sellMovingWeek": 221713,
+    "productId": "FINE_TOPAZ_GEM",
+    "sellOrders": 341,
+    "buyOrders": 135,
+    "sellPrice": 13054.017810541456,
+    "buyVolume": 65606,
+    "buyMovingWeek": 157639
+  }
+},{
+  "quick_status": {
+    "buyPrice": 102945.13944954128,
+    "sellVolume": 346976,
+    "sellMovingWeek": 17187,
+    "productId": "CRUDE_GABAGOOL_DISTILLATE",
+    "sellOrders": 272,
+    "buyOrders": 35,
+    "sellPrice": 65140.68778625954,
+    "buyVolume": 1228,
+    "buyMovingWeek": 20719
+  }
+},{
+  "quick_status": {
+    "buyPrice": 0.7768102056934858,
+    "sellVolume": 3246684,
+    "sellMovingWeek": 76648458,
+    "productId": "SEEDS",
+    "sellOrders": 56,
+    "buyOrders": 1058,
+    "sellPrice": 0.3,
+    "buyVolume": 12128798,
+    "buyMovingWeek": 22983985
+  }
+},{
+  "quick_status": {
+    "buyPrice": 19698.382798165138,
+    "sellVolume": 4805954,
+    "sellMovingWeek": 162187,
+    "productId": "FINE_RUBY_GEM",
+    "sellOrders": 522,
+    "buyOrders": 257,
+    "sellPrice": 12024.029377546718,
+    "buyVolume": 73889,
+    "buyMovingWeek": 164214
+  }
+},{
+  "quick_status": {
+    "buyPrice": 14162.86852974417,
+    "sellVolume": 465625,
+    "sellMovingWeek": 783927,
+    "productId": "ENCHANTED_LEATHER",
+    "sellOrders": 255,
+    "buyOrders": 1019,
+    "sellPrice": 13292.163809465994,
+    "buyVolume": 480415,
+    "buyMovingWeek": 863991
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2039.9711103126124,
+    "sellVolume": 2680203,
+    "sellMovingWeek": 1272958,
+    "productId": "ENCHANTED_SPONGE",
+    "sellOrders": 241,
+    "buyOrders": 794,
+    "sellPrice": 1939.7314317220587,
+    "buyVolume": 231750,
+    "buyMovingWeek": 176584
+  }
+},{
+  "quick_status": {
+    "buyPrice": 36.95177265053461,
+    "sellVolume": 2628765,
+    "sellMovingWeek": 4664272,
+    "productId": "HAY_BLOCK",
+    "sellOrders": 108,
+    "buyOrders": 1094,
+    "sellPrice": 21.003815052588443,
+    "buyVolume": 2480185,
+    "buyMovingWeek": 3093945
+  }
+},{
+  "quick_status": {
+    "buyPrice": 251.63628330660842,
+    "sellVolume": 17819860,
+    "sellMovingWeek": 26874145,
+    "productId": "WOLF_TOOTH",
+    "sellOrders": 675,
+    "buyOrders": 1291,
+    "sellPrice": 175.94226358234644,
+    "buyVolume": 4360963,
+    "buyMovingWeek": 3539946
+  }
+},{
+  "quick_status": {
+    "buyPrice": 807.2735713068666,
+    "sellVolume": 944910,
+    "sellMovingWeek": 7545548,
+    "productId": "ENCHANTED_ROTTEN_FLESH",
+    "sellOrders": 133,
+    "buyOrders": 2553,
+    "sellPrice": 654.6474873121704,
+    "buyVolume": 2840227,
+    "buyMovingWeek": 4819068
+  }
+},{
+  "quick_status": {
+    "buyPrice": 188716.8745,
+    "sellVolume": 342517,
+    "sellMovingWeek": 14677,
+    "productId": "ENCHANTED_GRILLED_PORK",
+    "sellOrders": 435,
+    "buyOrders": 111,
+    "sellPrice": 32442.406343792634,
+    "buyVolume": 18722,
+    "buyMovingWeek": 10534
+  }
+},{
+  "quick_status": {
+    "buyPrice": 329.5452909256971,
+    "sellVolume": 18315343,
+    "sellMovingWeek": 20073581,
+    "productId": "ENCHANTED_NETHER_STALK",
+    "sellOrders": 405,
+    "buyOrders": 1046,
+    "sellPrice": 315.11378717662654,
+    "buyVolume": 2106901,
+    "buyMovingWeek": 2414887
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2570.3494898618105,
+    "sellVolume": 3693727,
+    "sellMovingWeek": 274385,
+    "productId": "ENCHANTED_ANCIENT_CLAW",
+    "sellOrders": 515,
+    "buyOrders": 585,
+    "sellPrice": 1672.3111375976694,
+    "buyVolume": 383209,
+    "buyMovingWeek": 92928
+  }
+},{
+  "quick_status": {
+    "buyPrice": 258.9922275125466,
+    "sellVolume": 3652041,
+    "sellMovingWeek": 11462247,
+    "productId": "ENCHANTED_REDSTONE",
+    "sellOrders": 246,
+    "buyOrders": 926,
+    "sellPrice": 223.80325566515597,
+    "buyVolume": 1895402,
+    "buyMovingWeek": 6929039
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1864500.9000000001,
+    "sellVolume": 2093,
+    "sellMovingWeek": 374,
+    "productId": "METEOR_SHARD",
+    "sellOrders": 42,
+    "buyOrders": 49,
+    "sellPrice": 1082775.4965517242,
+    "buyVolume": 143,
+    "buyMovingWeek": 367
+  }
+},{
+  "quick_status": {
+    "buyPrice": 421401.538271605,
+    "sellVolume": 4736,
+    "sellMovingWeek": 4810,
+    "productId": "DWARVEN_COMPACTOR",
+    "sellOrders": 342,
+    "buyOrders": 1451,
+    "sellPrice": 379684.61129032256,
+    "buyVolume": 15660,
+    "buyMovingWeek": 7278
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1609175.675,
+    "sellVolume": 26297,
+    "sellMovingWeek": 536,
+    "productId": "GREAT_WHITE_SHARK_TOOTH",
+    "sellOrders": 1455,
+    "buyOrders": 300,
+    "sellPrice": 1126180.9995184592,
+    "buyVolume": 2336,
+    "buyMovingWeek": 1598
+  }
+},{
+  "quick_status": {
+    "buyPrice": 283838.0947368421,
+    "sellVolume": 412478,
+    "sellMovingWeek": 44141,
+    "productId": "ENCHANTED_LAVA_BUCKET",
+    "sellOrders": 1886,
+    "buyOrders": 59,
+    "sellPrice": 231243.52530463037,
+    "buyVolume": 668,
+    "buyMovingWeek": 80724
+  }
+},{
+  "quick_status": {
+    "buyPrice": 15.543392447513362,
+    "sellVolume": 4368022,
+    "sellMovingWeek": 28850461,
+    "productId": "RAW_FISH:3",
+    "sellOrders": 82,
+    "buyOrders": 751,
+    "sellPrice": 12.500869502678988,
+    "buyVolume": 2487326,
+    "buyMovingWeek": 1528665
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5891691.004109588,
+    "sellVolume": 994074,
+    "sellMovingWeek": 20888,
+    "productId": "RECOMBOBULATOR_3000",
+    "sellOrders": 14343,
+    "buyOrders": 701,
+    "sellPrice": 1573121.0324347178,
+    "buyVolume": 3398,
+    "buyMovingWeek": 25295
+  }
+},{
+  "quick_status": {
+    "buyPrice": 11012.936065573771,
+    "sellVolume": 2972,
+    "sellMovingWeek": 2420,
+    "productId": "DIAMOND_ATOM",
+    "sellOrders": 29,
+    "buyOrders": 558,
+    "sellPrice": 6068.4,
+    "buyVolume": 5543,
+    "buyMovingWeek": 1359
+  }
+},{
+  "quick_status": {
+    "buyPrice": 21.00876345021247,
+    "sellVolume": 8484231,
+    "sellMovingWeek": 24777733,
+    "productId": "RAW_FISH:2",
+    "sellOrders": 192,
+    "buyOrders": 647,
+    "sellPrice": 18.024880913705154,
+    "buyVolume": 2485016,
+    "buyMovingWeek": 472967
+  }
+},{
+  "quick_status": {
+    "buyPrice": 10.8,
+    "sellVolume": 7736595,
+    "sellMovingWeek": 39443625,
+    "productId": "RAW_FISH:1",
+    "sellOrders": 157,
+    "buyOrders": 318,
+    "sellPrice": 9.2,
+    "buyVolume": 1508572,
+    "buyMovingWeek": 4111994
+  }
+},{
+  "quick_status": {
+    "buyPrice": 746659.6278571427,
+    "sellVolume": 8099,
+    "sellMovingWeek": 25856,
+    "productId": "PRECURSOR_GEAR",
+    "sellOrders": 350,
+    "buyOrders": 2024,
+    "sellPrice": 670203.8412087912,
+    "buyVolume": 6560,
+    "buyMovingWeek": 31808
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1373.7044683776353,
+    "sellVolume": 1198692,
+    "sellMovingWeek": 902615,
+    "productId": "ENCHANTED_PORK",
+    "sellOrders": 374,
+    "buyOrders": 1602,
+    "sellPrice": 1255.828213965177,
+    "buyVolume": 1037978,
+    "buyMovingWeek": 961808
+  }
+},{
+  "quick_status": {
+    "buyPrice": 49011.05190839694,
+    "sellVolume": 50587,
+    "sellMovingWeek": 18867,
+    "productId": "NECROMANCER_BROOCH",
+    "sellOrders": 1102,
+    "buyOrders": 889,
+    "sellPrice": 35374.308286852596,
+    "buyVolume": 5653,
+    "buyMovingWeek": 22374
+  }
+},{
+  "quick_status": {
+    "buyPrice": 24554.99960784314,
+    "sellVolume": 685783,
+    "sellMovingWeek": 6048,
+    "productId": "GOBLIN_EGG_RED",
+    "sellOrders": 844,
+    "buyOrders": 29,
+    "sellPrice": 10764.475093384744,
+    "buyVolume": 1375,
+    "buyMovingWeek": 5404
+  }
+},{
+  "quick_status": {
+    "buyPrice": 6440566.930434782,
+    "sellVolume": 3198,
+    "sellMovingWeek": 534,
+    "productId": "DEEP_SEA_ORB",
+    "sellOrders": 173,
+    "buyOrders": 356,
+    "sellPrice": 5400000.6499999985,
+    "buyVolume": 3258,
+    "buyMovingWeek": 611
+  }
+},{
+  "quick_status": {
+    "buyPrice": 9.689003018699731,
+    "sellVolume": 15381586,
+    "sellMovingWeek": 18277557,
+    "productId": "ROUGH_JASPER_GEM",
+    "sellOrders": 237,
+    "buyOrders": 676,
+    "sellPrice": 6.758759890333857,
+    "buyVolume": 1743548,
+    "buyMovingWeek": 635443
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5,
+    "sellVolume": 1608236,
+    "sellMovingWeek": 8022045,
+    "productId": "FEATHER",
+    "sellOrders": 39,
+    "buyOrders": 30,
+    "sellPrice": 2.1,
+    "buyVolume": 209758,
+    "buyMovingWeek": 4423259
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1694.3620900265662,
+    "sellVolume": 6366634,
+    "sellMovingWeek": 2996342,
+    "productId": "WHALE_BAIT",
+    "sellOrders": 933,
+    "buyOrders": 2292,
+    "sellPrice": 1633.930953838524,
+    "buyVolume": 2911418,
+    "buyMovingWeek": 4812156
+  }
+},{
+  "quick_status": {
+    "buyPrice": 128996.29333333332,
+    "sellVolume": 12107,
+    "sellMovingWeek": 1109,
+    "productId": "PETRIFIED_STARFALL",
+    "sellOrders": 252,
+    "buyOrders": 353,
+    "sellPrice": 41770.6541218638,
+    "buyVolume": 1425,
+    "buyMovingWeek": 639
+  }
+},{
+  "quick_status": {
+    "buyPrice": 54.8,
+    "sellVolume": 8508514,
+    "sellMovingWeek": 8447258,
+    "productId": "SPONGE",
+    "sellOrders": 258,
+    "buyOrders": 652,
+    "sellPrice": 46.24602735239584,
+    "buyVolume": 1102336,
+    "buyMovingWeek": 766319
+  }
+},{
+  "quick_status": {
+    "buyPrice": 589.8,
+    "sellVolume": 2113731,
+    "sellMovingWeek": 2625943,
+    "productId": "ENCHANTED_DARK_OAK_LOG",
+    "sellOrders": 152,
+    "buyOrders": 1268,
+    "sellPrice": 512.4364247841621,
+    "buyVolume": 1452223,
+    "buyMovingWeek": 2340989
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1759528,
+    "sellVolume": 320343,
+    "sellMovingWeek": 3464,
+    "productId": "FLAWLESS_TOPAZ_GEM",
+    "sellOrders": 202,
+    "buyOrders": 38,
+    "sellPrice": 1661060.7386363635,
+    "buyVolume": 126,
+    "buyMovingWeek": 3795
+  }
+},{
+  "quick_status": {
+    "buyPrice": 7988.684522613065,
+    "sellVolume": 4105645,
+    "sellMovingWeek": 540894,
+    "productId": "ENCHANTED_RED_SAND",
+    "sellOrders": 1553,
+    "buyOrders": 636,
+    "sellPrice": 4569.7186925619835,
+    "buyVolume": 178201,
+    "buyMovingWeek": 468240
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3201.879949874686,
+    "sellVolume": 37830,
+    "sellMovingWeek": 563057,
+    "productId": "ENCHANTED_CLOWNFISH",
+    "sellOrders": 21,
+    "buyOrders": 204,
+    "sellPrice": 3165.3,
+    "buyVolume": 30648,
+    "buyMovingWeek": 76463
+  }
+},{
+  "quick_status": {
+    "buyPrice": 786.4456191772878,
+    "sellVolume": 2695343,
+    "sellMovingWeek": 17872569,
+    "productId": "ENCHANTED_GOLD",
+    "sellOrders": 205,
+    "buyOrders": 3580,
+    "sellPrice": 689.8047489800734,
+    "buyVolume": 6579132,
+    "buyMovingWeek": 5252960
+  }
+},{
+  "quick_status": {
+    "buyPrice": 662.4682503026056,
+    "sellVolume": 5338050,
+    "sellMovingWeek": 2546115,
+    "productId": "ENCHANTED_RAW_CHICKEN",
+    "sellOrders": 218,
+    "buyOrders": 778,
+    "sellPrice": 616.6409488306665,
+    "buyVolume": 1447369,
+    "buyMovingWeek": 2026025
+  }
+},{
+  "quick_status": {
+    "buyPrice": 21942.256882504287,
+    "sellVolume": 116249,
+    "sellMovingWeek": 45792,
+    "productId": "ENCHANTED_WATER_LILY",
+    "sellOrders": 56,
+    "buyOrders": 308,
+    "sellPrice": 16001,
+    "buyVolume": 227936,
+    "buyMovingWeek": 64352
+  }
+},{
+  "quick_status": {
+    "buyPrice": 349997.9,
+    "sellVolume": 8764,
+    "sellMovingWeek": 2325,
+    "productId": "RED_SCARF",
+    "sellOrders": 452,
+    "buyOrders": 166,
+    "sellPrice": 301219.01379310346,
+    "buyVolume": 731,
+    "buyMovingWeek": 3126
+  }
+},{
+  "quick_status": {
+    "buyPrice": 6.678593826660126,
+    "sellVolume": 1563466,
+    "sellMovingWeek": 23454851,
+    "productId": "LOG:1",
+    "sellOrders": 36,
+    "buyOrders": 749,
+    "sellPrice": 4.2,
+    "buyVolume": 2045122,
+    "buyMovingWeek": 5290195
+  }
+},{
+  "quick_status": {
+    "buyPrice": 62.64506620548019,
+    "sellVolume": 33057680,
+    "sellMovingWeek": 53518784,
+    "productId": "TITANIUM_ORE",
+    "sellOrders": 624,
+    "buyOrders": 474,
+    "sellPrice": 50.186268318989896,
+    "buyVolume": 1338668,
+    "buyMovingWeek": 1359671
+  }
+},{
+  "quick_status": {
+    "buyPrice": 6984.34021484375,
+    "sellVolume": 572196,
+    "sellMovingWeek": 91502,
+    "productId": "BLUE_SHARK_TOOTH",
+    "sellOrders": 145,
+    "buyOrders": 208,
+    "sellPrice": 1880.2933031483626,
+    "buyVolume": 134573,
+    "buyMovingWeek": 80734
+  }
+},{
+  "quick_status": {
+    "buyPrice": 9.272242486089182,
+    "sellVolume": 975967,
+    "sellMovingWeek": 22002926,
+    "productId": "LOG:3",
+    "sellOrders": 25,
+    "buyOrders": 793,
+    "sellPrice": 5.8,
+    "buyVolume": 5995405,
+    "buyMovingWeek": 11385167
+  }
+},{
+  "quick_status": {
+    "buyPrice": 6.956716619154019,
+    "sellVolume": 6103909,
+    "sellMovingWeek": 17187832,
+    "productId": "LOG:2",
+    "sellOrders": 110,
+    "buyOrders": 230,
+    "sellPrice": 2.291566447591496,
+    "buyVolume": 958664,
+    "buyMovingWeek": 6029021
+  }
+},{
+  "quick_status": {
+    "buyPrice": 483245.75,
+    "sellVolume": 1679,
+    "sellMovingWeek": 539,
+    "productId": "SADAN_BROOCH",
+    "sellOrders": 138,
+    "buyOrders": 187,
+    "sellPrice": 332502.0266666667,
+    "buyVolume": 883,
+    "buyMovingWeek": 352
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1497.2041396259744,
+    "sellVolume": 1729461,
+    "sellMovingWeek": 3568755,
+    "productId": "ENCHANTED_GLOWSTONE_DUST",
+    "sellOrders": 320,
+    "buyOrders": 1408,
+    "sellPrice": 1184.9705710031003,
+    "buyVolume": 1288722,
+    "buyMovingWeek": 3819094
+  }
+},{
+  "quick_status": {
+    "buyPrice": 121956.7277027027,
+    "sellVolume": 124431,
+    "sellMovingWeek": 4225,
+    "productId": "ENCHANTED_CACTUS",
+    "sellOrders": 486,
+    "buyOrders": 29,
+    "sellPrice": 94497.2848081441,
+    "buyVolume": 1711,
+    "buyMovingWeek": 8490
+  }
+},{
+  "quick_status": {
+    "buyPrice": 53252.95263157894,
+    "sellVolume": 991832,
+    "sellMovingWeek": 402615,
+    "productId": "ENCHANTED_SUGAR_CANE",
+    "sellOrders": 367,
+    "buyOrders": 91,
+    "sellPrice": 51269.38677411231,
+    "buyVolume": 11997,
+    "buyMovingWeek": 377034
+  }
+},{
+  "quick_status": {
+    "buyPrice": 55.78773006134969,
+    "sellVolume": 7586,
+    "sellMovingWeek": 20269,
+    "productId": "ONYX",
+    "sellOrders": 46,
+    "buyOrders": 635,
+    "sellPrice": 9.021865889212828,
+    "buyVolume": 16210,
+    "buyMovingWeek": 6007
+  }
+},{
+  "quick_status": {
+    "buyPrice": 256280.07108433737,
+    "sellVolume": 20256,
+    "sellMovingWeek": 3282,
+    "productId": "ENCHANTED_COOKED_SALMON",
+    "sellOrders": 35,
+    "buyOrders": 87,
+    "sellPrice": 252100.92255054432,
+    "buyVolume": 4074,
+    "buyMovingWeek": 546
+  }
+},{
+  "quick_status": {
+    "buyPrice": 8792.794160084017,
+    "sellVolume": 2772604,
+    "sellMovingWeek": 1002934,
+    "productId": "ENCHANTED_SULPHUR",
+    "sellOrders": 382,
+    "buyOrders": 3189,
+    "sellPrice": 4331.394305727335,
+    "buyVolume": 1087526,
+    "buyMovingWeek": 866137
+  }
+},{
+  "quick_status": {
+    "buyPrice": 80.22406037289139,
+    "sellVolume": 5531425,
+    "sellMovingWeek": 2676932,
+    "productId": "ENCHANTED_SEEDS",
+    "sellOrders": 196,
+    "buyOrders": 324,
+    "sellPrice": 70.2,
+    "buyVolume": 305216,
+    "buyMovingWeek": 240716
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1298999.655,
+    "sellVolume": 680140,
+    "sellMovingWeek": 1694,
+    "productId": "CONCENTRATED_STONE",
+    "sellOrders": 419,
+    "buyOrders": 22,
+    "sellPrice": 754175.350379572,
+    "buyVolume": 961,
+    "buyMovingWeek": 4304
+  }
+},{
+  "quick_status": {
+    "buyPrice": 129090.67164480322,
+    "sellVolume": 56383,
+    "sellMovingWeek": 2316,
+    "productId": "ENCHANTED_BONE_BLOCK",
+    "sellOrders": 256,
+    "buyOrders": 91,
+    "sellPrice": 53379.7704516129,
+    "buyVolume": 46491,
+    "buyMovingWeek": 7094
+  }
+},{
+  "quick_status": {
+    "buyPrice": 44.98775050709939,
+    "sellVolume": 2326408,
+    "sellMovingWeek": 8487674,
+    "productId": "GHAST_TEAR",
+    "sellOrders": 103,
+    "buyOrders": 1617,
+    "sellPrice": 29.231791200936467,
+    "buyVolume": 3966177,
+    "buyMovingWeek": 4559005
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1937473.1944444445,
+    "sellVolume": 7617,
+    "sellMovingWeek": 335,
+    "productId": "OMEGA_EGG",
+    "sellOrders": 427,
+    "buyOrders": 116,
+    "sellPrice": 1313430.1032258065,
+    "buyVolume": 1277,
+    "buyMovingWeek": 871
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2533.5925286202046,
+    "sellVolume": 814612,
+    "sellMovingWeek": 1100015,
+    "productId": "UNSTABLE_FRAGMENT",
+    "sellOrders": 368,
+    "buyOrders": 186,
+    "sellPrice": 2407.8040195975136,
+    "buyVolume": 18440,
+    "buyMovingWeek": 217179
+  }
+},{
+  "quick_status": {
+    "buyPrice": 8753.354569998683,
+    "sellVolume": 4194944,
+    "sellMovingWeek": 607609,
+    "productId": "PURPLE_CANDY",
+    "sellOrders": 701,
+    "buyOrders": 1079,
+    "sellPrice": 7819.968613000754,
+    "buyVolume": 712519,
+    "buyMovingWeek": 354832
+  }
+},{
+  "quick_status": {
+    "buyPrice": 143409.99944134077,
+    "sellVolume": 190245,
+    "sellMovingWeek": 11422,
+    "productId": "POLISHED_PUMPKIN",
+    "sellOrders": 323,
+    "buyOrders": 78,
+    "sellPrice": 123420.18222958056,
+    "buyVolume": 2490,
+    "buyMovingWeek": 9210
+  }
+},{
+  "quick_status": {
+    "buyPrice": 7357.960903027194,
+    "sellVolume": 1765073,
+    "sellMovingWeek": 33944,
+    "productId": "MAGMA_CREAM_DISTILLATE",
+    "sellOrders": 324,
+    "buyOrders": 707,
+    "sellPrice": 1254.711808636702,
+    "buyVolume": 97415,
+    "buyMovingWeek": 24104
+  }
+},{
+  "quick_status": {
+    "buyPrice": 124527.7631827269,
+    "sellVolume": 3242373,
+    "sellMovingWeek": 198233,
+    "productId": "ENCHANTED_GOLD_BLOCK",
+    "sellOrders": 704,
+    "buyOrders": 1987,
+    "sellPrice": 28528.14296090062,
+    "buyVolume": 622264,
+    "buyMovingWeek": 190100
+  }
+},{
+  "quick_status": {
+    "buyPrice": 26999.85975609756,
+    "sellVolume": 633774,
+    "sellMovingWeek": 30843,
+    "productId": "FINE_OPAL_GEM",
+    "sellOrders": 457,
+    "buyOrders": 56,
+    "sellPrice": 22192.182697947217,
+    "buyVolume": 1744,
+    "buyMovingWeek": 14309
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2816.2875116653936,
+    "sellVolume": 1676367,
+    "sellMovingWeek": 4165721,
+    "productId": "ENCHANTED_FLINT",
+    "sellOrders": 388,
+    "buyOrders": 2411,
+    "sellPrice": 2636.4405336150503,
+    "buyVolume": 1735286,
+    "buyMovingWeek": 1778893
+  }
+},{
+  "quick_status": {
+    "buyPrice": 155602.88267716535,
+    "sellVolume": 2295042,
+    "sellMovingWeek": 22460,
+    "productId": "ENCHANTED_EMERALD_BLOCK",
+    "sellOrders": 732,
+    "buyOrders": 145,
+    "sellPrice": 20126.89571944694,
+    "buyVolume": 5660,
+    "buyMovingWeek": 16904
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2423112.5,
+    "sellVolume": 11378,
+    "sellMovingWeek": 4433,
+    "productId": "FURBALL",
+    "sellOrders": 1079,
+    "buyOrders": 114,
+    "sellPrice": 1831477.9803493451,
+    "buyVolume": 219,
+    "buyMovingWeek": 5183
+  }
+},{
+  "quick_status": {
+    "buyPrice": 10132.849989304812,
+    "sellVolume": 7583662,
+    "sellMovingWeek": 180086999,
+    "productId": "ENCHANTED_CLAY_BALL",
+    "sellOrders": 623,
+    "buyOrders": 3598,
+    "sellPrice": 466.87414253390955,
+    "buyVolume": 35020735,
+    "buyMovingWeek": 25264555
+  }
+},{
+  "quick_status": {
+    "buyPrice": 400000,
+    "sellVolume": 11500,
+    "sellMovingWeek": 2844,
+    "productId": "GIANT_TOOTH",
+    "sellOrders": 325,
+    "buyOrders": 36,
+    "sellPrice": 242429.7773279352,
+    "buyVolume": 208,
+    "buyMovingWeek": 4236
+  }
+},{
+  "quick_status": {
+    "buyPrice": 15.82576933568081,
+    "sellVolume": 5057458,
+    "sellMovingWeek": 30845369,
+    "productId": "GLOWSTONE_DUST",
+    "sellOrders": 154,
+    "buyOrders": 159,
+    "sellPrice": 12.652128817704604,
+    "buyVolume": 1326239,
+    "buyMovingWeek": 24715021
+  }
+},{
+  "quick_status": {
+    "buyPrice": 9683329.166666666,
+    "sellVolume": 156658,
+    "sellMovingWeek": 777,
+    "productId": "PERFECT_AMETHYST_GEM",
+    "sellOrders": 190,
+    "buyOrders": 28,
+    "sellPrice": 14883.430687411135,
+    "buyVolume": 82,
+    "buyMovingWeek": 659
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2684.670650216739,
+    "sellVolume": 287108,
+    "sellMovingWeek": 1330399,
+    "productId": "ENCHANTED_MUTTON",
+    "sellOrders": 45,
+    "buyOrders": 2508,
+    "sellPrice": 2459.9306912869047,
+    "buyVolume": 2220396,
+    "buyMovingWeek": 1765354
+  }
+},{
+  "quick_status": {
+    "buyPrice": 6732.364615384616,
+    "sellVolume": 12690,
+    "sellMovingWeek": 1739,
+    "productId": "ENDSTONE_GEODE",
+    "sellOrders": 115,
+    "buyOrders": 686,
+    "sellPrice": 1197.6617391304346,
+    "buyVolume": 6414,
+    "buyMovingWeek": 1251
+  }
+},{
+  "quick_status": {
+    "buyPrice": 894.2717685639143,
+    "sellVolume": 9378622,
+    "sellMovingWeek": 40756699,
+    "productId": "NULL_SPHERE",
+    "sellOrders": 622,
+    "buyOrders": 713,
+    "sellPrice": 809.7041333909463,
+    "buyVolume": 1786129,
+    "buyMovingWeek": 5611350
+  }
+},{
+  "quick_status": {
+    "buyPrice": 499999.6016666667,
+    "sellVolume": 5037997,
+    "sellMovingWeek": 14544,
+    "productId": "STOCK_OF_STONKS",
+    "sellOrders": 981,
+    "buyOrders": 193,
+    "sellPrice": 315545.89830291655,
+    "buyVolume": 11854,
+    "buyMovingWeek": 18216
+  }
+},{
+  "quick_status": {
+    "buyPrice": 420.55472085122744,
+    "sellVolume": 1089232,
+    "sellMovingWeek": 2501131,
+    "productId": "ENCHANTED_BONE",
+    "sellOrders": 122,
+    "buyOrders": 763,
+    "sellPrice": 363.1224523339908,
+    "buyVolume": 705566,
+    "buyMovingWeek": 1731652
+  }
+},{
+  "quick_status": {
+    "buyPrice": 974.3999999999999,
+    "sellVolume": 10691,
+    "sellMovingWeek": 9240,
+    "productId": "OPTICAL_LENS",
+    "sellOrders": 73,
+    "buyOrders": 108,
+    "sellPrice": 40.58764478764479,
+    "buyVolume": 1042,
+    "buyMovingWeek": 7538
+  }
+},{
+  "quick_status": {
+    "buyPrice": 205927.59365413533,
+    "sellVolume": 118306157,
+    "sellMovingWeek": 796031,
+    "productId": "ENCHANTED_DIAMOND_BLOCK",
+    "sellOrders": 15553,
+    "buyOrders": 964,
+    "sellPrice": 21123.232897641934,
+    "buyVolume": 228932,
+    "buyMovingWeek": 499778
+  }
+},{
+  "quick_status": {
+    "buyPrice": 104683.89327521792,
+    "sellVolume": 3029465,
+    "sellMovingWeek": 92309,
+    "productId": "SUPERIOR_FRAGMENT",
+    "sellOrders": 1045,
+    "buyOrders": 268,
+    "sellPrice": 4641.014019361779,
+    "buyVolume": 25215,
+    "buyMovingWeek": 58289
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1868993.1666666667,
+    "sellVolume": 10294,
+    "sellMovingWeek": 5483,
+    "productId": "MAGMA_BUCKET",
+    "sellOrders": 566,
+    "buyOrders": 258,
+    "sellPrice": 1703831.508627451,
+    "buyVolume": 2085,
+    "buyMovingWeek": 5780
+  }
+},{
+  "quick_status": {
+    "buyPrice": 7895.902008032129,
+    "sellVolume": 1094369,
+    "sellMovingWeek": 40771,
+    "productId": "GOBLIN_EGG_GREEN",
+    "sellOrders": 411,
+    "buyOrders": 356,
+    "sellPrice": 2232.6829006456587,
+    "buyVolume": 20640,
+    "buyMovingWeek": 29074
+  }
+},{
+  "quick_status": {
+    "buyPrice": 117.26516362960209,
+    "sellVolume": 1373601,
+    "sellMovingWeek": 1442951,
+    "productId": "LIGHT_BAIT",
+    "sellOrders": 113,
+    "buyOrders": 1095,
+    "sellPrice": 62.73386917773668,
+    "buyVolume": 1073765,
+    "buyMovingWeek": 929242
+  }
+},{
+  "quick_status": {
+    "buyPrice": 42295.42760595648,
+    "sellVolume": 49878,
+    "sellMovingWeek": 102487,
+    "productId": "HOT_POTATO_BOOK",
+    "sellOrders": 1484,
+    "buyOrders": 6417,
+    "sellPrice": 37340.35622923588,
+    "buyVolume": 128054,
+    "buyMovingWeek": 482151
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3.6648541008253814,
+    "sellVolume": 7073956,
+    "sellMovingWeek": 61716106,
+    "productId": "CLAY_BALL",
+    "sellOrders": 145,
+    "buyOrders": 899,
+    "sellPrice": 2.5056241986245484,
+    "buyVolume": 6755321,
+    "buyMovingWeek": 27955934
+  }
+},{
+  "quick_status": {
+    "buyPrice": 546.6169571045574,
+    "sellVolume": 588771,
+    "sellMovingWeek": 2559510,
+    "productId": "HOT_BAIT",
+    "sellOrders": 143,
+    "buyOrders": 2757,
+    "sellPrice": 340.333430177586,
+    "buyVolume": 3131776,
+    "buyMovingWeek": 2803909
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2550.9679515418507,
+    "sellVolume": 1979899,
+    "sellMovingWeek": 131978,
+    "productId": "OLD_FRAGMENT",
+    "sellOrders": 339,
+    "buyOrders": 443,
+    "sellPrice": 2165.7993066243803,
+    "buyVolume": 45334,
+    "buyMovingWeek": 56998
+  }
+},{
+  "quick_status": {
+    "buyPrice": 100841.26701030928,
+    "sellVolume": 549668,
+    "sellMovingWeek": 176608,
+    "productId": "WORM_MEMBRANE",
+    "sellOrders": 115,
+    "buyOrders": 128,
+    "sellPrice": 2700.2542488957324,
+    "buyVolume": 9450,
+    "buyMovingWeek": 60681
+  }
+},{
+  "quick_status": {
+    "buyPrice": 164830.46347197104,
+    "sellVolume": 28953,
+    "sellMovingWeek": 56699,
+    "productId": "BEATING_HEART",
+    "sellOrders": 803,
+    "buyOrders": 3466,
+    "sellPrice": 81262.82954545454,
+    "buyVolume": 27635,
+    "buyMovingWeek": 52078
+  }
+},{
+  "quick_status": {
+    "buyPrice": 4.210123180291154,
+    "sellVolume": 3990944,
+    "sellMovingWeek": 43553778,
+    "productId": "ROUGH_AMBER_GEM",
+    "sellOrders": 63,
+    "buyOrders": 564,
+    "sellPrice": 2.4,
+    "buyVolume": 1828687,
+    "buyMovingWeek": 597389
+  }
+},{
+  "quick_status": {
+    "buyPrice": 115.7529576565714,
+    "sellVolume": 19415437,
+    "sellMovingWeek": 10913992,
+    "productId": "WATER_LILY",
+    "sellOrders": 481,
+    "buyOrders": 505,
+    "sellPrice": 98.76420550224188,
+    "buyVolume": 611219,
+    "buyMovingWeek": 1254980
+  }
+},{
+  "quick_status": {
+    "buyPrice": 208897960.7076923,
+    "sellVolume": 1762347,
+    "sellMovingWeek": 361876,
+    "productId": "AMALGAMATED_CRIMSONITE",
+    "sellOrders": 951,
+    "buyOrders": 92,
+    "sellPrice": 135.87345399698341,
+    "buyVolume": 16463,
+    "buyMovingWeek": 267418
+  }
+},{
+  "quick_status": {
+    "buyPrice": 12.186682724130323,
+    "sellVolume": 3908510,
+    "sellMovingWeek": 27444520,
+    "productId": "LOG_2",
+    "sellOrders": 80,
+    "buyOrders": 776,
+    "sellPrice": 8.24034423350617,
+    "buyVolume": 1704281,
+    "buyMovingWeek": 5099241
+  }
+},{
+  "quick_status": {
+    "buyPrice": 23697.150496141123,
+    "sellVolume": 751870,
+    "sellMovingWeek": 85393,
+    "productId": "FINE_AMBER_GEM",
+    "sellOrders": 163,
+    "buyOrders": 156,
+    "sellPrice": 6655.842553287165,
+    "buyVolume": 41538,
+    "buyMovingWeek": 82546
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2465.798837959974,
+    "sellVolume": 2398383,
+    "sellMovingWeek": 6465282,
+    "productId": "ENCHANTED_QUARTZ",
+    "sellOrders": 256,
+    "buyOrders": 538,
+    "sellPrice": 2413.500736021092,
+    "buyVolume": 309441,
+    "buyMovingWeek": 2025358
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5.794783195835788,
+    "sellVolume": 32279944,
+    "sellMovingWeek": 360620878,
+    "productId": "COAL",
+    "sellOrders": 551,
+    "buyOrders": 1350,
+    "sellPrice": 4.156779060820499,
+    "buyVolume": 17680866,
+    "buyMovingWeek": 25672743
+  }
+},{
+  "quick_status": {
+    "buyPrice": 534888.2171036309,
+    "sellVolume": 3944086,
+    "sellMovingWeek": 206595696,
+    "productId": "ENDER_PEARL",
+    "sellOrders": 105,
+    "buyOrders": 3104,
+    "sellPrice": 5.23616035007046,
+    "buyVolume": 54387709,
+    "buyMovingWeek": 17848343
+  }
+},{
+  "quick_status": {
+    "buyPrice": 133014.65,
+    "sellVolume": 649382,
+    "sellMovingWeek": 80147,
+    "productId": "ENCHANTED_COAL_BLOCK",
+    "sellOrders": 470,
+    "buyOrders": 31,
+    "sellPrice": 62300.18644991921,
+    "buyVolume": 2038,
+    "buyMovingWeek": 51504
+  }
+},{
+  "quick_status": {
+    "buyPrice": 10774998.133333333,
+    "sellVolume": 2524910,
+    "sellMovingWeek": 2154,
+    "productId": "PERFECT_TOPAZ_GEM",
+    "sellOrders": 473,
+    "buyOrders": 36,
+    "sellPrice": 15802.84538900444,
+    "buyVolume": 258,
+    "buyMovingWeek": 2911
+  }
+},{
+  "quick_status": {
+    "buyPrice": 4357.148498034811,
+    "sellVolume": 3277537,
+    "sellMovingWeek": 449384,
+    "productId": "GOBLIN_EGG",
+    "sellOrders": 927,
+    "buyOrders": 1221,
+    "sellPrice": 3368.6379238898744,
+    "buyVolume": 347481,
+    "buyMovingWeek": 518622
+  }
+},{
+  "quick_status": {
+    "buyPrice": 420.76825775656323,
+    "sellVolume": 1475335,
+    "sellMovingWeek": 1002660,
+    "productId": "ENCHANTED_PRISMARINE_CRYSTALS",
+    "sellOrders": 104,
+    "buyOrders": 403,
+    "sellPrice": 381.6,
+    "buyVolume": 163633,
+    "buyMovingWeek": 100687
+  }
+},{
+  "quick_status": {
+    "buyPrice": 83423.1,
+    "sellVolume": 368401,
+    "sellMovingWeek": 16274,
+    "productId": "ENCHANTED_WET_SPONGE",
+    "sellOrders": 483,
+    "buyOrders": 156,
+    "sellPrice": 75224.68199046483,
+    "buyVolume": 14325,
+    "buyMovingWeek": 10315
+  }
+},{
+  "quick_status": {
+    "buyPrice": 256.83077657163307,
+    "sellVolume": 11724007,
+    "sellMovingWeek": 19717879,
+    "productId": "FLAWED_JADE_GEM",
+    "sellOrders": 261,
+    "buyOrders": 179,
+    "sellPrice": 236.4585850956697,
+    "buyVolume": 403998,
+    "buyMovingWeek": 77391
+  }
+},{
+  "quick_status": {
+    "buyPrice": 4.680138506432124,
+    "sellVolume": 1131213,
+    "sellMovingWeek": 13997518,
+    "productId": "ENDER_STONE",
+    "sellOrders": 32,
+    "buyOrders": 522,
+    "sellPrice": 2.3,
+    "buyVolume": 2285899,
+    "buyMovingWeek": 6620546
+  }
+},{
+  "quick_status": {
+    "buyPrice": 20,
+    "sellVolume": 6183349,
+    "sellMovingWeek": 31365722,
+    "productId": "QUARTZ",
+    "sellOrders": 185,
+    "buyOrders": 588,
+    "sellPrice": 14.76100201197547,
+    "buyVolume": 2694220,
+    "buyMovingWeek": 15278087
+  }
+},{
+  "quick_status": {
+    "buyPrice": 419125.28753734526,
+    "sellVolume": 1172719,
+    "sellMovingWeek": 7415,
+    "productId": "JERRY_BOX_PURPLE",
+    "sellOrders": 281,
+    "buyOrders": 1230,
+    "sellPrice": 6937.390946474133,
+    "buyVolume": 117108,
+    "buyMovingWeek": 10797
+  }
+},{
+  "quick_status": {
+    "buyPrice": 0,
+    "sellVolume": 926,
+    "sellMovingWeek": 2,
+    "productId": "TOIL_LOG",
+    "sellOrders": 87,
+    "buyOrders": 13,
+    "sellPrice": 0,
+    "buyVolume": 16,
+    "buyMovingWeek": 7
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1830.5722222222223,
+    "sellVolume": 27137,
+    "sellMovingWeek": 7757,
+    "productId": "SALMON_OPAL",
+    "sellOrders": 208,
+    "buyOrders": 633,
+    "sellPrice": 467.1984764542937,
+    "buyVolume": 5773,
+    "buyMovingWeek": 2462
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1313.8371412532456,
+    "sellVolume": 4563071,
+    "sellMovingWeek": 6154623,
+    "productId": "SLUDGE_JUICE",
+    "sellOrders": 954,
+    "buyOrders": 1189,
+    "sellPrice": 1241.228129504141,
+    "buyVolume": 677071,
+    "buyMovingWeek": 2935211
+  }
+},{
+  "quick_status": {
+    "buyPrice": 9.877598533147173,
+    "sellVolume": 6409960,
+    "sellMovingWeek": 18613126,
+    "productId": "MAGMA_CREAM",
+    "sellOrders": 107,
+    "buyOrders": 399,
+    "sellPrice": 6.789082374787229,
+    "buyVolume": 2649152,
+    "buyMovingWeek": 4188454
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2.4063888132274234,
+    "sellVolume": 6512435,
+    "sellMovingWeek": 86047555,
+    "productId": "SUGAR_CANE",
+    "sellOrders": 116,
+    "buyOrders": 1690,
+    "sellPrice": 1.5879349393674718,
+    "buyVolume": 24584023,
+    "buyMovingWeek": 47550896
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1612.9311786102155,
+    "sellVolume": 3104829,
+    "sellMovingWeek": 24355992,
+    "productId": "ENCHANTED_MITHRIL",
+    "sellOrders": 338,
+    "buyOrders": 1788,
+    "sellPrice": 1572.2635746803142,
+    "buyVolume": 11177959,
+    "buyMovingWeek": 3956488
+  }
+},{
+  "quick_status": {
+    "buyPrice": 45747.45893200155,
+    "sellVolume": 109208,
+    "sellMovingWeek": 96553,
+    "productId": "RED_GIFT",
+    "sellOrders": 106,
+    "buyOrders": 744,
+    "sellPrice": 38600.782863340566,
+    "buyVolume": 129891,
+    "buyMovingWeek": 115386
+  }
+},{
+  "quick_status": {
+    "buyPrice": 661.1364476503176,
+    "sellVolume": 2856998,
+    "sellMovingWeek": 3127416,
+    "productId": "ENCHANTED_RAW_BEEF",
+    "sellOrders": 160,
+    "buyOrders": 946,
+    "sellPrice": 617.78530602453,
+    "buyVolume": 766608,
+    "buyMovingWeek": 2555791
+  }
+},{
+  "quick_status": {
+    "buyPrice": 4999998.65,
+    "sellVolume": 371,
+    "sellMovingWeek": 410,
+    "productId": "AOTE_STONE",
+    "sellOrders": 98,
+    "buyOrders": 16,
+    "sellPrice": 4132502.65,
+    "buyVolume": 66,
+    "buyMovingWeek": 522
+  }
+},{
+  "quick_status": {
+    "buyPrice": 537.0065516719625,
+    "sellVolume": 551392,
+    "sellMovingWeek": 2583260,
+    "productId": "ENCHANTED_FEATHER",
+    "sellOrders": 56,
+    "buyOrders": 270,
+    "sellPrice": 247.55327597617472,
+    "buyVolume": 316355,
+    "buyMovingWeek": 610633
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1102.2799283325369,
+    "sellVolume": 182415,
+    "sellMovingWeek": 5638437,
+    "productId": "ENCHANTED_OAK_LOG",
+    "sellOrders": 19,
+    "buyOrders": 1565,
+    "sellPrice": 1063.6020748745163,
+    "buyVolume": 2042884,
+    "buyMovingWeek": 5158428
+  }
+},{
+  "quick_status": {
+    "buyPrice": 23.6,
+    "sellVolume": 2275514,
+    "sellMovingWeek": 4630735,
+    "productId": "RABBIT_HIDE",
+    "sellOrders": 49,
+    "buyOrders": 54,
+    "sellPrice": 20.400000000000002,
+    "buyVolume": 387987,
+    "buyMovingWeek": 4456238
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5941.6864196025845,
+    "sellVolume": 122950,
+    "sellMovingWeek": 695558,
+    "productId": "WHITE_GIFT",
+    "sellOrders": 54,
+    "buyOrders": 2786,
+    "sellPrice": 5504.133125,
+    "buyVolume": 2019698,
+    "buyMovingWeek": 766042
+  }
+},{
+  "quick_status": {
+    "buyPrice": 4.515238752356975,
+    "sellVolume": 1420655,
+    "sellMovingWeek": 129638920,
+    "productId": "NETHER_STALK",
+    "sellOrders": 43,
+    "buyOrders": 2163,
+    "sellPrice": 2.8290006268469594,
+    "buyVolume": 46885488,
+    "buyMovingWeek": 99467637
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1159.3172,
+    "sellVolume": 1391622,
+    "sellMovingWeek": 1268832,
+    "productId": "DARK_BAIT",
+    "sellOrders": 255,
+    "buyOrders": 791,
+    "sellPrice": 837.3117756665966,
+    "buyVolume": 536595,
+    "buyMovingWeek": 721080
+  }
+},{
+  "quick_status": {
+    "buyPrice": 860.7710901840197,
+    "sellVolume": 115808,
+    "sellMovingWeek": 2786795,
+    "productId": "ENCHANTED_PUMPKIN",
+    "sellOrders": 25,
+    "buyOrders": 1381,
+    "sellPrice": 818.6046897059726,
+    "buyVolume": 1003781,
+    "buyMovingWeek": 1237798
+  }
+},{
+  "quick_status": {
+    "buyPrice": 267565.6629451396,
+    "sellVolume": 519883,
+    "sellMovingWeek": 12497,
+    "productId": "ENCHANTED_COOKED_FISH",
+    "sellOrders": 138,
+    "buyOrders": 803,
+    "sellPrice": 91232.1595723909,
+    "buyVolume": 100239,
+    "buyMovingWeek": 23718
+  }
+},{
+  "quick_status": {
+    "buyPrice": 17.110992529348987,
+    "sellVolume": 7372068,
+    "sellMovingWeek": 55311027,
+    "productId": "OBSIDIAN",
+    "sellOrders": 191,
+    "buyOrders": 541,
+    "sellPrice": 15.190828745582683,
+    "buyVolume": 864967,
+    "buyMovingWeek": 9547613
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1097999,
+    "sellVolume": 3876,
+    "sellMovingWeek": 134,
+    "productId": "GOLDEN_BALL",
+    "sellOrders": 223,
+    "buyOrders": 74,
+    "sellPrice": 496228.07764705876,
+    "buyVolume": 581,
+    "buyMovingWeek": 444
+  }
+},{
+  "quick_status": {
+    "buyPrice": 408.9851845698907,
+    "sellVolume": 9900288,
+    "sellMovingWeek": 2628115,
+    "productId": "STARFALL",
+    "sellOrders": 812,
+    "buyOrders": 413,
+    "sellPrice": 261.1567959074036,
+    "buyVolume": 1954267,
+    "buyMovingWeek": 4909871
+  }
+},{
+  "quick_status": {
+    "buyPrice": 30.223164282618118,
+    "sellVolume": 2244228,
+    "sellMovingWeek": 19718264,
+    "productId": "LEATHER",
+    "sellOrders": 92,
+    "buyOrders": 1275,
+    "sellPrice": 23.50054634200455,
+    "buyVolume": 7331963,
+    "buyMovingWeek": 10955635
+  }
+},{
+  "quick_status": {
+    "buyPrice": 299.42365122062625,
+    "sellVolume": 7541578,
+    "sellMovingWeek": 45966948,
+    "productId": "MAGMA_FISH",
+    "sellOrders": 214,
+    "buyOrders": 316,
+    "sellPrice": 201.9413105989127,
+    "buyVolume": 294421,
+    "buyMovingWeek": 2401650
+  }
+},{
+  "quick_status": {
+    "buyPrice": 10037.013118971061,
+    "sellVolume": 1835212,
+    "sellMovingWeek": 170153,
+    "productId": "SOUL_STRING",
+    "sellOrders": 545,
+    "buyOrders": 248,
+    "sellPrice": 1186.8151280530544,
+    "buyVolume": 121578,
+    "buyMovingWeek": 185906
+  }
+},{
+  "quick_status": {
+    "buyPrice": 62.99887886485066,
+    "sellVolume": 1933399,
+    "sellMovingWeek": 1540709,
+    "productId": "ENCHANTED_BREAD",
+    "sellOrders": 90,
+    "buyOrders": 380,
+    "sellPrice": 49.925759718533335,
+    "buyVolume": 523148,
+    "buyMovingWeek": 230165
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1069818.698529412,
+    "sellVolume": 78386,
+    "sellMovingWeek": 23236,
+    "productId": "FUMING_POTATO_BOOK",
+    "sellOrders": 2343,
+    "buyOrders": 1080,
+    "sellPrice": 752237.1048554914,
+    "buyVolume": 3351,
+    "buyMovingWeek": 28773
+  }
+},{
+  "quick_status": {
+    "buyPrice": 324.67559614408924,
+    "sellVolume": 5225371,
+    "sellMovingWeek": 7692727,
+    "productId": "FLAWED_SAPPHIRE_GEM",
+    "sellOrders": 131,
+    "buyOrders": 365,
+    "sellPrice": 221.61247615989095,
+    "buyVolume": 538369,
+    "buyMovingWeek": 196755
+  }
+},{
+  "quick_status": {
+    "buyPrice": 60.99556666377724,
+    "sellVolume": 2915294,
+    "sellMovingWeek": 7565977,
+    "productId": "SULPHUR_ORE",
+    "sellOrders": 100,
+    "buyOrders": 3991,
+    "sellPrice": 46.52359735762749,
+    "buyVolume": 2868294,
+    "buyMovingWeek": 1086134
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5969.811286681715,
+    "sellVolume": 1846147,
+    "sellMovingWeek": 27627,
+    "productId": "GLOWSTONE_DUST_DISTILLATE",
+    "sellOrders": 387,
+    "buyOrders": 596,
+    "sellPrice": 2308.331495558201,
+    "buyVolume": 66317,
+    "buyMovingWeek": 15824
+  }
+},{
+  "quick_status": {
+    "buyPrice": 11799999.88,
+    "sellVolume": 142203,
+    "sellMovingWeek": 1558,
+    "productId": "PERFECT_SAPPHIRE_GEM",
+    "sellOrders": 34,
+    "buyOrders": 39,
+    "sellPrice": 19626.598529328265,
+    "buyVolume": 245,
+    "buyMovingWeek": 2094
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5.4,
+    "sellVolume": 4878552,
+    "sellMovingWeek": 19997062,
+    "productId": "SNOW_BLOCK",
+    "sellOrders": 89,
+    "buyOrders": 1000,
+    "sellPrice": 3.9917986989037195,
+    "buyVolume": 5335062,
+    "buyMovingWeek": 15018747
+  }
+},{
+  "quick_status": {
+    "buyPrice": 37823.2325698324,
+    "sellVolume": 1025033,
+    "sellMovingWeek": 299024,
+    "productId": "ENCHANTED_BAKED_POTATO",
+    "sellOrders": 882,
+    "buyOrders": 416,
+    "sellPrice": 35258.70373102568,
+    "buyVolume": 85944,
+    "buyMovingWeek": 229161
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3364.0889502762434,
+    "sellVolume": 7253,
+    "sellMovingWeek": 38933,
+    "productId": "COMPACTOR",
+    "sellOrders": 137,
+    "buyOrders": 1895,
+    "sellPrice": 2572.9411764705883,
+    "buyVolume": 26614,
+    "buyMovingWeek": 39181
+  }
+},{
+  "quick_status": {
+    "buyPrice": 0,
+    "sellVolume": 0,
+    "sellMovingWeek": 0,
+    "productId": "BAZAAR_COOKIE",
+    "sellOrders": 0,
+    "buyOrders": 0,
+    "sellPrice": 0,
+    "buyVolume": 0,
+    "buyMovingWeek": 0
+  }
+},{
+  "quick_status": {
+    "buyPrice": 0,
+    "sellVolume": 8224,
+    "sellMovingWeek": 0,
+    "productId": "MANDRAA",
+    "sellOrders": 671,
+    "buyOrders": 0,
+    "sellPrice": 360231.16848484846,
+    "buyVolume": 0,
+    "buyMovingWeek": 0
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5.3212513972673605,
+    "sellVolume": 730570,
+    "sellMovingWeek": 25558842,
+    "productId": "BROWN_MUSHROOM",
+    "sellOrders": 19,
+    "buyOrders": 183,
+    "sellPrice": 2.9,
+    "buyVolume": 2732823,
+    "buyMovingWeek": 5640058
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5318.1389810426535,
+    "sellVolume": 4414019,
+    "sellMovingWeek": 54448,
+    "productId": "SPOOKY_SHARD",
+    "sellOrders": 338,
+    "buyOrders": 159,
+    "sellPrice": 1903.4319780368503,
+    "buyVolume": 70931,
+    "buyMovingWeek": 83653
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2.634488762793413,
+    "sellVolume": 5145114,
+    "sellMovingWeek": 59267295,
+    "productId": "CARROT_ITEM",
+    "sellOrders": 83,
+    "buyOrders": 1309,
+    "sellPrice": 1.6384954651152812,
+    "buyVolume": 17863255,
+    "buyMovingWeek": 33736591
+  }
+},{
+  "quick_status": {
+    "buyPrice": 242.79194271409443,
+    "sellVolume": 4850986,
+    "sellMovingWeek": 7827706,
+    "productId": "ENCHANTED_POTATO",
+    "sellOrders": 245,
+    "buyOrders": 1202,
+    "sellPrice": 215.19537421578158,
+    "buyVolume": 1770375,
+    "buyMovingWeek": 2038218
+  }
+},{
+  "quick_status": {
+    "buyPrice": 36.9,
+    "sellVolume": 3519990,
+    "sellMovingWeek": 1060940,
+    "productId": "EXP_BOTTLE",
+    "sellOrders": 219,
+    "buyOrders": 202,
+    "sellPrice": 25.971803262967356,
+    "buyVolume": 771347,
+    "buyMovingWeek": 1439665
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1034.4740157480314,
+    "sellVolume": 16961,
+    "sellMovingWeek": 11154,
+    "productId": "MOLTEN_CUBE",
+    "sellOrders": 106,
+    "buyOrders": 548,
+    "sellPrice": 29.420110192837466,
+    "buyVolume": 6125,
+    "buyMovingWeek": 6386
+  }
+},{
+  "quick_status": {
+    "buyPrice": 849.770748130266,
+    "sellVolume": 2304678,
+    "sellMovingWeek": 3568127,
+    "productId": "ENCHANTED_SLIME_BALL",
+    "sellOrders": 177,
+    "buyOrders": 1188,
+    "sellPrice": 779.5563668132278,
+    "buyVolume": 1814205,
+    "buyMovingWeek": 2982598
+  }
+},{
+  "quick_status": {
+    "buyPrice": 260339.06923076924,
+    "sellVolume": 7444,
+    "sellMovingWeek": 273,
+    "productId": "BULKY_STONE",
+    "sellOrders": 197,
+    "buyOrders": 178,
+    "sellPrice": 107507.83841463414,
+    "buyVolume": 373,
+    "buyMovingWeek": 155
+  }
+},{
+  "quick_status": {
+    "buyPrice": 669.9886447868532,
+    "sellVolume": 2461611,
+    "sellMovingWeek": 1678956,
+    "productId": "ENCHANTED_RED_MUSHROOM",
+    "sellOrders": 134,
+    "buyOrders": 171,
+    "sellPrice": 617.0686700022103,
+    "buyVolume": 629373,
+    "buyMovingWeek": 1015992
+  }
+},{
+  "quick_status": {
+    "buyPrice": 14630.162211740042,
+    "sellVolume": 143657,
+    "sellMovingWeek": 114733,
+    "productId": "ENCHANTED_RABBIT_HIDE",
+    "sellOrders": 75,
+    "buyOrders": 898,
+    "sellPrice": 13054.259144111193,
+    "buyVolume": 274996,
+    "buyMovingWeek": 138276
+  }
+},{
+  "quick_status": {
+    "buyPrice": 172999999.5,
+    "sellVolume": 305248,
+    "sellMovingWeek": 15,
+    "productId": "INFERNO_VERTEX",
+    "sellOrders": 57,
+    "buyOrders": 5,
+    "sellPrice": 29268.722772881614,
+    "buyVolume": 5,
+    "buyMovingWeek": 73
+  }
+},{
+  "quick_status": {
+    "buyPrice": 309.1295338856173,
+    "sellVolume": 11596324,
+    "sellMovingWeek": 5984063,
+    "productId": "FLAWED_AMETHYST_GEM",
+    "sellOrders": 331,
+    "buyOrders": 441,
+    "sellPrice": 243.72901183183282,
+    "buyVolume": 487231,
+    "buyMovingWeek": 31942
+  }
+},{
+  "quick_status": {
+    "buyPrice": 9939907.9,
+    "sellVolume": 1549356,
+    "sellMovingWeek": 2361,
+    "productId": "PERFECT_JADE_GEM",
+    "sellOrders": 183,
+    "buyOrders": 15,
+    "sellPrice": 14820.591393066637,
+    "buyVolume": 233,
+    "buyMovingWeek": 3297
+  }
+},{
+  "quick_status": {
+    "buyPrice": 367.08236430288935,
+    "sellVolume": 73962,
+    "sellMovingWeek": 1765098,
+    "productId": "ENCHANTED_BIRCH_LOG",
+    "sellOrders": 8,
+    "buyOrders": 901,
+    "sellPrice": 331.3248573757131,
+    "buyVolume": 1245304,
+    "buyMovingWeek": 1728466
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1487.1748651564185,
+    "sellVolume": 412355,
+    "sellMovingWeek": 801521,
+    "productId": "ENCHANTED_GUNPOWDER",
+    "sellOrders": 20,
+    "buyOrders": 852,
+    "sellPrice": 1167.6299362681457,
+    "buyVolume": 652135,
+    "buyMovingWeek": 668708
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1212891.8,
+    "sellVolume": 375,
+    "sellMovingWeek": 341,
+    "productId": "REFINED_AMBER",
+    "sellOrders": 52,
+    "buyOrders": 19,
+    "sellPrice": 798913.5625000001,
+    "buyVolume": 82,
+    "buyMovingWeek": 595
+  }
+},{
+  "quick_status": {
+    "buyPrice": 344.87748735244526,
+    "sellVolume": 8043718,
+    "sellMovingWeek": 17110350,
+    "productId": "ENCHANTED_SUGAR",
+    "sellOrders": 180,
+    "buyOrders": 397,
+    "sellPrice": 317.98606798770277,
+    "buyVolume": 344949,
+    "buyMovingWeek": 1738344
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1.3546189433914684,
+    "sellVolume": 1434038,
+    "sellMovingWeek": 42600101,
+    "productId": "CACTUS",
+    "sellOrders": 38,
+    "buyOrders": 1262,
+    "sellPrice": 1,
+    "buyVolume": 43287265,
+    "buyMovingWeek": 16398605
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3313.1000000000004,
+    "sellVolume": 446752,
+    "sellMovingWeek": 2926,
+    "productId": "ENCHANTED_CAKE",
+    "sellOrders": 258,
+    "buyOrders": 86,
+    "sellPrice": 971.708916745506,
+    "buyVolume": 1375,
+    "buyMovingWeek": 464
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5.056770445762021,
+    "sellVolume": 2117043,
+    "sellMovingWeek": 31170986,
+    "productId": "PUMPKIN",
+    "sellOrders": 53,
+    "buyOrders": 444,
+    "sellPrice": 3.781799424995772,
+    "buyVolume": 2021928,
+    "buyMovingWeek": 7459486
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2.5370713437471455,
+    "sellVolume": 8565125,
+    "sellMovingWeek": 93747014,
+    "productId": "WHEAT",
+    "sellOrders": 149,
+    "buyOrders": 484,
+    "sellPrice": 2.1,
+    "buyVolume": 2675151,
+    "buyMovingWeek": 7867167
+  }
+},{
+  "quick_status": {
+    "buyPrice": 8999.4,
+    "sellVolume": 336898,
+    "sellMovingWeek": 39005,
+    "productId": "NURSE_SHARK_TOOTH",
+    "sellOrders": 196,
+    "buyOrders": 91,
+    "sellPrice": 3714.3308440123733,
+    "buyVolume": 29068,
+    "buyMovingWeek": 42321
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1688.949928605426,
+    "sellVolume": 1931962,
+    "sellMovingWeek": 2247573,
+    "productId": "ENCHANTED_RAW_SALMON",
+    "sellOrders": 316,
+    "buyOrders": 753,
+    "sellPrice": 1585.3847448698011,
+    "buyVolume": 302456,
+    "buyMovingWeek": 255035
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1031.8183882288274,
+    "sellVolume": 994909,
+    "sellMovingWeek": 1834683,
+    "productId": "ENCHANTED_EMERALD",
+    "sellOrders": 164,
+    "buyOrders": 665,
+    "sellPrice": 945.5075074172831,
+    "buyVolume": 372143,
+    "buyMovingWeek": 1457631
+  }
+},{
+  "quick_status": {
+    "buyPrice": 951.7999586253895,
+    "sellVolume": 1526855,
+    "sellMovingWeek": 5699037,
+    "productId": "ENCHANTED_SPIDER_EYE",
+    "sellOrders": 98,
+    "buyOrders": 1868,
+    "sellPrice": 771.4935426205857,
+    "buyVolume": 1975563,
+    "buyMovingWeek": 1990123
+  }
+},{
+  "quick_status": {
+    "buyPrice": 4.05463006798341,
+    "sellVolume": 2275405,
+    "sellMovingWeek": 32987882,
+    "productId": "RED_MUSHROOM",
+    "sellOrders": 43,
+    "buyOrders": 718,
+    "sellPrice": 2.1049506184933517,
+    "buyVolume": 3615994,
+    "buyMovingWeek": 4401266
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3455.322922940049,
+    "sellVolume": 1361995,
+    "sellMovingWeek": 1760009,
+    "productId": "GRAND_EXP_BOTTLE",
+    "sellOrders": 3854,
+    "buyOrders": 1939,
+    "sellPrice": 3278.8137118352092,
+    "buyVolume": 1117400,
+    "buyMovingWeek": 4406414
+  }
+},{
+  "quick_status": {
+    "buyPrice": 19.96326146722616,
+    "sellVolume": 1423446,
+    "sellMovingWeek": 4029068,
+    "productId": "MUTTON",
+    "sellOrders": 66,
+    "buyOrders": 898,
+    "sellPrice": 6.04673852026496,
+    "buyVolume": 1363744,
+    "buyMovingWeek": 2789627
+  }
+},{
+  "quick_status": {
+    "buyPrice": 196.4753007636782,
+    "sellVolume": 3357973,
+    "sellMovingWeek": 2035698,
+    "productId": "RAW_SOULFLOW",
+    "sellOrders": 205,
+    "buyOrders": 746,
+    "sellPrice": 118.1193595962622,
+    "buyVolume": 874313,
+    "buyMovingWeek": 1556357
+  }
+},{
+  "quick_status": {
+    "buyPrice": 15.942614405632279,
+    "sellVolume": 2411054,
+    "sellMovingWeek": 69399508,
+    "productId": "RAW_FISH",
+    "sellOrders": 66,
+    "buyOrders": 991,
+    "sellPrice": 14.555398048106259,
+    "buyVolume": 5949328,
+    "buyMovingWeek": 23160260
+  }
+},{
+  "quick_status": {
+    "buyPrice": 4.699905552517771,
+    "sellVolume": 5061742,
+    "sellMovingWeek": 31212753,
+    "productId": "SPIDER_EYE",
+    "sellOrders": 89,
+    "buyOrders": 243,
+    "sellPrice": 3.1999999999999997,
+    "buyVolume": 1696750,
+    "buyMovingWeek": 7561443
+  }
+},{
+  "quick_status": {
+    "buyPrice": 485.83290088220025,
+    "sellVolume": 5742701,
+    "sellMovingWeek": 408098,
+    "productId": "YOGGIE",
+    "sellOrders": 392,
+    "buyOrders": 244,
+    "sellPrice": 49.26711683873783,
+    "buyVolume": 182146,
+    "buyMovingWeek": 229227
+  }
+},{
+  "quick_status": {
+    "buyPrice": 12103044.299999999,
+    "sellVolume": 24689512,
+    "sellMovingWeek": 6272,
+    "productId": "PERFECT_JASPER_GEM",
+    "sellOrders": 2699,
+    "buyOrders": 110,
+    "sellPrice": 81746.05933903944,
+    "buyVolume": 882,
+    "buyMovingWeek": 6767
+  }
+},{
+  "quick_status": {
+    "buyPrice": 201.73217490385986,
+    "sellVolume": 1077915,
+    "sellMovingWeek": 377259,
+    "productId": "ENCHANTED_NETHERRACK",
+    "sellOrders": 66,
+    "buyOrders": 838,
+    "sellPrice": 160.60328758116216,
+    "buyVolume": 1709594,
+    "buyMovingWeek": 253970
+  }
+},{
+  "quick_status": {
+    "buyPrice": 4701419.35,
+    "sellVolume": 3169,
+    "sellMovingWeek": 971,
+    "productId": "JADERALD",
+    "sellOrders": 714,
+    "buyOrders": 39,
+    "sellPrice": 2643931.9833333334,
+    "buyVolume": 58,
+    "buyMovingWeek": 1418
+  }
+},{
+  "quick_status": {
+    "buyPrice": 499998.68999999994,
+    "sellVolume": 1421517,
+    "sellMovingWeek": 1398,
+    "productId": "TIGHTLY_TIED_HAY_BALE",
+    "sellOrders": 328,
+    "buyOrders": 27,
+    "sellPrice": 233433.9795194508,
+    "buyVolume": 969,
+    "buyMovingWeek": 1310
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5957.127809307605,
+    "sellVolume": 1380547,
+    "sellMovingWeek": 30223,
+    "productId": "NETHER_STALK_DISTILLATE",
+    "sellOrders": 234,
+    "buyOrders": 348,
+    "sellPrice": 3121.234636736665,
+    "buyVolume": 40635,
+    "buyMovingWeek": 22473
+  }
+},{
+  "quick_status": {
+    "buyPrice": 60.32443620636392,
+    "sellVolume": 3641167,
+    "sellMovingWeek": 16602920,
+    "productId": "PRISMARINE_CRYSTALS",
+    "sellOrders": 206,
+    "buyOrders": 580,
+    "sellPrice": 52.192498518239134,
+    "buyVolume": 1230336,
+    "buyMovingWeek": 2635955
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2.3846273291925466,
+    "sellVolume": 0,
+    "sellMovingWeek": 36843,
+    "productId": "RARE_DIAMOND",
+    "sellOrders": 0,
+    "buyOrders": 763,
+    "sellPrice": 0,
+    "buyVolume": 25567,
+    "buyMovingWeek": 26538
+  }
+},{
+  "quick_status": {
+    "buyPrice": 6.40180838185277,
+    "sellVolume": 4748343,
+    "sellMovingWeek": 24921624,
+    "productId": "ICE",
+    "sellOrders": 99,
+    "buyOrders": 765,
+    "sellPrice": 4.091030390595092,
+    "buyVolume": 7448451,
+    "buyMovingWeek": 8542502
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3.7,
+    "sellVolume": 1928291,
+    "sellMovingWeek": 796804,
+    "productId": "HUGE_MUSHROOM_1",
+    "sellOrders": 32,
+    "buyOrders": 222,
+    "sellPrice": 1.3,
+    "buyVolume": 851504,
+    "buyMovingWeek": 283268
+  }
+},{
+  "quick_status": {
+    "buyPrice": 49932.20944792259,
+    "sellVolume": 223130,
+    "sellMovingWeek": 3057,
+    "productId": "TIGER_SHARK_TOOTH",
+    "sellOrders": 12,
+    "buyOrders": 180,
+    "sellPrice": 252.7560765550239,
+    "buyVolume": 44905,
+    "buyMovingWeek": 7678
+  }
+},{
+  "quick_status": {
+    "buyPrice": 9.46099041836638,
+    "sellVolume": 930828,
+    "sellMovingWeek": 420261,
+    "productId": "HUGE_MUSHROOM_2",
+    "sellOrders": 29,
+    "buyOrders": 965,
+    "sellPrice": 2.1375055428386527,
+    "buyVolume": 1165120,
+    "buyMovingWeek": 108753
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5.595294216081182,
+    "sellVolume": 4066215,
+    "sellMovingWeek": 56194363,
+    "productId": "STRING",
+    "sellOrders": 78,
+    "buyOrders": 730,
+    "sellPrice": 3.8,
+    "buyVolume": 3126988,
+    "buyMovingWeek": 9901441
+  }
+},{
+  "quick_status": {
+    "buyPrice": 60994.371627744855,
+    "sellVolume": 620521,
+    "sellMovingWeek": 95604,
+    "productId": "GOLDEN_TOOTH",
+    "sellOrders": 144,
+    "buyOrders": 354,
+    "sellPrice": 23507.04522218096,
+    "buyVolume": 119825,
+    "buyMovingWeek": 157226
+  }
+},{
+  "quick_status": {
+    "buyPrice": 628.6354878370071,
+    "sellVolume": 26342518,
+    "sellMovingWeek": 11772913,
+    "productId": "CRUDE_GABAGOOL",
+    "sellOrders": 1019,
+    "buyOrders": 406,
+    "sellPrice": 325.9685397761081,
+    "buyVolume": 552503,
+    "buyMovingWeek": 9638422
+  }
+},{
+  "quick_status": {
+    "buyPrice": 37423.225,
+    "sellVolume": 26851,
+    "sellMovingWeek": 3071,
+    "productId": "DRAGON_SCALE",
+    "sellOrders": 304,
+    "buyOrders": 328,
+    "sellPrice": 7468.584044943819,
+    "buyVolume": 2797,
+    "buyMovingWeek": 2931
+  }
+},{
+  "quick_status": {
+    "buyPrice": 147081.1270534778,
+    "sellVolume": 922056,
+    "sellMovingWeek": 64811,
+    "productId": "HYPER_CATALYST",
+    "sellOrders": 573,
+    "buyOrders": 1695,
+    "sellPrice": 112173.95055702367,
+    "buyVolume": 835916,
+    "buyMovingWeek": 123894
+  }
+},{
+  "quick_status": {
+    "buyPrice": 11.363314088719058,
+    "sellVolume": 3129392,
+    "sellMovingWeek": 1877658,
+    "productId": "RABBIT_FOOT",
+    "sellOrders": 77,
+    "buyOrders": 706,
+    "sellPrice": 5.923601345154387,
+    "buyVolume": 719407,
+    "buyMovingWeek": 559174
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1.426026845941932,
+    "sellVolume": 3350233,
+    "sellMovingWeek": 133965966,
+    "productId": "REDSTONE",
+    "sellOrders": 54,
+    "buyOrders": 394,
+    "sellPrice": 1.0076385440934958,
+    "buyVolume": 5680000,
+    "buyMovingWeek": 23807568
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1155.17629506008,
+    "sellVolume": 1572563,
+    "sellMovingWeek": 675378,
+    "productId": "ENCHANTED_CACTUS_GREEN",
+    "sellOrders": 297,
+    "buyOrders": 546,
+    "sellPrice": 895.4712951985773,
+    "buyVolume": 666937,
+    "buyMovingWeek": 1204900
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3285694.6691536754,
+    "sellVolume": 276970,
+    "sellMovingWeek": 78416,
+    "productId": "BOOSTER_COOKIE",
+    "sellOrders": 11091,
+    "buyOrders": 3178,
+    "sellPrice": 2976051.5244368357,
+    "buyVolume": 44586,
+    "buyMovingWeek": 87471
+  }
+},{
+  "quick_status": {
+    "buyPrice": 64132.8,
+    "sellVolume": 21729,
+    "sellMovingWeek": 11105,
+    "productId": "ENCHANTED_COOKIE",
+    "sellOrders": 66,
+    "buyOrders": 38,
+    "sellPrice": 56208.72984658298,
+    "buyVolume": 5071,
+    "buyMovingWeek": 22288
+  }
+},{
+  "quick_status": {
+    "buyPrice": 312999.5888888889,
+    "sellVolume": 338570,
+    "sellMovingWeek": 7903,
+    "productId": "AMALGAMATED_CRIMSONITE_NEW",
+    "sellOrders": 171,
+    "buyOrders": 47,
+    "sellPrice": 93208.64413350448,
+    "buyVolume": 501,
+    "buyMovingWeek": 4186
+  }
+},{
+  "quick_status": {
+    "buyPrice": 15504.956056553305,
+    "sellVolume": 455682,
+    "sellMovingWeek": 136743,
+    "productId": "STRONG_FRAGMENT",
+    "sellOrders": 587,
+    "buyOrders": 239,
+    "sellPrice": 14004.854070431194,
+    "buyVolume": 70087,
+    "buyMovingWeek": 98975
+  }
+},{
+  "quick_status": {
+    "buyPrice": 9.997799874806308,
+    "sellVolume": 7033736,
+    "sellMovingWeek": 64634593,
+    "productId": "SLIME_BALL",
+    "sellOrders": 143,
+    "buyOrders": 987,
+    "sellPrice": 6.404275624987004,
+    "buyVolume": 8521992,
+    "buyMovingWeek": 38550952
+  }
+},{
+  "quick_status": {
+    "buyPrice": 48.123467647616124,
+    "sellVolume": 1840671,
+    "sellMovingWeek": 23347322,
+    "productId": "MYCEL",
+    "sellOrders": 109,
+    "buyOrders": 2093,
+    "sellPrice": 27.6,
+    "buyVolume": 5594531,
+    "buyMovingWeek": 13293798
+  }
+},{
+  "quick_status": {
+    "buyPrice": 0.8748979282021782,
+    "sellVolume": 5974252,
+    "sellMovingWeek": 147443343,
+    "productId": "SNOW_BALL",
+    "sellOrders": 100,
+    "buyOrders": 569,
+    "sellPrice": 0.5,
+    "buyVolume": 11553913,
+    "buyMovingWeek": 16774110
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2498.5368265682646,
+    "sellVolume": 4796751,
+    "sellMovingWeek": 1544203,
+    "productId": "HOLY_FRAGMENT",
+    "sellOrders": 1284,
+    "buyOrders": 688,
+    "sellPrice": 2129.5139727846,
+    "buyVolume": 67340,
+    "buyMovingWeek": 155703
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1331.827777777778,
+    "sellVolume": 437487,
+    "sellMovingWeek": 853504,
+    "productId": "ENCHANTED_EGG",
+    "sellOrders": 52,
+    "buyOrders": 246,
+    "sellPrice": 1176.6166243893274,
+    "buyVolume": 51760,
+    "buyMovingWeek": 117141
+  }
+},{
+  "quick_status": {
+    "buyPrice": 270.46676446477113,
+    "sellVolume": 13687360,
+    "sellMovingWeek": 14982724,
+    "productId": "FLAWED_RUBY_GEM",
+    "sellOrders": 330,
+    "buyOrders": 806,
+    "sellPrice": 237.28984970302142,
+    "buyVolume": 1137758,
+    "buyMovingWeek": 602970
+  }
+},{
+  "quick_status": {
+    "buyPrice": 19234.106951965066,
+    "sellVolume": 2663220,
+    "sellMovingWeek": 226044,
+    "productId": "FINE_JADE_GEM",
+    "sellOrders": 623,
+    "buyOrders": 397,
+    "sellPrice": 15043.173069105693,
+    "buyVolume": 220893,
+    "buyMovingWeek": 107129
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5.4,
+    "sellVolume": 1698208,
+    "sellMovingWeek": 7548028,
+    "productId": "RAW_CHICKEN",
+    "sellOrders": 43,
+    "buyOrders": 510,
+    "sellPrice": 3.720749213611667,
+    "buyVolume": 3387621,
+    "buyMovingWeek": 4224514
+  }
+},{
+  "quick_status": {
+    "buyPrice": 4255256.390909092,
+    "sellVolume": 1196,
+    "sellMovingWeek": 3498,
+    "productId": "FLAWLESS_JASPER_GEM",
+    "sellOrders": 132,
+    "buyOrders": 52,
+    "sellPrice": 3841573.596153846,
+    "buyVolume": 513,
+    "buyMovingWeek": 6425
+  }
+},{
+  "quick_status": {
+    "buyPrice": 94679.54074074075,
+    "sellVolume": 39292,
+    "sellMovingWeek": 2856,
+    "productId": "ENCHANTED_SHARK_FIN",
+    "sellOrders": 58,
+    "buyOrders": 126,
+    "sellPrice": 64706.56843434344,
+    "buyVolume": 20399,
+    "buyMovingWeek": 4839
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5877184.135294117,
+    "sellVolume": 1556433,
+    "sellMovingWeek": 2396,
+    "productId": "PERFECT_AMBER_GEM",
+    "sellOrders": 351,
+    "buyOrders": 36,
+    "sellPrice": 50628.80223181433,
+    "buyVolume": 420,
+    "buyMovingWeek": 3511
+  }
+},{
+  "quick_status": {
+    "buyPrice": 7528081.400000001,
+    "sellVolume": 298,
+    "sellMovingWeek": 391,
+    "productId": "DRAGON_HORN",
+    "sellOrders": 21,
+    "buyOrders": 34,
+    "sellPrice": 6706599.842857144,
+    "buyVolume": 84,
+    "buyMovingWeek": 485
+  }
+},{
+  "quick_status": {
+    "buyPrice": 990.74148656837,
+    "sellVolume": 8032487,
+    "sellMovingWeek": 8585680,
+    "productId": "INK_SACK",
+    "sellOrders": 551,
+    "buyOrders": 323,
+    "sellPrice": 980.788182021051,
+    "buyVolume": 232429,
+    "buyMovingWeek": 692661
+  }
+},{
+  "quick_status": {
+    "buyPrice": 20.392271371769382,
+    "sellVolume": 4656114,
+    "sellMovingWeek": 10025485,
+    "productId": "FLINT",
+    "sellOrders": 115,
+    "buyOrders": 319,
+    "sellPrice": 14.626563453248922,
+    "buyVolume": 369564,
+    "buyMovingWeek": 2801377
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1313.4523968721667,
+    "sellVolume": 2177348,
+    "sellMovingWeek": 2158215,
+    "productId": "ENCHANTED_SPRUCE_LOG",
+    "sellOrders": 194,
+    "buyOrders": 1971,
+    "sellPrice": 1029.0180772562478,
+    "buyVolume": 1634848,
+    "buyMovingWeek": 2141059
+  }
+},{
+  "quick_status": {
+    "buyPrice": 12569.087113402064,
+    "sellVolume": 11579,
+    "sellMovingWeek": 11533,
+    "productId": "HARDENED_WOOD",
+    "sellOrders": 102,
+    "buyOrders": 933,
+    "sellPrice": 4202.21141868512,
+    "buyVolume": 18363,
+    "buyMovingWeek": 5545
+  }
+},{
+  "quick_status": {
+    "buyPrice": 41115.11131898971,
+    "sellVolume": 933679,
+    "sellMovingWeek": 349349,
+    "productId": "ENCHANTED_REDSTONE_BLOCK",
+    "sellOrders": 513,
+    "buyOrders": 541,
+    "sellPrice": 32612.496051030066,
+    "buyVolume": 45989,
+    "buyMovingWeek": 254088
+  }
+},{
+  "quick_status": {
+    "buyPrice": 397614.9059701492,
+    "sellVolume": 877891,
+    "sellMovingWeek": 93374,
+    "productId": "ENCHANTED_QUARTZ_BLOCK",
+    "sellOrders": 367,
+    "buyOrders": 251,
+    "sellPrice": 145058.1956903651,
+    "buyVolume": 19518,
+    "buyMovingWeek": 70527
+  }
+},{
+  "quick_status": {
+    "buyPrice": 979995.6999999998,
+    "sellVolume": 1529,
+    "sellMovingWeek": 4046,
+    "productId": "HEAVY_GABAGOOL",
+    "sellOrders": 57,
+    "buyOrders": 39,
+    "sellPrice": 718001.2,
+    "buyVolume": 328,
+    "buyMovingWeek": 4406
+  }
+},{
+  "quick_status": {
+    "buyPrice": 0,
+    "sellVolume": 10296,
+    "sellMovingWeek": 0,
+    "productId": "INFERNO_APEX",
+    "sellOrders": 368,
+    "buyOrders": 0,
+    "sellPrice": 4597025.545253864,
+    "buyVolume": 0,
+    "buyMovingWeek": 0
+  }
+},{
+  "quick_status": {
+    "buyPrice": 948.5683318146773,
+    "sellVolume": 25123101,
+    "sellMovingWeek": 2253565,
+    "productId": "GREEN_CANDY",
+    "sellOrders": 1119,
+    "buyOrders": 2986,
+    "sellPrice": 608.1452398313664,
+    "buyVolume": 3691503,
+    "buyMovingWeek": 1368753
+  }
+},{
+  "quick_status": {
+    "buyPrice": 12533146.4,
+    "sellVolume": 10818,
+    "sellMovingWeek": 379,
+    "productId": "ECCENTRIC_PAINTING",
+    "sellOrders": 345,
+    "buyOrders": 48,
+    "sellPrice": 4854723.0774193555,
+    "buyVolume": 234,
+    "buyMovingWeek": 469
+  }
+},{
+  "quick_status": {
+    "buyPrice": 68912.2,
+    "sellVolume": 146340,
+    "sellMovingWeek": 5719,
+    "productId": "ENCHANTED_REDSTONE_LAMP",
+    "sellOrders": 242,
+    "buyOrders": 21,
+    "sellPrice": 53850.692859440336,
+    "buyVolume": 2775,
+    "buyMovingWeek": 5994
+  }
+},{
+  "quick_status": {
+    "buyPrice": 500000000,
+    "sellVolume": 8061,
+    "sellMovingWeek": 0,
+    "productId": "REAPER_PEPPER",
+    "sellOrders": 363,
+    "buyOrders": 1,
+    "sellPrice": 1184494.0064676618,
+    "buyVolume": 2,
+    "buyMovingWeek": 1
+  }
+},{
+  "quick_status": {
+    "buyPrice": 11785.313333333334,
+    "sellVolume": 351199,
+    "sellMovingWeek": 98403,
+    "productId": "TREASURITE",
+    "sellOrders": 441,
+    "buyOrders": 275,
+    "sellPrice": 9164.231030286643,
+    "buyVolume": 29689,
+    "buyMovingWeek": 68031
+  }
+},{
+  "quick_status": {
+    "buyPrice": 12249999.866666667,
+    "sellVolume": 1166454,
+    "sellMovingWeek": 222,
+    "productId": "PERFECT_OPAL_GEM",
+    "sellOrders": 572,
+    "buyOrders": 33,
+    "sellPrice": 1004208.2473293344,
+    "buyVolume": 118,
+    "buyMovingWeek": 140
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5.832030162185483,
+    "sellVolume": 994473,
+    "sellMovingWeek": 9148975,
+    "productId": "GRAVEL",
+    "sellOrders": 28,
+    "buyOrders": 220,
+    "sellPrice": 2.5,
+    "buyVolume": 2802881,
+    "buyMovingWeek": 6769177
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2.6316155970964217,
+    "sellVolume": 1785212,
+    "sellMovingWeek": 43243427,
+    "productId": "MELON",
+    "sellOrders": 29,
+    "buyOrders": 1386,
+    "sellPrice": 1.7,
+    "buyVolume": 28163064,
+    "buyMovingWeek": 20200737
+  }
+},{
+  "quick_status": {
+    "buyPrice": 126702.74275668072,
+    "sellVolume": 165939,
+    "sellMovingWeek": 92890,
+    "productId": "ENCHANTED_PACKED_ICE",
+    "sellOrders": 158,
+    "buyOrders": 265,
+    "sellPrice": 87705.99360060229,
+    "buyVolume": 20581,
+    "buyMovingWeek": 63369
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1449999.8999999997,
+    "sellVolume": 321,
+    "sellMovingWeek": 162,
+    "productId": "DIAMONITE",
+    "sellOrders": 57,
+    "buyOrders": 16,
+    "sellPrice": 1000002.1142857142,
+    "buyVolume": 60,
+    "buyMovingWeek": 233
+  }
+},{
+  "quick_status": {
+    "buyPrice": 403.4380349832525,
+    "sellVolume": 4598601,
+    "sellMovingWeek": 1023635,
+    "productId": "ENCHANTED_PRISMARINE_SHARD",
+    "sellOrders": 285,
+    "buyOrders": 246,
+    "sellPrice": 369.5943641039695,
+    "buyVolume": 134246,
+    "buyMovingWeek": 125737
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1949998.8058823526,
+    "sellVolume": 3695,
+    "sellMovingWeek": 1411,
+    "productId": "SPIRIT_DECOY",
+    "sellOrders": 309,
+    "buyOrders": 97,
+    "sellPrice": 1578984.5381578947,
+    "buyVolume": 771,
+    "buyMovingWeek": 1849
+  }
+},{
+  "quick_status": {
+    "buyPrice": 31249999.7,
+    "sellVolume": 8263,
+    "sellMovingWeek": 88,
+    "productId": "HYPERGOLIC_GABAGOOL",
+    "sellOrders": 322,
+    "buyOrders": 10,
+    "sellPrice": 2291369.2354948805,
+    "buyVolume": 39,
+    "buyMovingWeek": 227
+  }
+},{
+  "quick_status": {
+    "buyPrice": 192737.3447831184,
+    "sellVolume": 1153199,
+    "sellMovingWeek": 106001,
+    "productId": "ENCHANTED_IRON_BLOCK",
+    "sellOrders": 580,
+    "buyOrders": 298,
+    "sellPrice": 112348.14501665178,
+    "buyVolume": 35760,
+    "buyMovingWeek": 87122
+  }
+},{
+  "quick_status": {
+    "buyPrice": 29999.21343283582,
+    "sellVolume": 35191,
+    "sellMovingWeek": 967,
+    "productId": "ENCHANTED_CARROT_STICK",
+    "sellOrders": 501,
+    "buyOrders": 172,
+    "sellPrice": 9652.672162485067,
+    "buyVolume": 2766,
+    "buyMovingWeek": 779
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2.43059802353408,
+    "sellVolume": 4029697,
+    "sellMovingWeek": 33266264,
+    "productId": "BONE",
+    "sellOrders": 87,
+    "buyOrders": 924,
+    "sellPrice": 1.2184174969190336,
+    "buyVolume": 6173457,
+    "buyMovingWeek": 8149245
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3.551567101480963,
+    "sellVolume": 2390564,
+    "sellMovingWeek": 66503495,
+    "productId": "REVENANT_FLESH",
+    "sellOrders": 48,
+    "buyOrders": 2858,
+    "sellPrice": 1.441315044633137,
+    "buyVolume": 62301481,
+    "buyMovingWeek": 31127819
+  }
+},{
+  "quick_status": {
+    "buyPrice": 64115.88185267858,
+    "sellVolume": 404195,
+    "sellMovingWeek": 45448,
+    "productId": "ENCHANTED_GLOWSTONE",
+    "sellOrders": 404,
+    "buyOrders": 388,
+    "sellPrice": 59722.523796728965,
+    "buyVolume": 171172,
+    "buyMovingWeek": 50982
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1638523.8846153845,
+    "sellVolume": 2369,
+    "sellMovingWeek": 293,
+    "productId": "OBSIDIAN_TABLET",
+    "sellOrders": 202,
+    "buyOrders": 35,
+    "sellPrice": 1085262.5310344826,
+    "buyVolume": 185,
+    "buyMovingWeek": 636
+  }
+},{
+  "quick_status": {
+    "buyPrice": 342802.8245614036,
+    "sellVolume": 13475,
+    "sellMovingWeek": 3823,
+    "productId": "VITAMIN_DEATH",
+    "sellOrders": 484,
+    "buyOrders": 588,
+    "sellPrice": 223224.21838235293,
+    "buyVolume": 2659,
+    "buyMovingWeek": 3763
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1,
+    "sellVolume": 337116,
+    "sellMovingWeek": 7042976,
+    "productId": "NETHERRACK",
+    "sellOrders": 13,
+    "buyOrders": 598,
+    "sellPrice": 0.3026679732570453,
+    "buyVolume": 3604760,
+    "buyMovingWeek": 3391700
+  }
+},{
+  "quick_status": {
+    "buyPrice": 17.224386751768158,
+    "sellVolume": 6516551,
+    "sellMovingWeek": 40361745,
+    "productId": "BLAZE_ROD",
+    "sellOrders": 201,
+    "buyOrders": 89,
+    "sellPrice": 13.860344249963655,
+    "buyVolume": 1324938,
+    "buyMovingWeek": 17033673
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2524.5576383319967,
+    "sellVolume": 1906978,
+    "sellMovingWeek": 1410757,
+    "productId": "YOUNG_FRAGMENT",
+    "sellOrders": 1205,
+    "buyOrders": 781,
+    "sellPrice": 2371.85330828637,
+    "buyVolume": 244726,
+    "buyMovingWeek": 480915
+  }
+},{
+  "quick_status": {
+    "buyPrice": 997.9920245398773,
+    "sellVolume": 9917,
+    "sellMovingWeek": 8349,
+    "productId": "CANDY_CORN",
+    "sellOrders": 54,
+    "buyOrders": 307,
+    "sellPrice": 120.29014778325121,
+    "buyVolume": 3353,
+    "buyMovingWeek": 2803
+  }
+},{
+  "quick_status": {
+    "buyPrice": 26999.57222222222,
+    "sellVolume": 1959,
+    "sellMovingWeek": 1884,
+    "productId": "MIDAS_JEWEL",
+    "sellOrders": 20,
+    "buyOrders": 303,
+    "sellPrice": 11001.2,
+    "buyVolume": 1791,
+    "buyMovingWeek": 923
+  }
+},{
+  "quick_status": {
+    "buyPrice": 498.9397849462366,
+    "sellVolume": 725,
+    "sellMovingWeek": 65689,
+    "productId": "PREMIUM_FLESH",
+    "sellOrders": 5,
+    "buyOrders": 527,
+    "sellPrice": 0.4,
+    "buyVolume": 21677,
+    "buyMovingWeek": 35364
+  }
+},{
+  "quick_status": {
+    "buyPrice": 35306.82631635775,
+    "sellVolume": 718933,
+    "sellMovingWeek": 15603,
+    "productId": "REFINED_MINERAL",
+    "sellOrders": 427,
+    "buyOrders": 1276,
+    "sellPrice": 2632.707299509798,
+    "buyVolume": 1315159,
+    "buyMovingWeek": 86921
+  }
+},{
+  "quick_status": {
+    "buyPrice": 4.336471539952858,
+    "sellVolume": 7913284,
+    "sellMovingWeek": 92317474,
+    "productId": "ROUGH_AMETHYST_GEM",
+    "sellOrders": 121,
+    "buyOrders": 101,
+    "sellPrice": 3.065283895492669,
+    "buyVolume": 2137336,
+    "buyMovingWeek": 4370772
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2.8518523302120333,
+    "sellVolume": 6935916,
+    "sellMovingWeek": 125320706,
+    "productId": "ROUGH_RUBY_GEM",
+    "sellOrders": 105,
+    "buyOrders": 333,
+    "sellPrice": 2.106936048361438,
+    "buyVolume": 3468101,
+    "buyMovingWeek": 2514774
+  }
+},{
+  "quick_status": {
+    "buyPrice": 519997.56363636366,
+    "sellVolume": 984434,
+    "sellMovingWeek": 1472,
+    "productId": "GOBLIN_EGG_BLUE",
+    "sellOrders": 903,
+    "buyOrders": 76,
+    "sellPrice": 239428.19248457655,
+    "buyVolume": 531,
+    "buyMovingWeek": 990
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1630902.6142857145,
+    "sellVolume": 91997,
+    "sellMovingWeek": 2818,
+    "productId": "FLAWLESS_RUBY_GEM",
+    "sellOrders": 120,
+    "buyOrders": 45,
+    "sellPrice": 1240621.1869565218,
+    "buyVolume": 556,
+    "buyMovingWeek": 5994
+  }
+},{
+  "quick_status": {
+    "buyPrice": 34411.69769820972,
+    "sellVolume": 1379264,
+    "sellMovingWeek": 21401,
+    "productId": "NULL_ATOM",
+    "sellOrders": 823,
+    "buyOrders": 40,
+    "sellPrice": 28196.993756199707,
+    "buyVolume": 2669,
+    "buyMovingWeek": 11667
+  }
+},{
+  "quick_status": {
+    "buyPrice": 146682.71806770633,
+    "sellVolume": 791691,
+    "sellMovingWeek": 151678,
+    "productId": "CATALYST",
+    "sellOrders": 814,
+    "buyOrders": 315,
+    "sellPrice": 96961.87448156372,
+    "buyVolume": 120939,
+    "buyMovingWeek": 40981
+  }
+},{
+  "quick_status": {
+    "buyPrice": 213.35934802856255,
+    "sellVolume": 2401832,
+    "sellMovingWeek": 1620136,
+    "productId": "BLESSED_BAIT",
+    "sellOrders": 216,
+    "buyOrders": 530,
+    "sellPrice": 100.27143553893676,
+    "buyVolume": 790638,
+    "buyMovingWeek": 1144100
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2499988.6,
+    "sellVolume": 3837,
+    "sellMovingWeek": 147,
+    "productId": "PURE_MITHRIL",
+    "sellOrders": 484,
+    "buyOrders": 11,
+    "sellPrice": 693175.5329113926,
+    "buyVolume": 52,
+    "buyMovingWeek": 258
+  }
+},{
+  "quick_status": {
+    "buyPrice": 83999.58095238096,
+    "sellVolume": 42498,
+    "sellMovingWeek": 32623,
+    "productId": "ENCHANTED_INK_SACK",
+    "sellOrders": 28,
+    "buyOrders": 75,
+    "sellPrice": 77611.25514316013,
+    "buyVolume": 9730,
+    "buyMovingWeek": 50934
+  }
+},{
+  "quick_status": {
+    "buyPrice": 19103.88620689655,
+    "sellVolume": 17699,
+    "sellMovingWeek": 1873,
+    "productId": "JERRY_STONE",
+    "sellOrders": 198,
+    "buyOrders": 506,
+    "sellPrice": 3505.30021978022,
+    "buyVolume": 4755,
+    "buyMovingWeek": 1135
+  }
+},{
+  "quick_status": {
+    "buyPrice": 681999.8333333334,
+    "sellVolume": 853409,
+    "sellMovingWeek": 15975,
+    "productId": "MOLTEN_POWDER",
+    "sellOrders": 330,
+    "buyOrders": 38,
+    "sellPrice": 486882.7114094459,
+    "buyVolume": 2355,
+    "buyMovingWeek": 20938
+  }
+},{
+  "quick_status": {
+    "buyPrice": 189998.9799270073,
+    "sellVolume": 27354,
+    "sellMovingWeek": 6149,
+    "productId": "ROCK_CANDY",
+    "sellOrders": 727,
+    "buyOrders": 879,
+    "sellPrice": 110539.46413427561,
+    "buyVolume": 10599,
+    "buyMovingWeek": 6309
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2014565.6939393939,
+    "sellVolume": 72598,
+    "sellMovingWeek": 3021,
+    "productId": "FLAWLESS_SAPPHIRE_GEM",
+    "sellOrders": 14,
+    "buyOrders": 59,
+    "sellPrice": 529306.8874531835,
+    "buyVolume": 887,
+    "buyMovingWeek": 7791
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2718250.8666666667,
+    "sellVolume": 6674,
+    "sellMovingWeek": 7512,
+    "productId": "MAGMA_URCHIN",
+    "sellOrders": 768,
+    "buyOrders": 80,
+    "sellPrice": 1260359.3746835443,
+    "buyVolume": 142,
+    "buyMovingWeek": 9244
+  }
+},{
+  "quick_status": {
+    "buyPrice": 6.82266618742387,
+    "sellVolume": 1901418,
+    "sellMovingWeek": 31744478,
+    "productId": "LOG",
+    "sellOrders": 52,
+    "buyOrders": 803,
+    "sellPrice": 4.7,
+    "buyVolume": 2012829,
+    "buyMovingWeek": 11293644
+  }
+},{
+  "quick_status": {
+    "buyPrice": 10907.320620043258,
+    "sellVolume": 3578239,
+    "sellMovingWeek": 631476,
+    "productId": "JACOBS_TICKET",
+    "sellOrders": 2313,
+    "buyOrders": 681,
+    "sellPrice": 9869.671171271797,
+    "buyVolume": 123627,
+    "buyMovingWeek": 706902
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1063327.9,
+    "sellVolume": 2525,
+    "sellMovingWeek": 2306,
+    "productId": "SEARING_STONE",
+    "sellOrders": 182,
+    "buyOrders": 38,
+    "sellPrice": 934328.5833333331,
+    "buyVolume": 152,
+    "buyMovingWeek": 5416
+  }
+},{
+  "quick_status": {
+    "buyPrice": 12667.33010115103,
+    "sellVolume": 2984717,
+    "sellMovingWeek": 149024,
+    "productId": "ABSOLUTE_ENDER_PEARL",
+    "sellOrders": 418,
+    "buyOrders": 642,
+    "sellPrice": 8972.65222703654,
+    "buyVolume": 123485,
+    "buyMovingWeek": 102143
+  }
+},{
+  "quick_status": {
+    "buyPrice": 152,
+    "sellVolume": 3417279,
+    "sellMovingWeek": 11505110,
+    "productId": "ENCHANTED_ENDER_PEARL",
+    "sellOrders": 263,
+    "buyOrders": 247,
+    "sellPrice": 139.0230762534819,
+    "buyVolume": 96292,
+    "buyMovingWeek": 4130767
+  }
+},{
+  "quick_status": {
+    "buyPrice": 69.39072702419175,
+    "sellVolume": 1386000,
+    "sellMovingWeek": 3020484,
+    "productId": "SPIKED_BAIT",
+    "sellOrders": 54,
+    "buyOrders": 814,
+    "sellPrice": 40.564482606781155,
+    "buyVolume": 1549614,
+    "buyMovingWeek": 3029248
+  }
+},{
+  "quick_status": {
+    "buyPrice": 67438.42068311195,
+    "sellVolume": 1406613,
+    "sellMovingWeek": 69520,
+    "productId": "ENCHANTED_FERMENTED_SPIDER_EYE",
+    "sellOrders": 442,
+    "buyOrders": 215,
+    "sellPrice": 6551.05828845003,
+    "buyVolume": 75285,
+    "buyMovingWeek": 71914
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3,
+    "sellVolume": 14252842,
+    "sellMovingWeek": 155663631,
+    "productId": "ROUGH_JADE_GEM",
+    "sellOrders": 214,
+    "buyOrders": 298,
+    "sellPrice": 2.010366471864682,
+    "buyVolume": 3871333,
+    "buyMovingWeek": 2836962
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1008.8326852201167,
+    "sellVolume": 825054,
+    "sellMovingWeek": 2425351,
+    "productId": "ENCHANTED_JUNGLE_LOG",
+    "sellOrders": 163,
+    "buyOrders": 1788,
+    "sellPrice": 850.3361348511586,
+    "buyVolume": 1691510,
+    "buyMovingWeek": 2243300
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1169790.8,
+    "sellVolume": 1114,
+    "sellMovingWeek": 406,
+    "productId": "BLESSED_FRUIT",
+    "sellOrders": 93,
+    "buyOrders": 38,
+    "sellPrice": 898261.1086956522,
+    "buyVolume": 121,
+    "buyMovingWeek": 673
+  }
+},{
+  "quick_status": {
+    "buyPrice": 7.399686763076399,
+    "sellVolume": 5004865,
+    "sellMovingWeek": 92377605,
+    "productId": "IRON_INGOT",
+    "sellOrders": 98,
+    "buyOrders": 869,
+    "sellPrice": 6.6,
+    "buyVolume": 3891466,
+    "buyMovingWeek": 12947708
+  }
+},{
+  "quick_status": {
+    "buyPrice": 204866.29882352942,
+    "sellVolume": 1043596,
+    "sellMovingWeek": 123126,
+    "productId": "NULL_OVOID",
+    "sellOrders": 414,
+    "buyOrders": 84,
+    "sellPrice": 158086.97159340026,
+    "buyVolume": 18326,
+    "buyMovingWeek": 173514
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3.499972322759208,
+    "sellVolume": 9800819,
+    "sellMovingWeek": 139909794,
+    "productId": "ROUGH_SAPPHIRE_GEM",
+    "sellOrders": 148,
+    "buyOrders": 985,
+    "sellPrice": 2.6,
+    "buyVolume": 6558434,
+    "buyMovingWeek": 2285551
+  }
+},{
+  "quick_status": {
+    "buyPrice": 4.435223855820779,
+    "sellVolume": 4199992,
+    "sellMovingWeek": 189698562,
+    "productId": "GOLD_INGOT",
+    "sellOrders": 99,
+    "buyOrders": 1431,
+    "sellPrice": 3.394483149851973,
+    "buyVolume": 12680791,
+    "buyMovingWeek": 19042981
+  }
+},{
+  "quick_status": {
+    "buyPrice": 35986.11283378182,
+    "sellVolume": 1040673,
+    "sellMovingWeek": 219277,
+    "productId": "REVENANT_VISCERA",
+    "sellOrders": 497,
+    "buyOrders": 596,
+    "sellPrice": 27855.655201747326,
+    "buyVolume": 218261,
+    "buyMovingWeek": 355388
+  }
+},{
+  "quick_status": {
+    "buyPrice": 117060.38677191072,
+    "sellVolume": 707958,
+    "sellMovingWeek": 56730,
+    "productId": "TARANTULA_SILK",
+    "sellOrders": 55,
+    "buyOrders": 361,
+    "sellPrice": 62287.12614087301,
+    "buyVolume": 82964,
+    "buyMovingWeek": 105703
+  }
+},{
+  "quick_status": {
+    "buyPrice": 273423.54607023415,
+    "sellVolume": 209404,
+    "sellMovingWeek": 67018,
+    "productId": "TITANIC_EXP_BOTTLE",
+    "sellOrders": 275,
+    "buyOrders": 537,
+    "sellPrice": 268396.44869364164,
+    "buyVolume": 55327,
+    "buyMovingWeek": 166014
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1244.01012145749,
+    "sellVolume": 6283574,
+    "sellMovingWeek": 6784358,
+    "productId": "ENCHANTED_IRON",
+    "sellOrders": 578,
+    "buyOrders": 635,
+    "sellPrice": 1138.1799995869244,
+    "buyVolume": 271601,
+    "buyMovingWeek": 3728417
+  }
+},{
+  "quick_status": {
+    "buyPrice": 300725.08613736613,
+    "sellVolume": 25972,
+    "sellMovingWeek": 64470,
+    "productId": "SUPER_COMPACTOR_3000",
+    "sellOrders": 1434,
+    "buyOrders": 6473,
+    "sellPrice": 184327.83567567565,
+    "buyVolume": 78430,
+    "buyMovingWeek": 107145
+  }
+},{
+  "quick_status": {
+    "buyPrice": 208740.06661251016,
+    "sellVolume": 116071,
+    "sellMovingWeek": 11415,
+    "productId": "SUPER_EGG",
+    "sellOrders": 209,
+    "buyOrders": 224,
+    "sellPrice": 177899.1764298725,
+    "buyVolume": 100562,
+    "buyMovingWeek": 19745
+  }
+},{
+  "quick_status": {
+    "buyPrice": 11.447492305607712,
+    "sellVolume": 17243430,
+    "sellMovingWeek": 370788032,
+    "productId": "MITHRIL_ORE",
+    "sellOrders": 296,
+    "buyOrders": 185,
+    "sellPrice": 9.026414388134812,
+    "buyVolume": 1152450,
+    "buyMovingWeek": 4340913
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3820.9977769304733,
+    "sellVolume": 1161069,
+    "sellMovingWeek": 479519,
+    "productId": "ENCHANTED_HAY_BLOCK",
+    "sellOrders": 425,
+    "buyOrders": 1503,
+    "sellPrice": 3500.0547411043626,
+    "buyVolume": 604524,
+    "buyMovingWeek": 522493
+  }
+},{
+  "quick_status": {
+    "buyPrice": 421.0827775312243,
+    "sellVolume": 539903,
+    "sellMovingWeek": 303204,
+    "productId": "ENCHANTED_PAPER",
+    "sellOrders": 44,
+    "buyOrders": 497,
+    "sellPrice": 138.88496959448472,
+    "buyVolume": 311704,
+    "buyMovingWeek": 332783
+  }
+},{
+  "quick_status": {
+    "buyPrice": 9098.05727871251,
+    "sellVolume": 40854,
+    "sellMovingWeek": 473464,
+    "productId": "ENCHANTED_TITANIUM",
+    "sellOrders": 87,
+    "buyOrders": 141,
+    "sellPrice": 8378.587337986042,
+    "buyVolume": 47305,
+    "buyMovingWeek": 535602
+  }
+},{
+  "quick_status": {
+    "buyPrice": 24.698528428093642,
+    "sellVolume": 4298799,
+    "sellMovingWeek": 3180043,
+    "productId": "SPOOKY_BAIT",
+    "sellOrders": 140,
+    "buyOrders": 350,
+    "sellPrice": 15.38116520668216,
+    "buyVolume": 1549121,
+    "buyMovingWeek": 1868419
+  }
+},{
+  "quick_status": {
+    "buyPrice": 104531.52916666667,
+    "sellVolume": 4192,
+    "sellMovingWeek": 1699,
+    "productId": "HOT_STUFF",
+    "sellOrders": 118,
+    "buyOrders": 396,
+    "sellPrice": 55395.19130434783,
+    "buyVolume": 4346,
+    "buyMovingWeek": 1270
+  }
+},{
+  "quick_status": {
+    "buyPrice": 6.701492478069305,
+    "sellVolume": 4272585,
+    "sellMovingWeek": 39366415,
+    "productId": "EMERALD",
+    "sellOrders": 96,
+    "buyOrders": 790,
+    "sellPrice": 5.042508666699481,
+    "buyVolume": 3695872,
+    "buyMovingWeek": 22689435
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1526.2056954557227,
+    "sellVolume": 3545211,
+    "sellMovingWeek": 533223,
+    "productId": "ENCHANTED_RABBIT_FOOT",
+    "sellOrders": 456,
+    "buyOrders": 2229,
+    "sellPrice": 960.2092288745971,
+    "buyVolume": 1331371,
+    "buyMovingWeek": 597477
+  }
+},{
+  "quick_status": {
+    "buyPrice": 818.8093545534924,
+    "sellVolume": 79323,
+    "sellMovingWeek": 3774629,
+    "productId": "ENCHANTED_ICE",
+    "sellOrders": 13,
+    "buyOrders": 791,
+    "sellPrice": 809.4,
+    "buyVolume": 507802,
+    "buyMovingWeek": 1633880
+  }
+},{
+  "quick_status": {
+    "buyPrice": 22623.999421965316,
+    "sellVolume": 16578,
+    "sellMovingWeek": 3604,
+    "productId": "SUSPICIOUS_VIAL",
+    "sellOrders": 215,
+    "buyOrders": 1055,
+    "sellPrice": 6164.633274647887,
+    "buyVolume": 8393,
+    "buyMovingWeek": 3009
+  }
+},{
+  "quick_status": {
+    "buyPrice": 4745.014397283531,
+    "sellVolume": 1143211,
+    "sellMovingWeek": 54896,
+    "productId": "ARACHNE_KEEPER_FRAGMENT",
+    "sellOrders": 488,
+    "buyOrders": 333,
+    "sellPrice": 2294.1,
+    "buyVolume": 83878,
+    "buyMovingWeek": 64485
+  }
+},{
+  "quick_status": {
+    "buyPrice": 0,
+    "sellVolume": 6879,
+    "sellMovingWeek": 159,
+    "productId": "DIRT_BOTTLE",
+    "sellOrders": 117,
+    "buyOrders": 36,
+    "sellPrice": 0,
+    "buyVolume": 160,
+    "buyMovingWeek": 168
+  }
+},{
+  "quick_status": {
+    "buyPrice": 10792.334562094826,
+    "sellVolume": 32346,
+    "sellMovingWeek": 75747,
+    "productId": "GREEN_GIFT",
+    "sellOrders": 38,
+    "buyOrders": 1116,
+    "sellPrice": 9815.078175092478,
+    "buyVolume": 738006,
+    "buyMovingWeek": 103471
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1694990.1,
+    "sellVolume": 5554,
+    "sellMovingWeek": 1725,
+    "productId": "FLAWLESS_AMETHYST_GEM",
+    "sellOrders": 241,
+    "buyOrders": 60,
+    "sellPrice": 1174505.8732919255,
+    "buyVolume": 378,
+    "buyMovingWeek": 3915
+  }
+},{
+  "quick_status": {
+    "buyPrice": 738.0516853932585,
+    "sellVolume": 13716,
+    "sellMovingWeek": 8992,
+    "productId": "RED_NOSE",
+    "sellOrders": 109,
+    "buyOrders": 357,
+    "sellPrice": 101.19652777777779,
+    "buyVolume": 4420,
+    "buyMovingWeek": 4629
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3.599510776599384,
+    "sellVolume": 5680136,
+    "sellMovingWeek": 72322209,
+    "productId": "ROUGH_TOPAZ_GEM",
+    "sellOrders": 82,
+    "buyOrders": 177,
+    "sellPrice": 2.6,
+    "buyVolume": 1462325,
+    "buyMovingWeek": 2080066
+  }
+},{
+  "quick_status": {
+    "buyPrice": 46.468414393530516,
+    "sellVolume": 4547791,
+    "sellMovingWeek": 33699888,
+    "productId": "PACKED_ICE",
+    "sellOrders": 117,
+    "buyOrders": 1781,
+    "sellPrice": 41.2,
+    "buyVolume": 3398289,
+    "buyMovingWeek": 16885736
+  }
+},{
+  "quick_status": {
+    "buyPrice": 20704.02473444613,
+    "sellVolume": 2271400,
+    "sellMovingWeek": 351715,
+    "productId": "HAMSTER_WHEEL",
+    "sellOrders": 1303,
+    "buyOrders": 498,
+    "sellPrice": 19714.494590630664,
+    "buyVolume": 179860,
+    "buyMovingWeek": 139377
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2670.5012006271936,
+    "sellVolume": 1536684,
+    "sellMovingWeek": 10283200,
+    "productId": "ENCHANTED_OBSIDIAN",
+    "sellOrders": 407,
+    "buyOrders": 2924,
+    "sellPrice": 2497.476279894795,
+    "buyVolume": 3268467,
+    "buyMovingWeek": 3558103
+  }
+},{
+  "quick_status": {
+    "buyPrice": 950.409225092251,
+    "sellVolume": 2665218,
+    "sellMovingWeek": 5770058,
+    "productId": "ENCHANTED_COAL",
+    "sellOrders": 219,
+    "buyOrders": 521,
+    "sellPrice": 811.7289205876091,
+    "buyVolume": 477301,
+    "buyMovingWeek": 4609164
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3.401491480624912,
+    "sellVolume": 752553,
+    "sellMovingWeek": 2946980,
+    "productId": "ROUGH_OPAL_GEM",
+    "sellOrders": 21,
+    "buyOrders": 420,
+    "sellPrice": 2.6207439643560257,
+    "buyVolume": 1017311,
+    "buyMovingWeek": 489392
+  }
+},{
+  "quick_status": {
+    "buyPrice": 24464.790776849273,
+    "sellVolume": 2658888,
+    "sellMovingWeek": 1679412,
+    "productId": "MAGMA_FISH_SILVER",
+    "sellOrders": 1079,
+    "buyOrders": 819,
+    "sellPrice": 7812.538474188412,
+    "buyVolume": 157050,
+    "buyMovingWeek": 1569558
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2543570.057142857,
+    "sellVolume": 317661,
+    "sellMovingWeek": 752,
+    "productId": "FLAWLESS_OPAL_GEM",
+    "sellOrders": 239,
+    "buyOrders": 259,
+    "sellPrice": 2023208.3794117644,
+    "buyVolume": 1189,
+    "buyMovingWeek": 382
+  }
+},{
+  "quick_status": {
+    "buyPrice": 21835.49407496977,
+    "sellVolume": 8089,
+    "sellMovingWeek": 69656,
+    "productId": "WEREWOLF_SKIN",
+    "sellOrders": 26,
+    "buyOrders": 94,
+    "sellPrice": 15000.299999999997,
+    "buyVolume": 20145,
+    "buyMovingWeek": 86122
+  }
+},{
+  "quick_status": {
+    "buyPrice": 21299999.825,
+    "sellVolume": 35597,
+    "sellMovingWeek": 848,
+    "productId": "DAEDALUS_STICK",
+    "sellOrders": 638,
+    "buyOrders": 58,
+    "sellPrice": 5721351.90682353,
+    "buyVolume": 163,
+    "buyMovingWeek": 463
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1122699.0847826088,
+    "sellVolume": 1355,
+    "sellMovingWeek": 3632,
+    "productId": "DRAGON_CLAW",
+    "sellOrders": 83,
+    "buyOrders": 291,
+    "sellPrice": 701000.4,
+    "buyVolume": 1502,
+    "buyMovingWeek": 4303
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1374904.7,
+    "sellVolume": 458953,
+    "sellMovingWeek": 1474,
+    "productId": "ENCHANTED_RED_SAND_CUBE",
+    "sellOrders": 54,
+    "buyOrders": 69,
+    "sellPrice": 555085.06856,
+    "buyVolume": 277,
+    "buyMovingWeek": 1559
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2497.45016088061,
+    "sellVolume": 1418804,
+    "sellMovingWeek": 3775698,
+    "productId": "ENCHANTED_RAW_FISH",
+    "sellOrders": 262,
+    "buyOrders": 702,
+    "sellPrice": 2056.230050054254,
+    "buyVolume": 866661,
+    "buyMovingWeek": 3649148
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1144755.516197183,
+    "sellVolume": 3312,
+    "sellMovingWeek": 246,
+    "productId": "LUCKY_DICE",
+    "sellOrders": 143,
+    "buyOrders": 369,
+    "sellPrice": 970081.3661971831,
+    "buyVolume": 6589,
+    "buyMovingWeek": 1775
+  }
+},{
+  "quick_status": {
+    "buyPrice": 25595.414737654322,
+    "sellVolume": 1404608,
+    "sellMovingWeek": 293823,
+    "productId": "FOUL_FLESH",
+    "sellOrders": 1097,
+    "buyOrders": 326,
+    "sellPrice": 3631.9897495334217,
+    "buyVolume": 94264,
+    "buyMovingWeek": 167334
+  }
+},{
+  "quick_status": {
+    "buyPrice": 9.260000817951306,
+    "sellVolume": 2445842,
+    "sellMovingWeek": 11687306,
+    "productId": "RAW_BEEF",
+    "sellOrders": 51,
+    "buyOrders": 1189,
+    "sellPrice": 4.8124018556168355,
+    "buyVolume": 3293002,
+    "buyMovingWeek": 6772441
+  }
+},{
+  "quick_status": {
+    "buyPrice": 4113.286211051816,
+    "sellVolume": 1046370,
+    "sellMovingWeek": 509632,
+    "productId": "ENCHANTED_EYE_OF_ENDER",
+    "sellOrders": 822,
+    "buyOrders": 652,
+    "sellPrice": 3171.984999275152,
+    "buyVolume": 257869,
+    "buyMovingWeek": 587355
+  }
+},{
+  "quick_status": {
+    "buyPrice": 123478.18867924529,
+    "sellVolume": 499903,
+    "sellMovingWeek": 30242,
+    "productId": "ECTOPLASM",
+    "sellOrders": 334,
+    "buyOrders": 10,
+    "sellPrice": 80491.7834336486,
+    "buyVolume": 516,
+    "buyMovingWeek": 39889
+  }
+},{
+  "quick_status": {
+    "buyPrice": 29556.734086021508,
+    "sellVolume": 106923,
+    "sellMovingWeek": 73524,
+    "productId": "FUEL_GABAGOOL",
+    "sellOrders": 73,
+    "buyOrders": 168,
+    "sellPrice": 19274.602699342922,
+    "buyVolume": 39810,
+    "buyMovingWeek": 112908
+  }
+},{
+  "quick_status": {
+    "buyPrice": 13.9,
+    "sellVolume": 6951102,
+    "sellMovingWeek": 749170,
+    "productId": "SHARK_BAIT",
+    "sellOrders": 137,
+    "buyOrders": 432,
+    "sellPrice": 8.808996916617463,
+    "buyVolume": 1325405,
+    "buyMovingWeek": 453177
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1900909.6,
+    "sellVolume": 3688,
+    "sellMovingWeek": 317,
+    "productId": "PRECIOUS_PEARL",
+    "sellOrders": 302,
+    "buyOrders": 113,
+    "sellPrice": 1001706.1948051949,
+    "buyVolume": 380,
+    "buyMovingWeek": 295
+  }
+},{
+  "quick_status": {
+    "buyPrice": 128732.63097547063,
+    "sellVolume": 102300,
+    "sellMovingWeek": 3946,
+    "productId": "JERRY_BOX_BLUE",
+    "sellOrders": 69,
+    "buyOrders": 604,
+    "sellPrice": 93853.69042995838,
+    "buyVolume": 84166,
+    "buyMovingWeek": 6723
+  }
+},{
+  "quick_status": {
+    "buyPrice": 133151.4476070529,
+    "sellVolume": 362300,
+    "sellMovingWeek": 24375,
+    "productId": "ENCHANTED_SLIME_BLOCK",
+    "sellOrders": 317,
+    "buyOrders": 121,
+    "sellPrice": 6363.152744083915,
+    "buyVolume": 19181,
+    "buyMovingWeek": 15295
+  }
+},{
+  "quick_status": {
+    "buyPrice": 7799998.4,
+    "sellVolume": 11488,
+    "sellMovingWeek": 1244,
+    "productId": "SCORCHED_BOOKS",
+    "sellOrders": 535,
+    "buyOrders": 27,
+    "sellPrice": 2830548.680505415,
+    "buyVolume": 48,
+    "buyMovingWeek": 1634
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3746.8380748153445,
+    "sellVolume": 1050518,
+    "sellMovingWeek": 1410287,
+    "productId": "ENCHANTED_MYCELIUM",
+    "sellOrders": 444,
+    "buyOrders": 1927,
+    "sellPrice": 3148.3286399932044,
+    "buyVolume": 624832,
+    "buyMovingWeek": 1121896
+  }
+},{
+  "quick_status": {
+    "buyPrice": 23408.976418181814,
+    "sellVolume": 985948,
+    "sellMovingWeek": 189593,
+    "productId": "FINE_SAPPHIRE_GEM",
+    "sellOrders": 66,
+    "buyOrders": 460,
+    "sellPrice": 8794.820941536824,
+    "buyVolume": 223203,
+    "buyMovingWeek": 181550
+  }
+},{
+  "quick_status": {
+    "buyPrice": 12.456070675960447,
+    "sellVolume": 1167142,
+    "sellMovingWeek": 4442906,
+    "productId": "RABBIT",
+    "sellOrders": 43,
+    "buyOrders": 314,
+    "sellPrice": 7.695519351408005,
+    "buyVolume": 1212864,
+    "buyMovingWeek": 3076631
+  }
+},{
+  "quick_status": {
+    "buyPrice": 7.874928518764947,
+    "sellVolume": 2266342,
+    "sellMovingWeek": 10113298,
+    "productId": "SULPHUR",
+    "sellOrders": 65,
+    "buyOrders": 427,
+    "sellPrice": 5.452257412398922,
+    "buyVolume": 2414140,
+    "buyMovingWeek": 5123436
+  }
+},{
+  "quick_status": {
+    "buyPrice": 155666666,
+    "sellVolume": 22009,
+    "sellMovingWeek": 1,
+    "productId": "MAGMA_FISH_DIAMOND",
+    "sellOrders": 750,
+    "buyOrders": 1,
+    "sellPrice": 496756.5060773481,
+    "buyVolume": 1,
+    "buyMovingWeek": 1
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1545.6880498929656,
+    "sellVolume": 5060465,
+    "sellMovingWeek": 27008613,
+    "productId": "ENCHANTED_CARROT",
+    "sellOrders": 297,
+    "buyOrders": 2560,
+    "sellPrice": 253.78280296129773,
+    "buyVolume": 23200290,
+    "buyMovingWeek": 6465289
+  }
+},{
+  "quick_status": {
+    "buyPrice": 65824.02083272419,
+    "sellVolume": 7952983,
+    "sellMovingWeek": 821707,
+    "productId": "GRIFFIN_FEATHER",
+    "sellOrders": 1733,
+    "buyOrders": 4078,
+    "sellPrice": 5010.163376589684,
+    "buyVolume": 1680657,
+    "buyMovingWeek": 437762
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5.441739997935946,
+    "sellVolume": 2592300,
+    "sellMovingWeek": 105147036,
+    "productId": "ROTTEN_FLESH",
+    "sellOrders": 52,
+    "buyOrders": 1190,
+    "sellPrice": 4.306558680164979,
+    "buyVolume": 4992035,
+    "buyMovingWeek": 9271781
+  }
+},{
+  "quick_status": {
+    "buyPrice": 18704.735951933908,
+    "sellVolume": 1350417,
+    "sellMovingWeek": 484667,
+    "productId": "SOULFLOW",
+    "sellOrders": 1257,
+    "buyOrders": 1170,
+    "sellPrice": 13512.444692879553,
+    "buyVolume": 594352,
+    "buyMovingWeek": 765765
+  }
+},{
+  "quick_status": {
+    "buyPrice": 16.26535433070866,
+    "sellVolume": 3319834,
+    "sellMovingWeek": 669075,
+    "productId": "MINNOW_BAIT",
+    "sellOrders": 127,
+    "buyOrders": 342,
+    "sellPrice": 9.689407928945851,
+    "buyVolume": 304309,
+    "buyMovingWeek": 328239
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1479.302780514505,
+    "sellVolume": 2254067,
+    "sellMovingWeek": 2501545,
+    "productId": "ENCHANTED_MAGMA_CREAM",
+    "sellOrders": 176,
+    "buyOrders": 401,
+    "sellPrice": 1275.4480069946449,
+    "buyVolume": 840336,
+    "buyMovingWeek": 2611861
+  }
+},{
+  "quick_status": {
+    "buyPrice": 127468.84957264957,
+    "sellVolume": 1121867,
+    "sellMovingWeek": 4787,
+    "productId": "ENCHANTED_FIREWORK_ROCKET",
+    "sellOrders": 661,
+    "buyOrders": 68,
+    "sellPrice": 82661.04165124027,
+    "buyVolume": 8772,
+    "buyMovingWeek": 3076
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2268997.9,
+    "sellVolume": 3740,
+    "sellMovingWeek": 2007,
+    "productId": "WITHER_BLOOD",
+    "sellOrders": 345,
+    "buyOrders": 126,
+    "sellPrice": 2001838.2978723405,
+    "buyVolume": 264,
+    "buyMovingWeek": 3024
+  }
+},{
+  "quick_status": {
+    "buyPrice": 538526.5166666667,
+    "sellVolume": 10864,
+    "sellMovingWeek": 2528,
+    "productId": "BLAZE_WAX",
+    "sellOrders": 804,
+    "buyOrders": 90,
+    "sellPrice": 360661.9467924528,
+    "buyVolume": 450,
+    "buyMovingWeek": 4623
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1563170.1929824562,
+    "sellVolume": 95453,
+    "sellMovingWeek": 4794,
+    "productId": "FLAWLESS_JADE_GEM",
+    "sellOrders": 369,
+    "buyOrders": 20,
+    "sellPrice": 1436563.9902564103,
+    "buyVolume": 367,
+    "buyMovingWeek": 5039
+  }
+},{
+  "quick_status": {
+    "buyPrice": 5.066226313794847,
+    "sellVolume": 15883619,
+    "sellMovingWeek": 544067862,
+    "productId": "HARD_STONE",
+    "sellOrders": 234,
+    "buyOrders": 852,
+    "sellPrice": 1.918204379128868,
+    "buyVolume": 12864465,
+    "buyMovingWeek": 11304137
+  }
+},{
+  "quick_status": {
+    "buyPrice": 808.9102762966553,
+    "sellVolume": 6852920,
+    "sellMovingWeek": 8105130,
+    "productId": "FLAWED_TOPAZ_GEM",
+    "sellOrders": 170,
+    "buyOrders": 272,
+    "sellPrice": 254.6463834984394,
+    "buyVolume": 505414,
+    "buyMovingWeek": 134101
+  }
+},{
+  "quick_status": {
+    "buyPrice": 54.63264248704663,
+    "sellVolume": 10203,
+    "sellMovingWeek": 28926,
+    "productId": "LAPIS_CRYSTAL",
+    "sellOrders": 55,
+    "buyOrders": 371,
+    "sellPrice": 4.356064073226545,
+    "buyVolume": 6974,
+    "buyMovingWeek": 14936
+  }
+},{
+  "quick_status": {
+    "buyPrice": 129720.77365684576,
+    "sellVolume": 124809,
+    "sellMovingWeek": 6070,
+    "productId": "ENCHANTED_COOKED_MUTTON",
+    "sellOrders": 275,
+    "buyOrders": 163,
+    "sellPrice": 83970.69095656954,
+    "buyVolume": 9965,
+    "buyMovingWeek": 4799
+  }
+},{
+  "quick_status": {
+    "buyPrice": 23349.610522151903,
+    "sellVolume": 464992,
+    "sellMovingWeek": 137827,
+    "productId": "FINE_AMETHYST_GEM",
+    "sellOrders": 196,
+    "buyOrders": 436,
+    "sellPrice": 13917.143973426133,
+    "buyVolume": 107028,
+    "buyMovingWeek": 106880
+  }
+},{
+  "quick_status": {
+    "buyPrice": 207973.3185483871,
+    "sellVolume": 204271,
+    "sellMovingWeek": 29310,
+    "productId": "REFINED_TITANIUM",
+    "sellOrders": 507,
+    "buyOrders": 57,
+    "sellPrice": 38605.411403373044,
+    "buyVolume": 4988,
+    "buyMovingWeek": 38488
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1193819.7712643677,
+    "sellVolume": 3123,
+    "sellMovingWeek": 693,
+    "productId": "SHINY_PRISM",
+    "sellOrders": 54,
+    "buyOrders": 373,
+    "sellPrice": 555682.9489361702,
+    "buyVolume": 3898,
+    "buyMovingWeek": 1718
+  }
+},{
+  "quick_status": {
+    "buyPrice": 48.457889416892,
+    "sellVolume": 3173777,
+    "sellMovingWeek": 17170277,
+    "productId": "SAND:1",
+    "sellOrders": 84,
+    "buyOrders": 1328,
+    "sellPrice": 40.50758122390715,
+    "buyVolume": 3736724,
+    "buyMovingWeek": 10526712
+  }
+},{
+  "quick_status": {
+    "buyPrice": 644.0578607943374,
+    "sellVolume": 11212657,
+    "sellMovingWeek": 1544334,
+    "productId": "ENCHANTED_RABBIT",
+    "sellOrders": 492,
+    "buyOrders": 376,
+    "sellPrice": 613.966858427451,
+    "buyVolume": 316195,
+    "buyMovingWeek": 509698
+  }
+},{
+  "quick_status": {
+    "buyPrice": 53346.31718569781,
+    "sellVolume": 1837169,
+    "sellMovingWeek": 347057,
+    "productId": "MUTANT_NETHER_STALK",
+    "sellOrders": 745,
+    "buyOrders": 236,
+    "sellPrice": 50505.15371770464,
+    "buyVolume": 34157,
+    "buyMovingWeek": 127586
+  }
+},{
+  "quick_status": {
+    "buyPrice": 54388.48870523416,
+    "sellVolume": 1045546,
+    "sellMovingWeek": 101309,
+    "productId": "FINE_JASPER_GEM",
+    "sellOrders": 427,
+    "buyOrders": 74,
+    "sellPrice": 17648.458993262997,
+    "buyVolume": 7961,
+    "buyMovingWeek": 114074
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2176185.0555555555,
+    "sellVolume": 192154,
+    "sellMovingWeek": 2560,
+    "productId": "FLAWLESS_AMBER_GEM",
+    "sellOrders": 1171,
+    "buyOrders": 26,
+    "sellPrice": 1461117.9797342194,
+    "buyVolume": 270,
+    "buyMovingWeek": 3569
+  }
+},{
+  "quick_status": {
+    "buyPrice": 3747.7056998557005,
+    "sellVolume": 955355,
+    "sellMovingWeek": 190727,
+    "productId": "ENCHANTED_CHARCOAL",
+    "sellOrders": 407,
+    "buyOrders": 232,
+    "sellPrice": 1042.146087613293,
+    "buyVolume": 101720,
+    "buyMovingWeek": 186741
+  }
+},{
+  "quick_status": {
+    "buyPrice": 2895.949789615589,
+    "sellVolume": 953058,
+    "sellMovingWeek": 2020479,
+    "productId": "ENCHANTED_BLAZE_POWDER",
+    "sellOrders": 163,
+    "buyOrders": 1356,
+    "sellPrice": 2200.938338039532,
+    "buyVolume": 1175832,
+    "buyMovingWeek": 1993905
+  }
+},{
+  "quick_status": {
+    "buyPrice": 930388.409447983,
+    "sellVolume": 211917,
+    "sellMovingWeek": 77840,
+    "productId": "SUMMONING_EYE",
+    "sellOrders": 4810,
+    "buyOrders": 5361,
+    "sellPrice": 731584.983556273,
+    "buyVolume": 46852,
+    "buyMovingWeek": 81599
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1511750.3499999999,
+    "sellVolume": 177912,
+    "sellMovingWeek": 2112,
+    "productId": "ENCHANTED_SULPHUR_CUBE",
+    "sellOrders": 74,
+    "buyOrders": 72,
+    "sellPrice": 173602.68530787944,
+    "buyVolume": 516,
+    "buyMovingWeek": 2258
+  }
+},{
+  "quick_status": {
+    "buyPrice": 95.93197032823558,
+    "sellVolume": 4832804,
+    "sellMovingWeek": 8357437,
+    "productId": "FISH_BAIT",
+    "sellOrders": 235,
+    "buyOrders": 2060,
+    "sellPrice": 64.31932966111997,
+    "buyVolume": 3798866,
+    "buyMovingWeek": 10310483
+  }
+},{
+  "quick_status": {
+    "buyPrice": 1294.4405586273479,
+    "sellVolume": 14017742,
+    "sellMovingWeek": 49944616,
+    "productId": "ENCHANTED_DIAMOND",
+    "sellOrders": 1221,
+    "buyOrders": 1404,
+    "sellPrice": 1269.9952468247113,
+    "buyVolume": 1914689,
+    "buyMovingWeek": 6709346
+  }
+}]
