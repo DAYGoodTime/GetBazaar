@@ -11,9 +11,10 @@ import java.util.Date;
 
 public class toolClass {
     //测试主类
+    static JSONObject BAZZAR_JSON = LoadLocalJSON("E:\\modding\\SmallProject\\GetBazzar\\somedata\\Bazzar.json");
     public static void main(String[] args)  {
-        //System.out.println("字符串格式的时间:"+ timestampToDate(1652494145761L) );
-        JSONObject BAZZAR_JSON = LoadLocalJSON("E:\\modding\\SmallProject\\GetBazzar\\Bazzar.json");
+        System.out.println("时间格式:"+ timestampToTimes(1652494145761L) );
+        System.out.println("日期格式:"+ timestampToDate(1652494145761L) );
         System.out.println(BAZZAR_JSON.isEmpty());
     }
 
@@ -88,32 +89,24 @@ public class toolClass {
     }
 
     /**
-     * 将时间戳格式转化成常规时间
+     * 将时间戳格式转化成当日时间
      * @param timeStamp 时间戳
-     * @return 返回String类型
+     * @return 返回String类型时间(时:分:秒)
      */
-    public static String timestampToString (Long timeStamp) {
-        //将时间戳转化为String
-        SimpleDateFormat format =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String time = format.format(timeStamp);
-        return time;
+    public static String timestampToTimes (Long timeStamp) {
+        //将时间戳转化为固定格式的日期
+        SimpleDateFormat times =  new SimpleDateFormat("HH:mm:ss");
+        return times.format(timeStamp);
     }
 
     /**
-     * 将时间戳格式转化成常规时间
+     * 将时间戳格式转化成完整的日期
      * @param timeStamp 时间戳
-     * @return 返回Date类型
+     * @return 返回String类型的日期(年-月-日 时:分:秒)
      */
-    public static Date timestampToDate (Long timeStamp) {
-        //将时间戳转化为Date
-        SimpleDateFormat format =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String time = format.format(timeStamp);
-        Date date= null;
-        try {
-            date = format.parse(time);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        return date;
+    public static String timestampToDate (Long timeStamp) {
+        //将时间戳转化为固定格式的日期
+        SimpleDateFormat Date =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        return Date.format(timeStamp);
     }
 }
