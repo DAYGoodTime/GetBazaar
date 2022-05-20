@@ -94,6 +94,7 @@ public class getBazzar {
             }
             String jsonString = stringBuilder.toString();
             JSONObject json = JSONObject.parseObject(jsonString);
+            System.out.println("获取完成");
             return json;
            //return createFile.createJsonFile(json,"E:\\modding\\SmallProject\\GetBazzar\\Bazzar.json");
 
