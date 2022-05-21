@@ -17,22 +17,18 @@ public class BazzarData {
     static final String JSON_PATH = "E:\\modding\\SmallProject\\GetBazzar\\somedata\\Bazzar.json";
     // 本地JSON用于测试
     //public static JSONObject SB_BAZZAR_JSON_FULL = toolClass.LoadLocalJSON(JSON_PATH);
-    public static JSONObject SB_BAZZAR_JSON_FULL = getBazzar.getBazzarJSON();
-    public static JSONObject SB_BAZZAR_JSON_PRODUCTS = JSONObject.parseObject(String.valueOf(SB_BAZZAR_JSON_FULL.get("products")));
-
     static  String DB_PORT = "3306";
     static final String DB_URL = "jdbc:mysql://localhost:"+DB_PORT+"?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
     static  String USER = "root";
     static  String PASSWORD = "kel123";
 
     static String SQL_DB_QUICK_STATUS = "bz_quick_status";
-    static Set<String> products_list = SB_BAZZAR_JSON_PRODUCTS.keySet();
     //用于测试的main方法
-    public static void main(String[] args) throws SQLException {
-        InitializedDBandTable();
-        KeepUpdateBazzarData_quick();
-        System.out.println("Bazzar内所有物品数:"+SB_BAZZAR_JSON_PRODUCTS.size());
-    }
+//    public static void main(String[] args) throws SQLException {
+//        InitializedDBandTable();
+//        KeepUpdateBazzarData_quick();
+//        System.out.println("Bazzar内所有物品数:"+SB_BAZZAR_JSON_PRODUCTS.size());
+//    }
 
     /**
      * 初始化数据库链接操作，并将返回的Connection变量返回回去
@@ -109,27 +105,26 @@ public class BazzarData {
      * 用于持续从API当中更新的数据(quick_status分类下的数据)
      * @throws SQLException 抛出SQL数据库异常
      */
-    public static void KeepUpdateBazzarData_quick() throws SQLException {
+    public static void KeepUpdateBazzarData_quick(JSONObject SB_BAZZAR_JSON_FULL) throws SQLException {
         Statement statement = null;
         Connection conn = InitializationAndConnection();
         statement = conn.createStatement();
         statement.execute("USE bz_quick_status");
-        Iterator<String> products_iterator = products_list.iterator();
-        while (products_iterator.hasNext()){
-            String products_name = products_iterator.next();
+        JSONObject SB_BAZZAR_JSON_PRODUCTS = JSONObject.parseObject(String.valueOf(SB_BAZZAR_JSON_FULL.get("products")));
+        Set<String> products_list = SB_BAZZAR_JSON_PRODUCTS.keySet();
+        for (String products_name : products_list) {
             //System.out.println(products_name);
             JSONObject products_quick_status = (JSONObject) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("quick_status");
-            JSONObject products_sell_summary_first = null;
-            JSONObject products_buy_summary_first = null;
+
             Object sellOrder_pricePerUnit = null;
             Object buyOrder_pricePerUnit = null;
             //在特殊情况下，某些物品的订单为空，所以得加一些判断
-            if(!((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("sell_summary")).isEmpty()){
-                products_sell_summary_first = (JSONObject) ((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("sell_summary")).get(0);
+            if (!((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("sell_summary")).isEmpty()) {
+               JSONObject products_sell_summary_first = (JSONObject) ((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("sell_summary")).get(0);
                 sellOrder_pricePerUnit = products_sell_summary_first.get("pricePerUnit");
             }
-            if(!((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("buy_summary")).isEmpty()){
-                products_buy_summary_first  = (JSONObject) ((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("buy_summary")).get(0);
+            if (!((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("buy_summary")).isEmpty()) {
+                JSONObject products_buy_summary_first = (JSONObject) ((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("buy_summary")).get(0);
                 buyOrder_pricePerUnit = products_buy_summary_first.get("pricePerUnit");
             }
             Object buyPrice = products_quick_status.get("buyPrice");
@@ -142,12 +137,12 @@ public class BazzarData {
             int buyOrders = (int) products_quick_status.get("buyOrders");
             Object timeStamp = SB_BAZZAR_JSON_FULL.get("lastUpdated");
             String sql2 =
-                    "INSERT INTO "+ '`' +products_name + '`' +"(" +
+                    "INSERT INTO " + '`' + products_name + '`' + "(" +
                             "buyPrice,sellPrice,sellVolume," +
                             "buyVolume,sellMovingWeek,buyMovingWeek," +
-                            "sellOrders,buyOrders,timeStamp,HighestBuyOderPrice,HighestSellOderPrice)"+
-                            "VALUES("+ buyPrice +","+ sellPrice +","+ sellVolume +","+ buyVolume +","+ sellMovingWeek
-                            +","+ buyMovingWeek +","+ sellOrders +","+buyOrders +","+ timeStamp + ","+buyOrder_pricePerUnit +","+ sellOrder_pricePerUnit +")";
+                            "sellOrders,buyOrders,timeStamp,HighestBuyOderPrice,HighestSellOderPrice)" +
+                            "VALUES(" + buyPrice + "," + sellPrice + "," + sellVolume + "," + buyVolume + "," + sellMovingWeek
+                            + "," + buyMovingWeek + "," + sellOrders + "," + buyOrders + "," + timeStamp + "," + buyOrder_pricePerUnit + "," + sellOrder_pricePerUnit + ")";
             statement.execute(sql2);
         }
         statement.close();

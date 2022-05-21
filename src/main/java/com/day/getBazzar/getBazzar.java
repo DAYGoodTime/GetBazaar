@@ -8,7 +8,6 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.Timer;
 import java.util.TimerTask;
-
 import com.alibaba.fastjson.*;
 
 /**
@@ -18,7 +17,8 @@ public class getBazzar {
 
     public static URL  SB_BAZZAR_API;
     public static JSONObject  SB_BAZZAR_JSON;
-    static int times = 0;
+    static int TotalTimes;
+    static int times=0;
     static {
         try {
             SB_BAZZAR_API = new URL("https://api.hypixel.net/skyblock/bazaar");
@@ -38,13 +38,12 @@ public class getBazzar {
             System.out.println("JSONAPIGet返回值:"+SB_BAZZAR_JSON.get("success"));
             System.out.println("JSON更新时间:"+toolClass.timestampToDate((Long) SB_BAZZAR_JSON.get("lastUpdated")));
             try {
-                BazzarData.KeepUpdateBazzarData_quick();
+                BazzarData.KeepUpdateBazzarData_quick(SB_BAZZAR_JSON);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-
             System.out.println("--------完成数据导入----------");
-            if(times == 10){
+            if(times == TotalTimes-1){
                 cancel();
             } else
                 times++;
@@ -53,17 +52,22 @@ public class getBazzar {
 
     //拟运行主类
     public static void main(String[] args) {
+        //判断是否有参数,写的有点烂
+        if(args.length==0 || args.length==1){
+            System.out.println("请输入参数 -t 一共获取t次数据,t必须大于0");
+            System.exit(1);
+        } else if (!args[0].equals("-t") && Integer.parseInt(args[1])<=0 ){
+            System.out.println("请合法的输入参数 -t 一共获取t次数据,t必须大于0");
+            System.exit(1);
+        } else {
+            TotalTimes = Integer.parseInt(args[1]);
+        }
         BazzarData.InitializationAndConnection();
         BazzarData.InitializedDBandTable();
         Timer timer2 = new Timer();
         timer2.schedule(new continuedGet(), 100, 60000);  //1秒后执行，并且每隔1分钟重复执行
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            //timer.cancel();  //终止计时器，放弃所有已安排的任务
-            timer2.purge();  //释放内存
+        //这里不是循环结束后运行的代码，循环任务会分开成一个子线程运行。
+
     }
 
     /**

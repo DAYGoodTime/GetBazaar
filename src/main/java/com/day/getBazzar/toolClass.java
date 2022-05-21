@@ -5,18 +5,16 @@ import com.alibaba.fastjson.*;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 
 import java.io.*;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class toolClass {
     //测试主类
     static JSONObject BAZZAR_JSON = LoadLocalJSON("E:\\modding\\SmallProject\\GetBazzar\\somedata\\Bazzar.json");
-    public static void main(String[] args)  {
-        System.out.println("时间格式:"+ timestampToTimes(1652494145761L) );
-        System.out.println("日期格式:"+ timestampToDate(1652494145761L) );
-        System.out.println(BAZZAR_JSON.isEmpty());
-    }
+//    public static void main(String[] args)  {
+//        System.out.println("时间格式:"+ timestampToTimes(1652494145761L) );
+//        System.out.println("日期格式:"+ timestampToDate(1652494145761L) );
+//        System.out.println(BAZZAR_JSON.isEmpty());
+//    }
 
     /**
      * 用于将“字符串“形的json格式写入成.json格式文件
