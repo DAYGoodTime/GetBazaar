@@ -4,28 +4,19 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
-import java.net.URL;
 import java.sql.SQLException;
 import java.util.Timer;
 import java.util.TimerTask;
 import com.alibaba.fastjson.*;
 
+import static com.day.getBazzar.GlobalVar.*;
+
 /**
  * 用于获取BazzarJSON数据
  */
-public class getBazzar {
+public class GetBazzar {
 
-    public static URL  SB_BAZZAR_API;
-    public static JSONObject  SB_BAZZAR_JSON;
-    static int TotalTimes;
     static int times=0;
-    static {
-        try {
-            SB_BAZZAR_API = new URL("https://api.hypixel.net/skyblock/bazaar");
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
-    }
 
     /**
      * 用于反复执行更新数据操作的timerTask
@@ -36,7 +27,7 @@ public class getBazzar {
             System.out.println("-------第"+(times+1)+"次获取-------");
             JSONObject SB_BAZZAR_JSON = getBazzarJSON();
             System.out.println("JSONAPIGet返回值:"+SB_BAZZAR_JSON.get("success"));
-            System.out.println("JSON更新时间:"+toolClass.timestampToDate((Long) SB_BAZZAR_JSON.get("lastUpdated")));
+            System.out.println("JSON更新时间:"+ToolClass.timestampToDate((Long) SB_BAZZAR_JSON.get("lastUpdated")));
             try {
                 BazzarData.KeepUpdateBazzarData_quick(SB_BAZZAR_JSON);
             } catch (SQLException e) {
@@ -51,21 +42,14 @@ public class getBazzar {
     }
 
     //拟运行主类
-    public static void main(String[] args) {
-        //判断是否有参数,写的有点烂
-        if(args.length==0 || args.length==1){
-            System.out.println("请输入参数 -t 一共获取t次数据,t必须大于0");
-            System.exit(1);
-        } else if (!args[0].equals("-t") && Integer.parseInt(args[1])<=0 ){
-            System.out.println("请合法的输入参数 -t 一共获取t次数据,t必须大于0");
-            System.exit(1);
-        } else {
-            TotalTimes = Integer.parseInt(args[1]);
-        }
-        BazzarData.InitializationAndConnection();
+    public static void main(String[] args) throws IOException {
+        //读入参数，这里创建对象是因为静态方法会导致线程一直运行
+        GlobalVar gv = new GlobalVar();
+        gv.readConfig();
+
         BazzarData.InitializedDBandTable();
         Timer timer2 = new Timer();
-        timer2.schedule(new continuedGet(), 100, 60000);  //1秒后执行，并且每隔1分钟重复执行
+        timer2.schedule(new continuedGet(), 100, 15000);  //1秒后执行，并且每隔1分钟重复执行
         //这里不是循环结束后运行的代码，循环任务会分开成一个子线程运行。
 
     }
