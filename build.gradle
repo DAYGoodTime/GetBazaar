@@ -24,7 +24,7 @@ shadowJar {
 
         //指定入口函数，其他的是默认
         attributes(
-                'Main-Class': 'com.day.getBazzar.getBazzar'
+                'Main-Class': 'com.day.getBazzar.GetBazzar'
         )
     }
 }

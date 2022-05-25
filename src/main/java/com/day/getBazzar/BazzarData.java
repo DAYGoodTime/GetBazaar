@@ -1,5 +1,7 @@
 package com.day.getBazzar;
 
+import static com.day.getBazzar.GlobalVar.*;
+
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
@@ -8,19 +10,11 @@ import java.sql.*;
 import java.util.Iterator;
 import java.util.Set;
 
+
 /**
  * 关于Bazzar数据处理
  */
 public class BazzarData {
-
-    //各种变量:
-    static final String JSON_PATH = "E:\\modding\\SmallProject\\GetBazzar\\somedata\\Bazzar.json";
-    // 本地JSON用于测试
-    //public static JSONObject SB_BAZZAR_JSON_FULL = toolClass.LoadLocalJSON(JSON_PATH);
-    static  String DB_PORT = "3306";
-    static final String DB_URL = "jdbc:mysql://localhost:"+DB_PORT+"?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
-    static  String USER = "root";
-    static  String PASSWORD = "kel123";
 
     static String SQL_DB_QUICK_STATUS = "bz_quick_status";
     //用于测试的main方法
@@ -63,7 +57,7 @@ public class BazzarData {
             //创建表
             statement.execute("USE bz_quick_status");
             //这里使用本地旧数据进行初始化数据库，无需向API再申请一次JSON
-            JSONObject SB_BAZZAR_JSON_FULL_LOCAL = toolClass.LoadLocalJSON(JSON_PATH);
+            JSONObject SB_BAZZAR_JSON_FULL_LOCAL = ToolClass.LoadLocalJSON(LOCAL_JSON_PATH);
             JSONObject SB_BAZZAR_JSON_PRODUCTS = JSONObject.parseObject(String.valueOf(SB_BAZZAR_JSON_FULL_LOCAL.get("products")));
             Set<String> products_list = SB_BAZZAR_JSON_PRODUCTS.keySet();
             Iterator<String> products_iterator = products_list.iterator();

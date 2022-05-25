@@ -1,4 +1,15 @@
 
-gradle/
-build/
-src/test/
+/.gradle/
+/src/java/com/day/getBazzar/test.java
+.idea/vcs.xml
+.idea/sqldialects.xml
+.idea/dataSources.xml
+.gradle/checksums/sha1-checksums.bin
+.gradle/checksums/md5-checksums.bin
+.gradle/checksums/checksums.lock
+.gradle/buildOutputCleanup/outputFiles.bin
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.gradle/7.1.1/fileHashes/fileHashes.lock
+.gradle/7.1.1/fileHashes/fileHashes.bin
+.gradle/7.1.1/executionHistory/executionHistory.lock
+.gradle/7.1.1/executionHistory/executionHistory.bin

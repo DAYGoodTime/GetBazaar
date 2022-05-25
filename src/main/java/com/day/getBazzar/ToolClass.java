@@ -6,15 +6,9 @@ import com.alibaba.fastjson.serializer.SerializerFeature;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
+import java.util.regex.Pattern;
 
-public class toolClass {
-    //测试主类
-    static JSONObject BAZZAR_JSON = LoadLocalJSON("E:\\modding\\SmallProject\\GetBazzar\\somedata\\Bazzar.json");
-//    public static void main(String[] args)  {
-//        System.out.println("时间格式:"+ timestampToTimes(1652494145761L) );
-//        System.out.println("日期格式:"+ timestampToDate(1652494145761L) );
-//        System.out.println(BAZZAR_JSON.isEmpty());
-//    }
+public class ToolClass {
 
     /**
      * 用于将“字符串“形的json格式写入成.json格式文件
@@ -55,7 +49,7 @@ public class toolClass {
     }
 
     public static JSONObject LoadLocalJSON (String filePath){
-        String s = toolClass.readJsonFile(filePath);
+        String s = ToolClass.readJsonFile(filePath);
         return JSON.parseObject(s);
     }
 
@@ -106,5 +100,14 @@ public class toolClass {
         //将时间戳转化为固定格式的日期
         SimpleDateFormat Date =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return Date.format(timeStamp);
+    }
+    /**
+     * 判断是否为整数
+     * @param str 传入的字符串
+     * @return 是整数返回true,否则返回false
+     */
+    public static boolean isInteger(String str) {
+        Pattern pattern = Pattern.compile("^[-\\+]?[\\d]*$");
+        return pattern.matcher(str).matches();
     }
 }
