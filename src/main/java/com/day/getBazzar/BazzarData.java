@@ -30,7 +30,7 @@ public class BazzarData {
      */
     public static Connection InitializationAndConnection (){
         try {
-            Connection conn = null;
+            Connection conn;
             Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(DB_URL, USER, PASSWORD);
             System.out.println("数据库连接成功！");
@@ -60,11 +60,9 @@ public class BazzarData {
             JSONObject SB_BAZZAR_JSON_FULL_LOCAL = ToolClass.LoadLocalJSON(LOCAL_JSON_PATH);
             JSONObject SB_BAZZAR_JSON_PRODUCTS = JSONObject.parseObject(String.valueOf(SB_BAZZAR_JSON_FULL_LOCAL.get("products")));
             Set<String> products_list = SB_BAZZAR_JSON_PRODUCTS.keySet();
-            Iterator<String> products_iterator = products_list.iterator();
-            while (products_iterator.hasNext()){
+            for (String products_name : products_list) {
                 String sql;
-                String products_name = products_iterator.next();
-                sql = "CREATE TABLE IF NOT EXISTS "+ '`' +products_name + '`' +
+                sql = "CREATE TABLE IF NOT EXISTS " + '`' + products_name + '`' +
                         "(" +
                         "    `buyPrice`       DOUBLE(25, 6) NOT NULL DEFAULT 0," +
                         "    `sellPrice`      DOUBLE(25, 6) NOT NULL DEFAULT 0," +
@@ -100,7 +98,7 @@ public class BazzarData {
      * @throws SQLException 抛出SQL数据库异常
      */
     public static void KeepUpdateBazzarData_quick(JSONObject SB_BAZZAR_JSON_FULL) throws SQLException {
-        Statement statement = null;
+        Statement statement;
         Connection conn = InitializationAndConnection();
         statement = conn.createStatement();
         statement.execute("USE bz_quick_status");

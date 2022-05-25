@@ -2,8 +2,7 @@ package com.day.getBazzar;
 
 import java.io.*;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
+import java.nio.charset.StandardCharsets;
 import java.sql.SQLException;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -42,14 +41,13 @@ public class GetBazzar {
     }
 
     //拟运行主类
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, SQLException {
         //读入参数，这里创建对象是因为静态方法会导致线程一直运行
         GlobalVar gv = new GlobalVar();
         gv.readConfig();
-
         BazzarData.InitializedDBandTable();
         Timer timer2 = new Timer();
-        timer2.schedule(new continuedGet(), 100, 15000);  //1秒后执行，并且每隔1分钟重复执行
+        timer2.schedule(new continuedGet(), 100, 60000);  //0.1秒后执行，并且每隔1分钟重复执行
         //这里不是循环结束后运行的代码，循环任务会分开成一个子线程运行。
 
     }
@@ -59,9 +57,9 @@ public class GetBazzar {
      * @return fastjson的JSONObject：Bazzar的全部数据
      */
     public static JSONObject getBazzarJSON() {
-        HttpURLConnection connection = null;
-        InputStream inputStreamReader = null;
-        BufferedReader bufferedReader = null;
+        HttpURLConnection connection;
+        InputStream inputStreamReader;
+        BufferedReader bufferedReader;
         StringBuilder stringBuilder = new StringBuilder();
         try {
             connection = (HttpURLConnection)SB_BAZZAR_API.openConnection();
@@ -73,7 +71,7 @@ public class GetBazzar {
             //接受输入
             System.out.println("正在接受API数据:");
             inputStreamReader = connection.getInputStream();
-            bufferedReader = new BufferedReader(new InputStreamReader(inputStreamReader,"UTF-8"));
+            bufferedReader = new BufferedReader(new InputStreamReader(inputStreamReader, StandardCharsets.UTF_8));
 
             String line;
 
@@ -86,12 +84,6 @@ public class GetBazzar {
             return json;
            //return createFile.createJsonFile(json,"E:\\modding\\SmallProject\\GetBazzar\\Bazzar.json");
 
-        } catch (ProtocolException e) {
-            e.printStackTrace();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }

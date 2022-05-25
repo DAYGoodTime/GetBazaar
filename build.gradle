@@ -3,7 +3,7 @@ plugins {
     id 'java'
 }
 group 'org.day.getBazzar'
-version '1.0.2'
+version '1.0.3'
 
 repositories {
     mavenCentral()
@@ -13,6 +13,9 @@ repositories {
 dependencies {
     implementation 'com.alibaba:fastjson:1.2.80'
     implementation 'mysql:mysql-connector-java:8.0.18'
+    implementation 'cn.hutool:hutool-db:5.8.1'
+    implementation 'cn.hutool:hutool-setting:5.8.1'
+    implementation 'cn.hutool:hutool-core:5.8.1'
 }
 
 test {

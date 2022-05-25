@@ -1,0 +1,16 @@
+[mysql]
+#数据库主机地址
+host = localhost
+#用户名，必须
+user = root
+#密码，必须，如果密码为空，请填写 pass =
+pass = kel123
+#数据库端口
+port = 3306
+#JDBC url，必须
+url = jdbc:mysql://${host}:${port}?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+[API]
+#获取API次数
+TotalTimes = 3
+#本地JSON路径，用于初始化数据库表
+path=E:\\modding\\SmallProject\\GetBazzar\\somedata\\Bazzar.json
