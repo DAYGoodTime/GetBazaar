@@ -3,7 +3,7 @@ plugins {
     id 'java'
 }
 group 'org.day.getBazzar'
-version '1.0.3'
+version '1.0.4'
 
 repositories {
     mavenCentral()
@@ -16,6 +16,7 @@ dependencies {
     implementation 'cn.hutool:hutool-db:5.8.1'
     implementation 'cn.hutool:hutool-setting:5.8.1'
     implementation 'cn.hutool:hutool-core:5.8.1'
+    implementation 'cn.hutool:hutool-http:5.8.1'
 }
 
 test {

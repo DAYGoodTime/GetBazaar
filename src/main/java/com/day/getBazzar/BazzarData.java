@@ -53,7 +53,7 @@ public class BazzarData {
         try {
             statement = conn.createStatement();
             //创建数据库
-            //statement.execute("CREATE DATABASE BZ_quick_status");
+            statement.execute("CREATE DATABASE if not exists bz_quick_status");
             //创建表
             statement.execute("USE bz_quick_status");
             //这里使用本地旧数据进行初始化数据库，无需向API再申请一次JSON
@@ -98,9 +98,8 @@ public class BazzarData {
      * @throws SQLException 抛出SQL数据库异常
      */
     public static void KeepUpdateBazzarData_quick(JSONObject SB_BAZZAR_JSON_FULL) throws SQLException {
-        Statement statement;
         Connection conn = InitializationAndConnection();
-        statement = conn.createStatement();
+        Statement statement = conn.createStatement();
         statement.execute("USE bz_quick_status");
         JSONObject SB_BAZZAR_JSON_PRODUCTS = JSONObject.parseObject(String.valueOf(SB_BAZZAR_JSON_FULL.get("products")));
         Set<String> products_list = SB_BAZZAR_JSON_PRODUCTS.keySet();
@@ -135,7 +134,15 @@ public class BazzarData {
                             "sellOrders,buyOrders,timeStamp,HighestBuyOderPrice,HighestSellOderPrice)" +
                             "VALUES(" + buyPrice + "," + sellPrice + "," + sellVolume + "," + buyVolume + "," + sellMovingWeek
                             + "," + buyMovingWeek + "," + sellOrders + "," + buyOrders + "," + timeStamp + "," + buyOrder_pricePerUnit + "," + sellOrder_pricePerUnit + ")";
-            statement.execute(sql2);
+            //对sql操作进行事务管理，一旦出错进行回滚
+            try {
+                conn.setAutoCommit(false);
+                statement.execute(sql2);
+                conn.commit();
+            } catch (Exception e){
+                conn.rollback();
+                e.printStackTrace();
+            }
         }
         statement.close();
         conn.close();

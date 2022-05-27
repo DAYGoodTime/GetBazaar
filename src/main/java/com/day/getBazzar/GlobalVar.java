@@ -1,12 +1,10 @@
 package com.day.getBazzar;
 
-import cn.hutool.core.io.FileUtil;
+
 import cn.hutool.core.util.CharsetUtil;
 import cn.hutool.setting.Setting;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 public class GlobalVar {
     static  String USER;
@@ -20,7 +18,7 @@ public class GlobalVar {
      * @throws IOException
      */
     public  void readConfig() throws IOException {
-        Setting cfg = new Setting("E:\\modding\\SmallProject\\GetBazzar\\config\\bazzar.setting", CharsetUtil.CHARSET_UTF_8, true);
+        Setting cfg = new Setting("\\config\\bazzar.setting", CharsetUtil.CHARSET_UTF_8, true);
         //全局参数读入
         USER = cfg.getStr("user","mysql","root");
         PASSWORD = cfg.getByGroup("pass","mysql");
@@ -31,12 +29,6 @@ public class GlobalVar {
     // 本地JSON用于测试
     //public static JSONObject SB_BAZZAR_JSON_FULL = toolClass.LoadLocalJSON(JSON_PATH);
 
-    static  URL SB_BAZZAR_API;
-    static {
-        try {
-             SB_BAZZAR_API = new URL("https://api.hypixel.net/skyblock/bazaar");
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
-    }
+    static String SB_BAZZAR_API = "https://api.hypixel.net/skyblock/bazaar";
+
 }

@@ -1,11 +1,11 @@
 package com.day.getBazzar;
 
 import java.io.*;
-import java.net.HttpURLConnection;
-import java.nio.charset.StandardCharsets;
 import java.sql.SQLException;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import cn.hutool.http.HttpUtil;
 import com.alibaba.fastjson.*;
 
 import static com.day.getBazzar.GlobalVar.*;
@@ -45,7 +45,7 @@ public class GetBazzar {
         //读入参数，这里创建对象是因为静态方法会导致线程一直运行
         GlobalVar gv = new GlobalVar();
         gv.readConfig();
-        BazzarData.InitializedDBandTable();
+        //BazzarData.InitializedDBandTable();
         Timer timer2 = new Timer();
         timer2.schedule(new continuedGet(), 100, 60000);  //0.1秒后执行，并且每隔1分钟重复执行
         //这里不是循环结束后运行的代码，循环任务会分开成一个子线程运行。
@@ -57,36 +57,14 @@ public class GetBazzar {
      * @return fastjson的JSONObject：Bazzar的全部数据
      */
     public static JSONObject getBazzarJSON() {
-        HttpURLConnection connection;
-        InputStream inputStreamReader;
-        BufferedReader bufferedReader;
-        StringBuilder stringBuilder = new StringBuilder();
-        try {
-            connection = (HttpURLConnection)SB_BAZZAR_API.openConnection();
-            connection.setRequestMethod("GET");
-            connection.setReadTimeout(500000);
-            connection.setConnectTimeout(500000);
-            connection.setRequestProperty("User-Agent","Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)");
 
-            //接受输入
-            System.out.println("正在接受API数据:");
-            inputStreamReader = connection.getInputStream();
-            bufferedReader = new BufferedReader(new InputStreamReader(inputStreamReader, StandardCharsets.UTF_8));
-
-            String line;
-
-            while ((line = bufferedReader.readLine()) != null){
-                stringBuilder.append(line);
-            }
-            String jsonString = stringBuilder.toString();
-            JSONObject json = JSONObject.parseObject(jsonString);
-            System.out.println("获取完成");
-            return json;
-           //return createFile.createJsonFile(json,"E:\\modding\\SmallProject\\GetBazzar\\Bazzar.json");
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
+        //接受输入
+        System.out.println("正在接受API数据:");
+        StringBuilder stringBuilder = new StringBuilder(HttpUtil.get(SB_BAZZAR_API));
+        String jsonString = stringBuilder.toString();
+        JSONObject json = JSONObject.parseObject(jsonString);
+        System.out.println("获取完成");
+        return json;
+        //return createFile.createJsonFile(json,"E:\\modding\\SmallProject\\GetBazzar\\Bazzar.json");
     }
 }

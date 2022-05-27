@@ -17,8 +17,8 @@ public class ToolClass {
      * @return
      */
     public static boolean createJsonFile (Object jsonData,String filePath){
-        String content = JSON.toJSONString(jsonData, SerializerFeature.PrettyFormat,SerializerFeature.WriteMapNullValue
-        ,SerializerFeature.WriteDateUseDateFormat);
+        String content = JSON.toJSONString(jsonData,SerializerFeature.PrettyFormat, SerializerFeature.WriteMapNullValue,
+                SerializerFeature.WriteDateUseDateFormat);
         //标记文件状态
         boolean flag = true;
 
@@ -78,6 +78,16 @@ public class ToolClass {
             e.printStackTrace();
             return null;
         }
+    }
+
+    /**
+     * 返回格式化的json字符串
+     * @param json json对象
+     * @return
+     */
+    public static String formatJsonString(JSONObject json){
+        return  JSON.toJSONString(json, SerializerFeature.PrettyFormat, SerializerFeature.WriteMapNullValue,
+                SerializerFeature.WriteDateUseDateFormat);
     }
 
     /**
