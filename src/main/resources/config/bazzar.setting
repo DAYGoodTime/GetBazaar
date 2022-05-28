@@ -8,7 +8,7 @@ pass = kel123
 #数据库端口
 port = 3306
 #JDBC url，必须
-url = jdbc:mysql://${host}:${port}?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+url = jdbc:mysql://${host}:${port}?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useServerPrepStmts=true
 [API]
 #获取API次数
 TotalTimes = 3
