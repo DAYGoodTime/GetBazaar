@@ -1,5 +1,5 @@
 
-/.gradle/*
+.gradle/
 /src/java/com/day/getBazzar/test.java
 .idea/vcs.xml
 .idea/sqldialects.xml

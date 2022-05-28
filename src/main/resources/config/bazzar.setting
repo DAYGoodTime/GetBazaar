@@ -2,9 +2,9 @@
 #数据库主机地址
 host = localhost
 #用户名，必须
-user = bazzar
+user = root
 #密码，必须，如果密码为空，请填写 pass =
-pass = XM2NGZJcs4mAT4XP
+pass = kel123
 #数据库端口
 port = 3306
 #JDBC url，必须

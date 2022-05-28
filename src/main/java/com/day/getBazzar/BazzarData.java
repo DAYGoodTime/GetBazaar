@@ -7,7 +7,6 @@ import com.alibaba.fastjson.JSONObject;
 
 import java.math.BigDecimal;
 import java.sql.*;
-import java.util.Iterator;
 import java.util.Set;
 
 
@@ -62,6 +61,7 @@ public class BazzarData {
             Set<String> products_list = SB_BAZZAR_JSON_PRODUCTS.keySet();
             for (String products_name : products_list) {
                 String sql;
+                products_name = CheckIfSpecialItem(products_name);
                 sql = "CREATE TABLE IF NOT EXISTS " + '`' + products_name + '`' +
                         "(" +
                         "    `buyPrice`       DOUBLE(25, 6) NOT NULL DEFAULT 0," +
@@ -72,7 +72,7 @@ public class BazzarData {
                         "    `buyMovingWeek`  BIGINT        NOT NULL DEFAULT 0," +
                         "    `sellOrders`     INT           NOT NULL DEFAULT 0," +
                         "    `buyOrders`      INT           NOT NULL DEFAULT 0," +
-                        "    `timeStamp`      BIGINT        NOT NULL DEFAULT 0," +
+                        "    `timeStamp`      TIMESTAMP     NOT NULL ," +
                         "    `HighestBuyOderPrice`       DOUBLE(25, 6) ," +
                         "    `HighestSellOderPrice`      DOUBLE(25, 6) " +
                         ")";
@@ -103,21 +103,22 @@ public class BazzarData {
         statement.execute("USE bz_quick_status");
         JSONObject SB_BAZZAR_JSON_PRODUCTS = JSONObject.parseObject(String.valueOf(SB_BAZZAR_JSON_FULL.get("products")));
         Set<String> products_list = SB_BAZZAR_JSON_PRODUCTS.keySet();
+        PreparedStatement pstmt = null;
         for (String products_name : products_list) {
-            //System.out.println(products_name);
             JSONObject products_quick_status = (JSONObject) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("quick_status");
-
             Object sellOrder_pricePerUnit = null;
             Object buyOrder_pricePerUnit = null;
             //在特殊情况下，某些物品的订单为空，所以得加一些判断
             if (!((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("sell_summary")).isEmpty()) {
-               JSONObject products_sell_summary_first = (JSONObject) ((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("sell_summary")).get(0);
+                JSONObject products_sell_summary_first = (JSONObject) ((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("sell_summary")).get(0);
                 sellOrder_pricePerUnit = products_sell_summary_first.get("pricePerUnit");
             }
             if (!((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("buy_summary")).isEmpty()) {
                 JSONObject products_buy_summary_first = (JSONObject) ((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("buy_summary")).get(0);
                 buyOrder_pricePerUnit = products_buy_summary_first.get("pricePerUnit");
             }
+            //因为窒息的防SQL注入，预编译的sql对符号的改动特别蛋疼，所以这里只能修改物品id以此兼容
+            products_name = CheckIfSpecialItem(products_name);
             Object buyPrice = products_quick_status.get("buyPrice");
             BigDecimal sellPrice = (BigDecimal) products_quick_status.get("sellPrice");
             int sellVolume = (int) products_quick_status.get("sellVolume");
@@ -127,25 +128,48 @@ public class BazzarData {
             int sellOrders = (int) products_quick_status.get("sellOrders");
             int buyOrders = (int) products_quick_status.get("buyOrders");
             Object timeStamp = SB_BAZZAR_JSON_FULL.get("lastUpdated");
-            String sql2 =
-                    "INSERT INTO " + '`' + products_name + '`' + "(" +
-                            "buyPrice,sellPrice,sellVolume," +
-                            "buyVolume,sellMovingWeek,buyMovingWeek," +
-                            "sellOrders,buyOrders,timeStamp,HighestBuyOderPrice,HighestSellOderPrice)" +
-                            "VALUES(" + buyPrice + "," + sellPrice + "," + sellVolume + "," + buyVolume + "," + sellMovingWeek
-                            + "," + buyMovingWeek + "," + sellOrders + "," + buyOrders + "," + timeStamp + "," + buyOrder_pricePerUnit + "," + sellOrder_pricePerUnit + ")";
+            String sql2 = "INSERT INTO " + products_name + "(" +
+                    "buyPrice,sellPrice,sellVolume," +
+                    "buyVolume,sellMovingWeek,buyMovingWeek," +
+                    "sellOrders,buyOrders,timeStamp,HighestBuyOderPrice,HighestSellOderPrice)" +
+                    "VALUES( ?,?,?,?,?,?,?,?,?,?,?)";
+            pstmt = conn.prepareStatement(sql2);
             //对sql操作进行事务管理，一旦出错进行回滚
             try {
                 conn.setAutoCommit(false);
-                statement.execute(sql2);
+                pstmt.setObject(1, buyPrice);
+                pstmt.setObject(2, sellPrice);
+                pstmt.setInt(3, sellVolume);
+                pstmt.setInt(4, buyVolume);
+                pstmt.setInt(5, sellMovingWeek);
+                pstmt.setInt(6, buyMovingWeek);
+                pstmt.setInt(7, sellOrders);
+                pstmt.setInt(8, buyOrders);
+                pstmt.setTimestamp(9, new Timestamp((Long) timeStamp));
+                pstmt.setObject(10, buyOrder_pricePerUnit);
+                pstmt.setObject(11, sellOrder_pricePerUnit);
+                pstmt.execute();
                 conn.commit();
-            } catch (Exception e){
+            } catch (Exception e) {
                 conn.rollback();
                 e.printStackTrace();
             }
         }
         statement.close();
+        pstmt.close();
         conn.close();
     }
 
+    /**
+     * 用于检测物品名字是否含有特殊字符
+     * 例如ink_sack:3等含有副id的特殊物品
+     * 若存在则进行修改，否则返回原字符串
+     * @param products_name 可能存在特殊字符的物品name
+     * @return 返回修改后的物品name
+     */
+    public static String CheckIfSpecialItem(String products_name){
+        if(products_name.contains(":")){
+            return products_name.replace(":","_");
+        } else return products_name;
+    }
 }
