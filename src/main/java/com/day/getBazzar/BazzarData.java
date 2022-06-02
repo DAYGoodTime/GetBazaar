@@ -72,7 +72,7 @@ public class BazzarData {
                         "    `buyMovingWeek`  BIGINT        NOT NULL DEFAULT 0," +
                         "    `sellOrders`     INT           NOT NULL DEFAULT 0," +
                         "    `buyOrders`      INT           NOT NULL DEFAULT 0," +
-                        "    `timeStamp`      TIMESTAMP     NOT NULL ," +
+                        "    `timeStamp`      BIGINT     NOT NULL ," +
                         "    `HighestBuyOderPrice`       DOUBLE(25, 6) ," +
                         "    `HighestSellOderPrice`      DOUBLE(25, 6) " +
                         ")";
@@ -145,7 +145,7 @@ public class BazzarData {
                 pstmt.setInt(6, buyMovingWeek);
                 pstmt.setInt(7, sellOrders);
                 pstmt.setInt(8, buyOrders);
-                pstmt.setTimestamp(9, new Timestamp((Long) timeStamp));
+                pstmt.setLong(9, (Long) timeStamp);
                 pstmt.setObject(10, buyOrder_pricePerUnit);
                 pstmt.setObject(11, sellOrder_pricePerUnit);
                 pstmt.execute();
@@ -168,6 +168,13 @@ public class BazzarData {
      * @return 返回修改后的物品name
      */
     public static String CheckIfSpecialItem(String products_name){
+        //紧急添加:因为原数据存在log:2与log_2，所以在此将两者区分。改成log_2→log_2_1,log:2→log_2,log_2:1→log_2_2
+        if((products_name.toLowerCase()).equals("log_2")){
+            return "log_2_1";
+        }
+        if((products_name.toLowerCase()).equals("log_2:1")){
+            return "log_2_2";
+        }
         if(products_name.contains(":")){
             return products_name.replace(":","_");
         } else return products_name;

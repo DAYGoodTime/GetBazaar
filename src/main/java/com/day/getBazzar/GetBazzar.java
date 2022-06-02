@@ -45,7 +45,7 @@ public class GetBazzar {
         //读入参数，这里创建对象是因为静态方法会导致线程一直运行
         GlobalVar gv = new GlobalVar();
         gv.readConfig();
-        //BazzarData.InitializedDBandTable();
+        BazzarData.InitializedDBandTable();
         Timer timer2 = new Timer();
         timer2.schedule(new continuedGet(), 100, 60000);  //0.1秒后执行，并且每隔1分钟重复执行
         //这里不是循环结束后运行的代码，循环任务会分开成一个子线程运行。
