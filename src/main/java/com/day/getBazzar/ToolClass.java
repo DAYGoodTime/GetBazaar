@@ -75,7 +75,7 @@ public class ToolClass {
             jsonStr = sb.toString();
             return jsonStr;
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("无法读取文件!");
             return null;
         }
     }

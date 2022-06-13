@@ -56,7 +56,12 @@ public class BazzarData {
             //创建表
             statement.execute("USE bz_quick_status");
             //这里使用本地旧数据进行初始化数据库，无需向API再申请一次JSON
-            JSONObject SB_BAZZAR_JSON_FULL_LOCAL = ToolClass.LoadLocalJSON(LOCAL_JSON_PATH);
+            //若本地读取为空，则自动向API读取.
+            JSONObject SB_BAZZAR_JSON_FULL_LOCAL = null;
+            if(ToolClass.LoadLocalJSON(LOCAL_JSON_PATH) == null){
+                System.out.println("检测到本地文件不存在，正在向API获取数据");
+                SB_BAZZAR_JSON_FULL_LOCAL = GetBazzar.getBazzarJSON();
+            } else { SB_BAZZAR_JSON_FULL_LOCAL = ToolClass.LoadLocalJSON(LOCAL_JSON_PATH);}
             JSONObject SB_BAZZAR_JSON_PRODUCTS = JSONObject.parseObject(String.valueOf(SB_BAZZAR_JSON_FULL_LOCAL.get("products")));
             Set<String> products_list = SB_BAZZAR_JSON_PRODUCTS.keySet();
             for (String products_name : products_list) {
@@ -109,24 +114,24 @@ public class BazzarData {
             Object sellOrder_pricePerUnit = null;
             Object buyOrder_pricePerUnit = null;
             //在特殊情况下，某些物品的订单为空，所以得加一些判断
-            if (!((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("sell_summary")).isEmpty()) {
-                JSONObject products_sell_summary_first = (JSONObject) ((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("sell_summary")).get(0);
+            if (!((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("buy_summary")).isEmpty()) {
+                JSONObject products_sell_summary_first = (JSONObject) ((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("buy_summary")).get(0);
                 sellOrder_pricePerUnit = products_sell_summary_first.get("pricePerUnit");
             }
-            if (!((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("buy_summary")).isEmpty()) {
-                JSONObject products_buy_summary_first = (JSONObject) ((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("buy_summary")).get(0);
+            if (!((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("sell_summary")).isEmpty()) {
+                JSONObject products_buy_summary_first = (JSONObject) ((JSONArray) ((JSONObject) SB_BAZZAR_JSON_PRODUCTS.get(products_name)).get("sell_summary")).get(0);
                 buyOrder_pricePerUnit = products_buy_summary_first.get("pricePerUnit");
             }
             //因为窒息的防SQL注入，预编译的sql对符号的改动特别蛋疼，所以这里只能修改物品id以此兼容
             products_name = CheckIfSpecialItem(products_name);
             Object buyPrice = products_quick_status.get("buyPrice");
-            BigDecimal sellPrice = (BigDecimal) products_quick_status.get("sellPrice");
-            int sellVolume = (int) products_quick_status.get("sellVolume");
-            int buyVolume = (int) products_quick_status.get("buyVolume");
-            int sellMovingWeek = (int) products_quick_status.get("sellMovingWeek");
-            int buyMovingWeek = (int) products_quick_status.get("buyMovingWeek");
-            int sellOrders = (int) products_quick_status.get("sellOrders");
-            int buyOrders = (int) products_quick_status.get("buyOrders");
+            Object sellPrice = products_quick_status.get("sellPrice");
+            Object sellVolume = products_quick_status.get("sellVolume");
+            Object buyVolume = products_quick_status.get("buyVolume");
+            Object sellMovingWeek =  products_quick_status.get("sellMovingWeek");
+            Object buyMovingWeek = products_quick_status.get("buyMovingWeek");
+            Object sellOrders = products_quick_status.get("sellOrders");
+            Object buyOrders = products_quick_status.get("buyOrders");
             Object timeStamp = SB_BAZZAR_JSON_FULL.get("lastUpdated");
             String sql2 = "INSERT INTO " + products_name + "(" +
                     "buyPrice,sellPrice,sellVolume," +
@@ -139,12 +144,12 @@ public class BazzarData {
                 conn.setAutoCommit(false);
                 pstmt.setObject(1, buyPrice);
                 pstmt.setObject(2, sellPrice);
-                pstmt.setInt(3, sellVolume);
-                pstmt.setInt(4, buyVolume);
-                pstmt.setInt(5, sellMovingWeek);
-                pstmt.setInt(6, buyMovingWeek);
-                pstmt.setInt(7, sellOrders);
-                pstmt.setInt(8, buyOrders);
+                pstmt.setObject(3, sellVolume);
+                pstmt.setObject(4, buyVolume);
+                pstmt.setObject(5, sellMovingWeek);
+                pstmt.setObject(6, buyMovingWeek);
+                pstmt.setObject(7, sellOrders);
+                pstmt.setObject(8, buyOrders);
                 pstmt.setLong(9, (Long) timeStamp);
                 pstmt.setObject(10, buyOrder_pricePerUnit);
                 pstmt.setObject(11, sellOrder_pricePerUnit);

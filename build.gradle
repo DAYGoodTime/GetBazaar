@@ -3,7 +3,7 @@ plugins {
     id 'java'
 }
 group 'org.day.getBazzar'
-version '1.0.4'
+version '1.0.4-fix2'
 
 repositories {
     mavenCentral()
