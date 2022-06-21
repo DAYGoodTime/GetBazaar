@@ -5,8 +5,10 @@ import static com.day.getBazzar.GlobalVar.*;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
-import java.math.BigDecimal;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.OptionalDouble;
 import java.util.Set;
 
 
@@ -15,24 +17,40 @@ import java.util.Set;
  */
 public class BazzarData {
 
-    static String SQL_DB_QUICK_STATUS = "bz_quick_status";
-    //用于测试的main方法
-//    public static void main(String[] args) throws SQLException {
-//        InitializedDBandTable();
-//        KeepUpdateBazzarData_quick();
-//        System.out.println("Bazzar内所有物品数:"+SB_BAZZAR_JSON_PRODUCTS.size());
-//    }
+    static int id_row_nm = 1;
+    static int id_row_day = 1;
 
     /**
      * 初始化数据库链接操作，并将返回的Connection变量返回回去
-     * @return  数据库链接的Connection；
+     *
+     * @return 数据库链接的Connection；
      */
-    public static Connection InitializationAndConnection (){
+    public static Connection InitializationAndConnection() {
+        Connection conn = null;
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            conn = DriverManager.getConnection(DB_URL, USER, PASSWORD);
+            System.out.println("数据库连接成功！");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return conn;
+    }
+
+    /**
+     * 初始化数据库链接操作，并将返回的Connection变量返回回去
+     *
+     * @param flag 是否输出链接成功消息
+     * @return 数据库链接的Connection；
+     */
+    public static Connection InitializationAndConnection(boolean flag) {
         try {
             Connection conn;
             Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(DB_URL, USER, PASSWORD);
-            System.out.println("数据库连接成功！");
+            if (flag) {
+                System.out.println("数据库连接成功！");
+            }
             return conn;
         } catch (Exception e) {
             e.printStackTrace();
@@ -42,70 +60,111 @@ public class BazzarData {
 
     /**
      * 进行数据库和表格格式的初始化
+     * 初始化为分钟统计表格
      * 使用本地JSON文件进行读取
      * @return 是否初始化成功
      */
-    public static boolean InitializedDBandTable () {
-        System.out.println("正在初始化数据库:");
-        Statement statement = null;
-        Connection conn = InitializationAndConnection();
-        try {
-            statement = conn.createStatement();
+    public static boolean InitializedDBandTable() {
+        System.out.println("正在初始化数据库:" + DB_NM);
+        try (Connection conn = InitializationAndConnection(); Statement statement = conn.createStatement()) {
             //创建数据库
-            statement.execute("CREATE DATABASE if not exists bz_quick_status");
+            statement.execute("CREATE DATABASE if not exists " + DB_NM);
             //创建表
-            statement.execute("USE bz_quick_status");
+            statement.execute("USE " + DB_NM);
             //这里使用本地旧数据进行初始化数据库，无需向API再申请一次JSON
             //若本地读取为空，则自动向API读取.
-            JSONObject SB_BAZZAR_JSON_FULL_LOCAL = null;
-            if(ToolClass.LoadLocalJSON(LOCAL_JSON_PATH) == null){
+            JSONObject SB_BAZZAR_JSON_FULL_LOCAL;
+            if (ToolClass.LoadLocalJSON(LOCAL_JSON_PATH) == null) {
                 System.out.println("检测到本地文件不存在，正在向API获取数据");
                 SB_BAZZAR_JSON_FULL_LOCAL = GetBazzar.getBazzarJSON();
-            } else { SB_BAZZAR_JSON_FULL_LOCAL = ToolClass.LoadLocalJSON(LOCAL_JSON_PATH);}
+            } else {
+                SB_BAZZAR_JSON_FULL_LOCAL = ToolClass.LoadLocalJSON(LOCAL_JSON_PATH);
+            }
             JSONObject SB_BAZZAR_JSON_PRODUCTS = JSONObject.parseObject(String.valueOf(SB_BAZZAR_JSON_FULL_LOCAL.get("products")));
             Set<String> products_list = SB_BAZZAR_JSON_PRODUCTS.keySet();
             for (String products_name : products_list) {
-                String sql;
                 products_name = CheckIfSpecialItem(products_name);
-                sql = "CREATE TABLE IF NOT EXISTS " + '`' + products_name + '`' +
-                        "(" +
-                        "    `buyPrice`       DOUBLE(25, 6) NOT NULL DEFAULT 0," +
-                        "    `sellPrice`      DOUBLE(25, 6) NOT NULL DEFAULT 0," +
-                        "    `sellVolume`     INT           NOT NULL DEFAULT 0," +
-                        "    `buyVolume`      INT           NOT NULL DEFAULT 0," +
-                        "    `sellMovingWeek` BIGINT        NOT NULL DEFAULT 0," +
-                        "    `buyMovingWeek`  BIGINT        NOT NULL DEFAULT 0," +
-                        "    `sellOrders`     INT           NOT NULL DEFAULT 0," +
-                        "    `buyOrders`      INT           NOT NULL DEFAULT 0," +
-                        "    `timeStamp`      BIGINT     NOT NULL ," +
-                        "    `HighestBuyOderPrice`       DOUBLE(25, 6) ," +
-                        "    `HighestSellOderPrice`      DOUBLE(25, 6) " +
+                String sql = "CREATE TABLE IF NOT EXISTS " + '`' + products_name + '`' +
+                        "(\n" +
+                        "    `buyPrice`       DOUBLE(25, 6) NOT NULL DEFAULT 0,\n" +
+                        "   `sellPrice`      DOUBLE(25, 6) NOT NULL DEFAULT 0,\n" +
+                        "    `sellVolume`     INT           NOT NULL DEFAULT 0,\n" +
+                        "    `buyVolume`      INT           NOT NULL DEFAULT 0,\n" +
+                        "    `sellMovingWeek` BIGINT        NOT NULL DEFAULT 0,\n" +
+                        "    `buyMovingWeek`  BIGINT        NOT NULL DEFAULT 0,\n" +
+                        "    `sellOrders`     INT           NOT NULL DEFAULT 0,\n" +
+                        "    `buyOrders`      INT           NOT NULL DEFAULT 0,\n" +
+                        "    `timeStamp`      BIGINT     NOT NULL ,\n" +
+                        "    `LowestBuyOderPrice`       DOUBLE(25, 6) ,\n" +
+                        "    `HighestSellOderPrice`      DOUBLE(25, 6) ,\n" +
+                        "     id int auto_increment not null,\n" +
+                        "     primary key (id)\n" +
                         ")";
                 statement.execute(sql);
             }
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
-        } finally {
-            try {
-                statement.close();
-                conn.close();
-                System.out.println("初始化数据库成功");
-            } catch (SQLException | NullPointerException e) {
-                e.printStackTrace();
-            }
         }
+        return InitializedDBandTable_day();
+    }
+    /**
+     * 进行数据库和表格格式的初始化
+     * 初始化为日统计表格
+     * 使用本地JSON文件进行读取
+     * @return 是否初始化成功
+     */
+    public static boolean InitializedDBandTable_day() {
+        System.out.println("正在初始化数据库:" + DB_DAY);
+        try (Connection conn = InitializationAndConnection(); Statement statement = conn.createStatement()) {
+            //创建数据库
+            statement.execute("CREATE DATABASE if not exists " + DB_DAY);
+            //创建表
+            statement.execute("USE " + DB_DAY);
+            //这里使用本地旧数据进行初始化数据库，无需向API再申请一次JSON
+            //若本地读取为空，则自动向API读取.
+            JSONObject SB_BAZZAR_JSON_FULL_LOCAL = GetBazzar.getBazzarJSON();
+            JSONObject SB_BAZZAR_JSON_PRODUCTS = JSONObject.parseObject(String.valueOf(SB_BAZZAR_JSON_FULL_LOCAL.get("products")));
+            Set<String> products_list = SB_BAZZAR_JSON_PRODUCTS.keySet();
+            for (String products_name : products_list) {
+                products_name = CheckIfSpecialItem(products_name);
+                String sql = "CREATE TABLE IF NOT EXISTS " + '`' + products_name + '`' +
+                        "(\n" +
+                        "    `buyPriceAvgs`       DOUBLE(25, 6) NOT NULL DEFAULT 0,\n" +
+                        "    `sellPriceAvgs`      DOUBLE(25, 6) NOT NULL DEFAULT 0,\n" +
+                        "    `buyVolumeAvgs`     INT           NOT NULL DEFAULT 0,\n" +
+                        "    `sellVolumeAvgs`      INT           NOT NULL DEFAULT 0,\n" +
+                        "    `timeStamp`      BIGINT     NOT NULL ,\n" +
+                        "    `LowestBuyOderPriceAvgs`       DOUBLE(25, 6) ,\n" +
+                        "    `HighestSellOderPriceAvgs`      DOUBLE(25, 6) ,\n" +
+                        "    `MaxBuyOrderPrice`     INT           NOT NULL DEFAULT 0,\n" +
+                        "    `MaxSellOrderPrice`      INT           NOT NULL DEFAULT 0,\n" +
+                        "     id int auto_increment not null,\n" +
+                        "     primary key (id)\n" +
+                        ")";
+                statement.execute(sql);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+        System.out.println("数据库初始化成功");
         return true;
     }
 
     /**
      * 用于持续从API当中更新的数据(quick_status分类下的数据)
+     *
      * @throws SQLException 抛出SQL数据库异常
      */
-    public static void KeepUpdateBazzarData_quick(JSONObject SB_BAZZAR_JSON_FULL) throws SQLException {
+    public static void KeepUpdateBazzarData_quick(JSONObject SB_BAZZAR_JSON_FULL) throws Exception {
+        if (id_row_nm == 1441) {
+            KeepUpdateBzData_day(SB_BAZZAR_JSON_FULL);
+            id_row_nm = 1;
+        }
         Connection conn = InitializationAndConnection();
         Statement statement = conn.createStatement();
-        statement.execute("USE bz_quick_status");
+        statement.execute("USE " + DB_NM);
         JSONObject SB_BAZZAR_JSON_PRODUCTS = JSONObject.parseObject(String.valueOf(SB_BAZZAR_JSON_FULL.get("products")));
         Set<String> products_list = SB_BAZZAR_JSON_PRODUCTS.keySet();
         PreparedStatement pstmt = null;
@@ -124,21 +183,31 @@ public class BazzarData {
             }
             //因为窒息的防SQL注入，预编译的sql对符号的改动特别蛋疼，所以这里只能修改物品id以此兼容
             products_name = CheckIfSpecialItem(products_name);
+
             Object buyPrice = products_quick_status.get("buyPrice");
             Object sellPrice = products_quick_status.get("sellPrice");
             Object sellVolume = products_quick_status.get("sellVolume");
             Object buyVolume = products_quick_status.get("buyVolume");
-            Object sellMovingWeek =  products_quick_status.get("sellMovingWeek");
+            Object sellMovingWeek = products_quick_status.get("sellMovingWeek");
             Object buyMovingWeek = products_quick_status.get("buyMovingWeek");
             Object sellOrders = products_quick_status.get("sellOrders");
             Object buyOrders = products_quick_status.get("buyOrders");
             Object timeStamp = SB_BAZZAR_JSON_FULL.get("lastUpdated");
-            String sql2 = "INSERT INTO " + products_name + "(" +
+            String sql = "INSERT INTO " + products_name + "(" +
                     "buyPrice,sellPrice,sellVolume," +
                     "buyVolume,sellMovingWeek,buyMovingWeek," +
-                    "sellOrders,buyOrders,timeStamp,HighestBuyOderPrice,HighestSellOderPrice)" +
+                    "sellOrders,buyOrders,timeStamp,LowestBuyOderPrice,HighestSellOderPrice)" +
                     "VALUES( ?,?,?,?,?,?,?,?,?,?,?)";
-            pstmt = conn.prepareStatement(sql2);
+            String sql2 = "UPDATE " + products_name +
+                    " SET buyPrice = ?,sellPrice = ?,sellVolume=?,buyVolume=?,\n" +
+                    "sellMovingWeek=?,buyMovingWeek=?,sellOrders=?,buyOrders=?,\n" +
+                    "timeStamp=?,LowestBuyOderPrice=?,HighestSellOderPrice=? where id =" + id_row_nm;
+            //当插入次数大于1440次(即一天后)开始对表格数据进行更新操作,减少数据堆积操作
+            if (GetBazzar.times >= 1441) {
+                pstmt = conn.prepareStatement(sql2);
+            } else {
+                pstmt = conn.prepareStatement(sql);
+            }
             //对sql操作进行事务管理，一旦出错进行回滚
             try {
                 conn.setAutoCommit(false);
@@ -158,30 +227,146 @@ public class BazzarData {
             } catch (Exception e) {
                 conn.rollback();
                 e.printStackTrace();
+                pstmt.close();
+                statement.close();
+                conn.close();
             }
         }
         statement.close();
         pstmt.close();
         conn.close();
+        id_row_nm++;
+    }
+
+    /**
+     * 数据累计一天后进行统计,并存入新的表格当中
+     *
+     * @param SB_BAZZAR_JSON_FULL SB返回的API文件用于提取时间
+     * @throws Exception
+     */
+    public static void KeepUpdateBzData_day(JSONObject SB_BAZZAR_JSON_FULL) throws Exception {
+        Set<String> products_list = JSONObject.parseObject(String.valueOf(SB_BAZZAR_JSON_FULL.get("products"))).keySet();
+        Connection conn = InitializationAndConnection();
+        Statement statement = conn.createStatement();
+        statement.execute("USE " + DB_DAY);
+        PreparedStatement pstmt = null;
+        try {
+            for (String products_name : products_list) {
+                products_name = CheckIfSpecialItem(products_name);
+                List<Object> dataList = statisticsData(products_name);
+                if (dataList == null) {
+                    throw new Exception("dataList is empty");
+                }
+                String sql2 = "INSERT INTO " + products_name + "(" +
+                        "buyPriceAvgs,sellPriceAvgs,sellVolumeAvgs," +
+                        "buyVolumeAvgs,timeStamp,LowestBuyOderPriceAvgs," +
+                        "HighestSellOderPriceAvgs,MaxBuyOrderPrice,MaxSellOrderPrice)" +
+                        "VALUES( ?,?,?,?,?,?,?,?,?)";
+                pstmt = conn.prepareStatement(sql2);
+                //对sql操作进行事务管理，一旦出错进行回滚
+                conn.setAutoCommit(false);
+                pstmt.setObject(1, dataList.get(0));
+                pstmt.setObject(2, dataList.get(1));
+                pstmt.setObject(3, dataList.get(2));
+                pstmt.setObject(4, dataList.get(3));
+                pstmt.setLong(5, (Long) SB_BAZZAR_JSON_FULL.get("lastUpdated"));
+                pstmt.setObject(6, dataList.get(4));
+                pstmt.setObject(7, dataList.get(5));
+                pstmt.setObject(8, dataList.get(6));
+                pstmt.setObject(9, dataList.get(7));
+                pstmt.execute();
+                conn.commit();
+            }
+        } catch (Exception e) {
+            conn.rollback();
+            e.printStackTrace();
+        } finally {
+            pstmt.close();
+            statement.close();
+            conn.close();
+        }
+    }
+
+    /**
+     * 对物品进行统计，并将统计好的数据以List集合方式返回
+     *
+     * @param product_name
+     * @return 包含所有统计数据的集合
+     */
+    public static List<Object> statisticsData(String product_name) {
+        List<Float> buyPrices = new ArrayList<>();
+        List<Float> sellPrices = new ArrayList<>();
+        List<Integer> buyVolumes = new ArrayList<>();
+        List<Integer> sellVolumes = new ArrayList<>();
+        List<Float> hBuyOrderPrices = new ArrayList<>();
+        List<Float> lSellOrderPrices = new ArrayList<>();
+        List<Object> optObject = new ArrayList<>();
+        List<Object> statData = new ArrayList<>();
+        try {
+            Connection conn = InitializationAndConnection(false);
+            Statement statement = conn.createStatement();
+            statement.execute("USE " + DB_NM);
+            Statement stmt = conn.createStatement();
+            String sql = "SELECT * FROM " + product_name;
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()) {
+                buyPrices.add((float) rs.getDouble("buyPrice"));
+                sellPrices.add((float) rs.getDouble("sellPrice"));
+                buyVolumes.add(rs.getInt("buyVolume"));
+                sellVolumes.add(rs.getInt("sellVolume"));
+                hBuyOrderPrices.add((float) rs.getDouble("LowestBuyOderPrice"));
+                lSellOrderPrices.add((float) rs.getDouble("HighestSellOderPrice"));
+            }
+            OptionalDouble od_BuyPrices = buyPrices.stream().mapToDouble(num -> num).average();
+            OptionalDouble od_SellPrices = sellPrices.stream().mapToDouble(num -> num).average();
+            OptionalDouble od_BuyVolumes = buyVolumes.stream().mapToDouble(num -> num).average();
+            OptionalDouble od_SellVolumes = sellVolumes.stream().mapToDouble(num -> num).average();
+            OptionalDouble od_BuyOrderPricesAvg = hBuyOrderPrices.stream().mapToDouble(num -> num).average();
+            OptionalDouble od_SellOrderPricesAvg = lSellOrderPrices.stream().mapToDouble(num -> num).average();
+            OptionalDouble od_hBuyOrderPrices = hBuyOrderPrices.stream().mapToDouble(num -> num).max();
+            OptionalDouble od_lSellOrderPrices = lSellOrderPrices.stream().mapToDouble(num -> num).max();
+            optObject.add(od_BuyPrices);
+            optObject.add(od_SellPrices);
+            optObject.add(od_SellVolumes);
+            optObject.add(od_BuyVolumes);
+            optObject.add(od_BuyOrderPricesAvg);
+            optObject.add(od_SellOrderPricesAvg);
+            optObject.add(od_hBuyOrderPrices);
+            optObject.add(od_lSellOrderPrices);
+            for (Object o : optObject) {
+                OptionalDouble od = (OptionalDouble) o;
+                if (od.isPresent()) {
+                    statData.add(od.getAsDouble());
+                }
+            }
+            statement.close();
+            stmt.close();
+            conn.close();
+            return statData;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     /**
      * 用于检测物品名字是否含有特殊字符
      * 例如ink_sack:3等含有副id的特殊物品
      * 若存在则进行修改，否则返回原字符串
+     *
      * @param products_name 可能存在特殊字符的物品name
      * @return 返回修改后的物品name
      */
-    public static String CheckIfSpecialItem(String products_name){
+    public static String CheckIfSpecialItem(String products_name) {
         //紧急添加:因为原数据存在log:2与log_2，所以在此将两者区分。改成log_2→log_2_1,log:2→log_2,log_2:1→log_2_2
-        if((products_name.toLowerCase()).equals("log_2")){
+        if ((products_name).equalsIgnoreCase("log_2")) {
             return "log_2_1";
         }
-        if((products_name.toLowerCase()).equals("log_2:1")){
+        if ((products_name).equalsIgnoreCase("log_2:1")) {
             return "log_2_2";
         }
-        if(products_name.contains(":")){
-            return products_name.replace(":","_");
+        if (products_name.contains(":")) {
+            return products_name.replace(":", "_");
         } else return products_name;
     }
 }

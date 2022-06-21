@@ -15,7 +15,10 @@ import static com.day.getBazzar.GlobalVar.*;
  */
 public class GetBazzar {
 
-    static int times=0;
+    public static int times=0;
+    //连接API进行重连次数
+    static int  reConnectCount = 1;
+    static int maxReConnectCount = 10;
 
     /**
      * 用于反复执行更新数据操作的timerTask
@@ -29,7 +32,7 @@ public class GetBazzar {
             System.out.println("JSON更新时间:"+ToolClass.timestampToDate((Long) SB_BAZZAR_JSON.get("lastUpdated")));
             try {
                 BazzarData.KeepUpdateBazzarData_quick(SB_BAZZAR_JSON);
-            } catch (SQLException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
             System.out.println("--------完成数据导入----------");
@@ -46,8 +49,8 @@ public class GetBazzar {
         GlobalVar gv = new GlobalVar();
         gv.readConfig();
         BazzarData.InitializedDBandTable();
-        Timer timer2 = new Timer();
-        timer2.schedule(new continuedGet(), 100, 60000);  //0.1秒后执行，并且每隔1分钟重复执行
+        Timer timer = new Timer();
+        timer.schedule(new continuedGet(), 100, API_Time * 1000L);  //0.1秒后执行，并且每隔1分钟重复执行
         //这里不是循环结束后运行的代码，循环任务会分开成一个子线程运行。
 
     }
@@ -57,14 +60,31 @@ public class GetBazzar {
      * @return fastjson的JSONObject：Bazzar的全部数据
      */
     public static JSONObject getBazzarJSON() {
-
         //接受输入
         System.out.println("正在接受API数据:");
-        StringBuilder stringBuilder = new StringBuilder(HttpUtil.get(SB_BAZZAR_API));
-        String jsonString = stringBuilder.toString();
+        String jsonString = ConnectAPI().toString();
         JSONObject json = JSONObject.parseObject(jsonString);
         System.out.println("获取完成");
         return json;
         //return createFile.createJsonFile(json,"E:\\modding\\SmallProject\\GetBazzar\\Bazzar.json");
+    }
+
+    /**
+     * 内部方法,使用递归方法进行重连
+     * @return 链接成功后返回JSON字符串
+     */
+    private static StringBuilder ConnectAPI(){
+        StringBuilder stringBuilder = null;
+        try{
+            stringBuilder = new StringBuilder(HttpUtil.get(SB_BAZZAR_API));
+        } catch (Exception e){
+            if(reConnectCount == maxReConnectCount){
+                e.printStackTrace();
+            }else {
+                reConnectCount++;
+                return ConnectAPI();
+            }
+        }
+        return stringBuilder;
     }
 }

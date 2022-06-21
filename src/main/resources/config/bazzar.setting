@@ -9,8 +9,21 @@ pass = kel123
 port = 3306
 #JDBC url，必须
 url = jdbc:mysql://${host}:${port}?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useServerPrepStmts=true
+#数据库名字（分钟）
+DB_nm = bz_test_nm
+#数据库名字（天）
+DB_day = bz_test_day
 [API]
-#获取API次数
-TotalTimes = 3
+#获取API次数，当值小于0时，代表程序一直运行
+TotalTimes = -1
 #本地JSON路径，用于初始化数据库表
 path=somedata/Bazzar.json
+#每次请求时间间隔(单位:秒)
+API_Time = 60
+[Bazzar]
+#日统计阈值(分钟)
+statistics_day = 1440
+#周统计阈值(日)
+statistics_week = 7
+#月统计阈值(日)
+statistics_month = 30
