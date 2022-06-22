@@ -13,17 +13,23 @@ url = jdbc:mysql://${host}:${port}?useSSL=false&allowPublicKeyRetrieval=true&ser
 DB_nm = bz_test_nm
 #数据库名字（天）
 DB_day = bz_test_day
+#数据库名字（周）
+DB_week = bz_test_week
+#数据库名字（月）
+DB_month = bz_test_month
 [API]
 #获取API次数，当值小于0时，代表程序一直运行
 TotalTimes = -1
 #本地JSON路径，用于初始化数据库表
 path=somedata/Bazzar.json
-#每次请求时间间隔(单位:秒)
+#每次请求时间间隔(单位:秒) 默认为60
 API_Time = 60
+#请求时，超时重连间隔(单位:秒) 默认为5
+reConnectTime = 10
 [Bazzar]
-#日统计阈值(分钟)
+#日统计阈值(分钟) 默认为1440
 statistics_day = 1440
-#周统计阈值(日)
+#周统计阈值(日) 默认为7
 statistics_week = 7
-#月统计阈值(日)
+#月统计阈值(日) 默认为30
 statistics_month = 30

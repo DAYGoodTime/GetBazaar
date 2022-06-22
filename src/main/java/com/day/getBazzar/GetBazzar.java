@@ -70,10 +70,29 @@ public class GetBazzar {
     }
 
     /**
+     * 从Hpyixel skyblock api当中获取Bazzar的数据，并将数据作为JSON对象返回
+     * @return fastjson的JSONObject：Bazzar的全部数据
+     * @param flag 是否输出提示消息
+     */
+    public static JSONObject getBazzarJSON(boolean flag) {
+        //接受输入
+        if(flag){
+            System.out.println("正在接受API数据:");
+        }
+        String jsonString = ConnectAPI().toString();
+        JSONObject json = JSONObject.parseObject(jsonString);
+        if (flag){
+            System.out.println("获取完成");
+        }
+        return json;
+        //return createFile.createJsonFile(json,"E:\\modding\\SmallProject\\GetBazzar\\Bazzar.json");
+    }
+
+    /**
      * 内部方法,使用递归方法进行重连
      * @return 链接成功后返回JSON字符串
      */
-    private static StringBuilder ConnectAPI(){
+    private static StringBuilder ConnectAPI()  {
         StringBuilder stringBuilder = null;
         try{
             stringBuilder = new StringBuilder(HttpUtil.get(SB_BAZZAR_API));
@@ -81,6 +100,12 @@ public class GetBazzar {
             if(reConnectCount == maxReConnectCount){
                 e.printStackTrace();
             }else {
+                System.out.println("连接失败,"+reConnectTime+"秒后尝试重连");
+                try {
+                    Thread.sleep(reConnectTime*1000L);
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
                 reConnectCount++;
                 return ConnectAPI();
             }
