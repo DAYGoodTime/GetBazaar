@@ -148,9 +148,9 @@ public class BazzarData {
         if (id_row_nm == statistics_day + 1) {
             KeepUpdateBzData_day(SB_BAZZAR_JSON_FULL, DB_DAY);
             id_row_nm = 1;
-        } else if (id_row_day+1 % statistics_week == 0) {
+        } else if (id_row_day % (statistics_week +1) == 0) {
             KeepUpdateBzData_day(SB_BAZZAR_JSON_FULL, DB_WK);
-        } else if (id_row_day+1 % statistics_month == 0) {
+        } else if (id_row_day % (statistics_month +1) == 0) {
             KeepUpdateBzData_day(SB_BAZZAR_JSON_FULL, DB_MO);
         } else {
             Connection conn = InitializationAndConnection(false);
@@ -174,7 +174,6 @@ public class BazzarData {
                 }
                 //因为窒息的防SQL注入，预编译的sql对符号的改动特别蛋疼，所以这里只能修改物品id以此兼容
                 products_name = CheckIfSpecialItem(products_name);
-
                 Object buyPrice = products_quick_status.get("buyPrice");
                 Object sellPrice = products_quick_status.get("sellPrice");
                 Object sellVolume = products_quick_status.get("sellVolume");
@@ -256,9 +255,9 @@ public class BazzarData {
                     throw new Exception("dataList is empty");
                 }
                 String sql2 = "INSERT INTO " + products_name + "(" +
-                        "buyPriceAvgs,sellPriceAvgs,sellVolumeAvgs," +
-                        "buyVolumeAvgs,timeStamp,LowestBuyOderPriceAvgs," +
-                        "HighestSellOderPriceAvgs,MinBuyOrderPrice,MaxSellOrderPrice)" +
+                        "buyPriceAvg,sellPriceAvg,sellVolumeAvg," +
+                        "buyVolumeAvg,timeStamp,LowestBuyOderPriceAvg," +
+                        "HighestSellOderPriceAvg,MinBuyOrderPrice,MaxSellOrderPrice)" +
                         "VALUES( ?,?,?,?,?,?,?,?,?)";
                 pstmt = conn.prepareStatement(sql2);
                 //对sql操作进行事务管理，一旦出错进行回滚

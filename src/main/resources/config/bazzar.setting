@@ -1,4 +1,5 @@
 [mysql]
+#注意:2.0版本之后都需要使用root用户连接，否则无法连接多个数据库
 #数据库主机地址
 host = localhost
 #用户名，必须
@@ -10,13 +11,13 @@ port = 3306
 #JDBC url，必须
 url = jdbc:mysql://${host}:${port}?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useServerPrepStmts=true
 #数据库名字（分钟）
-DB_nm = bz_test_nm
+DB_nm = bz_nm
 #数据库名字（天）
-DB_day = bz_test_day
+DB_day = bz_day
 #数据库名字（周）
-DB_week = bz_test_week
+DB_week = bz_week
 #数据库名字（月）
-DB_month = bz_test_month
+DB_month = bz_month
 [API]
 #获取API次数，当值小于0时，代表程序一直运行
 TotalTimes = -1
