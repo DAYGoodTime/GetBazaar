@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import cn.hutool.core.io.IORuntimeException;
 import cn.hutool.http.HttpUtil;
 import com.alibaba.fastjson.*;
 
@@ -96,8 +97,9 @@ public class GetBazzar {
         StringBuilder stringBuilder = null;
         try{
             stringBuilder = new StringBuilder(HttpUtil.get(SB_BAZZAR_API));
-        } catch (Exception e){
+        } catch (Throwable e){
             if(reConnectCount == maxReConnectCount){
+                System.out.println("重连达到最大次数");
                 e.printStackTrace();
             }else {
                 System.out.println("连接失败,"+reConnectTime+"秒后尝试重连");
