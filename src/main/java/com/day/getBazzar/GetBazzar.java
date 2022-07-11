@@ -1,11 +1,8 @@
 package com.day.getBazzar;
 
-import java.io.*;
-import java.sql.SQLException;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import cn.hutool.core.io.IORuntimeException;
 import cn.hutool.http.HttpUtil;
 import com.alibaba.fastjson.*;
 
@@ -27,16 +24,17 @@ public class GetBazzar {
     static class continuedGet extends TimerTask{
         @Override
         public void run() {
-            System.out.println("-------第"+(times+1)+"次获取-------");
-            JSONObject SB_BAZZAR_JSON = getBazzarJSON();
-            System.out.println("JSONAPIGet返回值:"+SB_BAZZAR_JSON.get("success"));
-            System.out.println("JSON更新时间:"+ToolClass.timestampToDate((Long) SB_BAZZAR_JSON.get("lastUpdated")));
             try {
+                System.out.println("-------第"+(times+1)+"次获取-------");
+                JSONObject SB_BAZZAR_JSON = getBazzarJSON(false);
+                System.out.print(" JSON更新时间:"+ToolClass.timestampToDate((Long) SB_BAZZAR_JSON.get("lastUpdated")));
+                System.out.print(" times:"+times+" id_row_nm:"+BazzarData.id_row_nm+" id_row_day:"+BazzarData.id_row_day);
                 BazzarData.KeepUpdateBazzarData_quick(SB_BAZZAR_JSON);
-            } catch (Exception e) {
+            } catch (Throwable e) {
+                System.out.println("times:"+times);
+                System.out.println("id_row_nm:"+BazzarData.id_row_nm);
                 e.printStackTrace();
             }
-            System.out.println("--------完成数据导入----------");
             if(times == TotalTimes-1){
                 cancel();
             } else
@@ -45,15 +43,17 @@ public class GetBazzar {
     }
 
     //拟运行主类
-    public static void main(String[] args) throws IOException, SQLException {
+    public static void main(String[] args) {
         //读入参数，这里创建对象是因为静态方法会导致线程一直运行
         GlobalVar gv = new GlobalVar();
         gv.readConfig();
+        //这里用于输入上次运行的状态
+            times = 3788;
+            BazzarData.id_row_nm = 905;
         BazzarData.InitializedDBandTable();
         Timer timer = new Timer();
         timer.schedule(new continuedGet(), 100, API_Time * 1000L);  //0.1秒后执行，并且每隔1分钟重复执行
         //这里不是循环结束后运行的代码，循环任务会分开成一个子线程运行。
-
     }
 
     /**
@@ -100,6 +100,7 @@ public class GetBazzar {
         } catch (Throwable e){
             if(reConnectCount == maxReConnectCount){
                 System.out.println("重连达到最大次数");
+                System.out.println("rec:"+reConnectCount + "mRe:"+maxReConnectCount);
                 e.printStackTrace();
             }else {
                 System.out.println("连接失败,"+reConnectTime+"秒后尝试重连");
@@ -112,6 +113,7 @@ public class GetBazzar {
                 return ConnectAPI();
             }
         }
+        reConnectCount = 1;
         return stringBuilder;
     }
 }

@@ -389,8 +389,8 @@ public class BazzarData {
                 sellVolumes.add(rs.getInt("sellVolumeAvg"));
                 lBuyOrderPrices.add((float) rs.getDouble("LowestBuyOderPriceAvg"));
                 hSellOrderPrices.add((float) rs.getDouble("HighestSellOderPriceAvg"));
-                minBuyOrderPrices.add((float) rs.getDouble("MinBuyOderPriceAvg"));
-                maxSellOrderPrices.add((float) rs.getDouble("MaxSellOderPriceAvg"));
+                minBuyOrderPrices.add((float) rs.getDouble("MinBuyOderPrice"));
+                maxSellOrderPrices.add((float) rs.getDouble("MaxSellOderPrice"));
             }
             OptionalDouble od_BuyPrices = buyPrices.stream().mapToDouble(num -> num).average();
             OptionalDouble od_SellPrices = sellPrices.stream().mapToDouble(num -> num).average();

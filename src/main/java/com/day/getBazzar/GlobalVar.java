@@ -11,10 +11,10 @@ public class GlobalVar {
     static String PASSWORD;
     static String LOCAL_JSON_PATH;
     static String DB_URL;
-    static String DB_NM;
-    static String DB_DAY;
-    static String DB_WK;
-    static String DB_MO;
+    public static String DB_NM;
+    public static String DB_DAY;
+    public static String DB_WK;
+    public static String DB_MO;
     static int TotalTimes;
     static int API_Time;
     static int reConnectTime;
