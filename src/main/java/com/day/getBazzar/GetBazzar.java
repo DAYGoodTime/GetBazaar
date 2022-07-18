@@ -4,6 +4,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import cn.hutool.http.HttpUtil;
+import cn.hutool.log.*;
 import com.alibaba.fastjson.*;
 
 import static com.day.getBazzar.GlobalVar.*;
@@ -17,7 +18,7 @@ public class GetBazzar {
     //连接API进行重连次数
     static int  reConnectCount = 1;
     static int maxReConnectCount = 10;
-
+    private static final Log log = LogFactory.get();
     /**
      * 用于反复执行更新数据操作的timerTask
      */
@@ -25,14 +26,13 @@ public class GetBazzar {
         @Override
         public void run() {
             try {
-                System.out.println("-------第"+(times+1)+"次获取-------");
-                JSONObject SB_BAZZAR_JSON = getBazzarJSON(false);
-                System.out.print(" JSON更新时间:"+ToolClass.timestampToDate((Long) SB_BAZZAR_JSON.get("lastUpdated")));
-                System.out.print(" times:"+times+" id_row_nm:"+BazzarData.id_row_nm+" id_row_day:"+BazzarData.id_row_day);
+                JSONObject SB_BAZZAR_JSON = getBazzarJSON();
+                log.info("第{}次获取 API时间:{} id_row_day={} id_row_nm={} times={}",
+                        (times+1),ToolClass.timestampToDate((Long) SB_BAZZAR_JSON.get("lastUpdated")),
+                        BazzarData.id_row_day,BazzarData.id_row_nm,times);
                 BazzarData.KeepUpdateBazzarData_quick(SB_BAZZAR_JSON);
             } catch (Throwable e) {
-                System.out.println("times:"+times);
-                System.out.println("id_row_nm:"+BazzarData.id_row_nm);
+                log.error("A {} Exception",e);
                 e.printStackTrace();
             }
             if(times == TotalTimes-1){
@@ -48,9 +48,15 @@ public class GetBazzar {
         GlobalVar gv = new GlobalVar();
         gv.readConfig();
         //这里用于输入上次运行的状态
-            times = 3788;
-            BazzarData.id_row_nm = 905;
-        BazzarData.InitializedDBandTable();
+        if(args.length == 2){
+            times = Integer.parseInt(args[0]);
+            BazzarData.id_row_nm = Integer.parseInt(args[1]);
+        }
+        if(args.length == 3){
+            if(args[2].equalsIgnoreCase("Y")){
+                BazzarData.InitializedDBandTable();
+            }
+        }
         Timer timer = new Timer();
         timer.schedule(new continuedGet(), 100, API_Time * 1000L);  //0.1秒后执行，并且每隔1分钟重复执行
         //这里不是循环结束后运行的代码，循环任务会分开成一个子线程运行。
@@ -62,28 +68,10 @@ public class GetBazzar {
      */
     public static JSONObject getBazzarJSON() {
         //接受输入
-        System.out.println("正在接受API数据:");
         String jsonString = ConnectAPI().toString();
         JSONObject json = JSONObject.parseObject(jsonString);
-        System.out.println("获取完成");
-        return json;
-        //return createFile.createJsonFile(json,"E:\\modding\\SmallProject\\GetBazzar\\Bazzar.json");
-    }
-
-    /**
-     * 从Hpyixel skyblock api当中获取Bazzar的数据，并将数据作为JSON对象返回
-     * @return fastjson的JSONObject：Bazzar的全部数据
-     * @param flag 是否输出提示消息
-     */
-    public static JSONObject getBazzarJSON(boolean flag) {
-        //接受输入
-        if(flag){
-            System.out.println("正在接受API数据:");
-        }
-        String jsonString = ConnectAPI().toString();
-        JSONObject json = JSONObject.parseObject(jsonString);
-        if (flag){
-            System.out.println("获取完成");
+        if(json==null){
+            log.error("API数据为空!");
         }
         return json;
         //return createFile.createJsonFile(json,"E:\\modding\\SmallProject\\GetBazzar\\Bazzar.json");
@@ -100,10 +88,9 @@ public class GetBazzar {
         } catch (Throwable e){
             if(reConnectCount == maxReConnectCount){
                 System.out.println("重连达到最大次数");
-                System.out.println("rec:"+reConnectCount + "mRe:"+maxReConnectCount);
-                e.printStackTrace();
+                log.error("重连达到最大次数! \n {}",e);
             }else {
-                System.out.println("连接失败,"+reConnectTime+"秒后尝试重连");
+                log.warn("连接失败,{}秒开始重连,重连次数:{}",reConnectTime,reConnectCount);
                 try {
                     Thread.sleep(reConnectTime*1000L);
                 } catch (InterruptedException ex) {

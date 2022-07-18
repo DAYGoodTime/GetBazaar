@@ -2,6 +2,8 @@ package com.day.getBazzar;
 
 import static com.day.getBazzar.GlobalVar.*;
 
+import cn.hutool.log.Log;
+import cn.hutool.log.LogFactory;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
@@ -19,6 +21,7 @@ public class BazzarData {
 
     static int id_row_nm = 1;
     static int id_row_day = 1;
+    private static final Log log = LogFactory.get();
 
     /**
      * 初始化数据库链接操作，并将返回的Connection变量返回回去
@@ -49,7 +52,7 @@ public class BazzarData {
      * @return 是否初始化成功
      */
     public static boolean InitializedDBandTable() {
-        System.out.println("正在初始化数据库:" + DB_NM);
+        log.info("正在初始化数据库:{}",DB_NM);
         try (Connection conn = InitializationAndConnection(true); Statement statement = conn.createStatement()) {
             //创建数据库
             statement.execute("CREATE DATABASE if not exists " + DB_NM);
@@ -59,8 +62,8 @@ public class BazzarData {
             //若本地读取为空，则自动向API读取.
             JSONObject SB_BAZZAR_JSON_FULL_LOCAL;
             if (ToolClass.LoadLocalJSON(LOCAL_JSON_PATH) == null) {
-                System.out.println("检测到本地文件不存在，正在向API获取数据");
-                SB_BAZZAR_JSON_FULL_LOCAL = GetBazzar.getBazzarJSON(false);
+                log.warn("检测到本地文件不存在，正在向API获取数据");
+                SB_BAZZAR_JSON_FULL_LOCAL = GetBazzar.getBazzarJSON();
             } else {
                 SB_BAZZAR_JSON_FULL_LOCAL = ToolClass.LoadLocalJSON(LOCAL_JSON_PATH);
             }
@@ -102,7 +105,7 @@ public class BazzarData {
      * @return 是否初始化成功
      */
     public static boolean InitializedDBandTable_statistics(String DB_name) {
-        System.out.println("正在初始化数据库:" + DB_name);
+        log.info("正在初始化数据库:{}",DB_name);
         try (Connection conn = InitializationAndConnection(false); Statement statement = conn.createStatement()) {
             //创建数据库
             statement.execute("CREATE DATABASE if not exists " + DB_name);
@@ -110,7 +113,7 @@ public class BazzarData {
             statement.execute("USE " + DB_name);
             //这里使用本地旧数据进行初始化数据库，无需向API再申请一次JSON
             //若本地读取为空，则自动向API读取.
-            JSONObject SB_BAZZAR_JSON_FULL_LOCAL = GetBazzar.getBazzarJSON(false);
+            JSONObject SB_BAZZAR_JSON_FULL_LOCAL = GetBazzar.getBazzarJSON();
             JSONObject SB_BAZZAR_JSON_PRODUCTS = JSONObject.parseObject(String.valueOf(SB_BAZZAR_JSON_FULL_LOCAL.get("products")));
             Set<String> products_list = SB_BAZZAR_JSON_PRODUCTS.keySet();
             for (String products_name : products_list) {
@@ -252,6 +255,7 @@ public class BazzarData {
                     dataList = statisticsData_day(products_name, DB_NAME);
                 }
                 if (dataList == null) {
+                    log.error("数据列表为空");
                     throw new Exception("dataList is empty");
                 }
                 String sql2 = "INSERT INTO " + products_name + "(" +
