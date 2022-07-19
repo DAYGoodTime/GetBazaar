@@ -1,5 +1,6 @@
 package com.day.getBazzar;
 
+import java.sql.SQLException;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -27,12 +28,12 @@ public class GetBazzar {
         public void run() {
             try {
                 JSONObject SB_BAZZAR_JSON = getBazzarJSON();
-                log.info("第{}次获取 API时间:{} id_row_day={} id_row_nm={} times={}",
+                log.info("第{}次获取 [API时间:{}] [id_row_day={}] [id_row_nm={}] [times={}]",
                         (times+1),ToolClass.timestampToDate((Long) SB_BAZZAR_JSON.get("lastUpdated")),
                         BazzarData.id_row_day,BazzarData.id_row_nm,times);
                 BazzarData.KeepUpdateBazzarData_quick(SB_BAZZAR_JSON);
             } catch (Throwable e) {
-                log.error("A {} Exception",e);
+                log.error("循环运行失败",e);
                 e.printStackTrace();
             }
             if(times == TotalTimes-1){
@@ -47,14 +48,29 @@ public class GetBazzar {
         //读入参数，这里创建对象是因为静态方法会导致线程一直运行
         GlobalVar gv = new GlobalVar();
         gv.readConfig();
+        log.debug("参数情况:[TotalTimes="+TotalTimes+"] [API_Time="+API_Time+"] [reConnectTime="+reConnectTime+"] \n" +
+                "[statistics_day="+statistics_day+"] [statistics_week="+statistics_week+"] [statistics_month="+statistics_month+"]");
         //这里用于输入上次运行的状态
-        if(args.length == 2){
+        if(args.length == 3){
             times = Integer.parseInt(args[0]);
             BazzarData.id_row_nm = Integer.parseInt(args[1]);
+            BazzarData.id_row_day = Integer.parseInt(args[2]);
         }
-        if(args.length == 3){
-            if(args[2].equalsIgnoreCase("Y")){
-                BazzarData.InitializedDBandTable();
+        if(args.length == 1){
+            if(args[0].equalsIgnoreCase("Y")){
+                if(!BazzarData.InitializedDBandTable()){
+                    System.exit(-1);
+                }
+            }
+        }
+        if(args.length == 4){
+            times = Integer.parseInt(args[0]);
+            BazzarData.id_row_nm = Integer.parseInt(args[1]);
+            BazzarData.id_row_day = Integer.parseInt(args[2]);
+            if(args[3].equalsIgnoreCase("Y")){
+                if(!BazzarData.InitializedDBandTable()){
+                    System.exit(-1);
+                }
             }
         }
         Timer timer = new Timer();

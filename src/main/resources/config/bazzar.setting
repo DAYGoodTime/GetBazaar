@@ -1,36 +1,44 @@
-[mysql]
-#注意:2.0版本之后都需要使用root用户连接，否则无法连接多个数据库
-#数据库主机地址
-host = localhost
-#用户名，必须
-user = root
-#密码，必须，如果密码为空，请填写 pass =
-pass = kel123
-#数据库端口
-port = 3306
-#JDBC url，必须
-url = jdbc:mysql://${host}:${port}?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useServerPrepStmts=true
-#数据库名字（分钟）
-DB_nm = bz_nm
-#数据库名字（天）
-DB_day = bz_day
-#数据库名字（周）
-DB_week = bz_week
-#数据库名字（月）
-DB_month = bz_month
+[DataBase]
+#数据库名字
+DB_name = bazzar
+#表名字（分钟）
+TB_nm = bz_nm
+#表名字（天）
+TB_day = bz_day
+#表名字（周）
+TB_week = bz_week
+#表名字（月）
+TB_month = bz_month
 [API]
 #获取API次数，当值小于0时，代表程序一直运行
 TotalTimes = -1
 #本地JSON路径，用于初始化数据库表
-path=somedata/Bazzar.json
+path=/somedata/Bazzar.json
 #每次请求时间间隔(单位:秒) 默认为60
 API_Time = 60
 #请求时，超时重连间隔(单位:秒) 默认为5
 reConnectTime = 10
-[Bazzar]
 #日统计阈值(分钟) 默认为1440
 statistics_day = 1440
 #周统计阈值(日) 默认为7
 statistics_week = 7
 #月统计阈值(日) 默认为30
 statistics_month = 30
+## db.setting文件
+[mysql]
+host = localhost
+user = root
+pass = kel123
+port = 3306
+#数据库名字
+DB_name = bazzar
+url = jdbc:mysql://${host}:${port}/${DB_name}?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+## 可选配置
+# 是否在日志中显示执行的SQL
+showSql = false
+# 是否格式化显示的SQL
+formatSql = false
+# 是否显示SQL参数
+showParams = true
+# 打印SQL的日志等级，默认debug，可以是info、warn、error
+sqlLevel = debug
