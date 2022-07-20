@@ -50,10 +50,10 @@ public class BazzarData {
                         "    `timeStamp`      BIGINT     NOT NULL ,\n" +
                         "    `LowestBuyOderPrice`       DOUBLE(25, 6) DEFAULT 0 ,\n" +
                         "    `HighestSellOderPrice`      DOUBLE(25, 6) DEFAULT 0,\n" +
-                        "     uniqueId int auto_increment not null,\n" +
                         "     id int not null,\n" +
-                        "     INDEX (products_name(255))  ,\n" +
-                        "     primary key (uniqueId)\n" +
+                        "     INDEX (products_name asc, id desc)  ,\n" +
+                        "     INDEX (id desc)  ,\n" +
+                        "     INDEX (timeStamp desc)\n" +
                         ")";
                 Db.use(bazzar_ds).execute(sql);
         } catch (SQLException e) {
@@ -85,7 +85,9 @@ public class BazzarData {
                         "    `HighestSellOderPriceAvg`         DOUBLE(25, 6) ,\n" +
                         "    `MinBuyOrderPrice`       INT      DEFAULT 0,\n" +
                         "    `MaxSellOrderPrice`      INT      DEFAULT 0,\n" +
-                        "     INDEX (products_name(255))  ,\n" +
+                        "     INDEX (products_name asc, id desc)  ,\n" +
+                        "     INDEX (id desc)  ,\n" +
+                        "     INDEX (timeStamp desc)  ,\n" +
                         "     uniqueId int auto_increment not null,\n" +
                         "     id int not null,\n" +
                         "     primary key (uniqueId)\n" +
@@ -104,14 +106,6 @@ public class BazzarData {
     public static void KeepUpdateBazzarData_quick(JSONObject SB_BAZZAR_JSON_FULL) {
         //若数据满足阈值，则开始添加数据到统计表格中
         try{
-            if (id_row_nm == statistics_day + 1) {
-                KeepUpdateBzData_day(SB_BAZZAR_JSON_FULL, TB_DAY);
-                id_row_nm = 1;
-            } else if (id_row_day % (statistics_week +1) == 0) {
-                KeepUpdateBzData_day(SB_BAZZAR_JSON_FULL, TB_WK);
-            } else if (id_row_day % (statistics_month +1) == 0) {
-                KeepUpdateBzData_day(SB_BAZZAR_JSON_FULL, TB_MO);
-            } else {
                 JSONObject SB_BAZZAR_JSON_PRODUCTS = JSONObject.parseObject(String.valueOf(SB_BAZZAR_JSON_FULL.get("products")));
                 Set<String> products_list = SB_BAZZAR_JSON_PRODUCTS.keySet();
                 for (String products_name : products_list) {
@@ -147,10 +141,10 @@ public class BazzarData {
                                 .set("buyOrders",buyOrders).set("timeStamp",timeStamp).set("LowestBuyOderPrice",LowestBuyOderPrice).set("HighestSellOderPrice",HighestSellOderPrice)
                                 .set("id",id_row_nm);
                         //当插入次数大于1440次(即一天后)开始对表格数据进行更新操作,减少数据堆积操作
-                        if (GetBazzar.times >= 1441) {
+                        if (GetBazzar.times >= statistics_day+1) {
                             session.update(
                                     entity,
-                                    Entity.create().set("id",id_row_nm)
+                                    Entity.create(TB_NM).set("products_name",products_name).set("id",id_row_nm)
                             );
                         } else {
                             session.insert(
@@ -159,12 +153,19 @@ public class BazzarData {
                         }
                         session.commit();
                     } catch (SQLException e) {
-                        log.error("API数据输入异常，数据已回滚");
+                        log.error("API数据输入异常，数据已回滚",e);
                         session.quietRollback();
                     }
                 }
-                id_row_nm++;
+            if (id_row_nm == statistics_day + 1) {
+                KeepUpdateBzData_day(SB_BAZZAR_JSON_FULL, TB_DAY);
+                id_row_nm = 0;
+            } else if (id_row_day % (statistics_week +1) == 0) {
+                KeepUpdateBzData_day(SB_BAZZAR_JSON_FULL, TB_WK);
+            } else if (id_row_day % (statistics_month +1) == 0) {
+                KeepUpdateBzData_day(SB_BAZZAR_JSON_FULL, TB_MO);
             }
+                id_row_nm++;
         } catch (SQLException e){
             log.error("数据库统计错误{}",e);
         }
