@@ -85,6 +85,10 @@ public class GetBazzar {
     public static JSONObject getBazzarJSON() {
         //接受输入
         String jsonString = ConnectAPI().toString();
+        while (!JSONValidator.from(jsonString).validate()){
+            log.warn("JSON字符串数据有误，正在尝试重新获取");
+            jsonString = ConnectAPI().toString();
+        }
         JSONObject json = JSONObject.parseObject(jsonString);
         if(json==null){
             log.error("API数据为空!");
