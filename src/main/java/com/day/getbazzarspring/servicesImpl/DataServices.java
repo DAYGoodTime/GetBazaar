@@ -5,7 +5,6 @@ import cn.hutool.json.JSONObject;
 import cn.hutool.log.Log;
 import cn.hutool.log.LogFactory;
 import com.day.getbazzarspring.dao.ProductDAYMapper;
-import com.day.getbazzarspring.dao.RedisDao;
 import com.day.getbazzarspring.dto.FullProduct;
 import com.day.getbazzarspring.pojo.ProductDAY;
 import com.day.getbazzarspring.pojo.ProductNM;
@@ -15,22 +14,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.*;
-import java.util.concurrent.TimeUnit;
 
 @Service
 public class DataServices {
     public static final boolean isDEV = false;
     private static final Log log = LogFactory.get();
 
+    @Resource(name = "NormalRedisTemplate")
+    RedisTemplate<String, Object> redisTemplate;
+
     private static final int DAYCount = 1440;
     @Autowired
     SQLServices sqlServices;
-    @Autowired
-    RedisTemplate<String, Object> redisTemplate;
-    @Autowired
-    RedisDao redisDao;
+    private Long lastTime;
     @Autowired
     ProductDAYMapper productDAYMapper;
 
@@ -52,7 +51,13 @@ public class DataServices {
         if (fullJSON == null || fullJSON.isEmpty()) {
             return;
         }
+
         Long timestamp = fullJSON.getLong("lastUpdated");
+        if (lastTime != null && lastTime.equals(timestamp)) {
+            return;
+        } else {
+            lastTime = timestamp;
+        }
         Long times = redisTemplate.opsForList().size("product_nm");
         if (times == null) {
             times = 1L;
@@ -73,8 +78,9 @@ public class DataServices {
                 }
                 FullProduct fullProduct = products.get(product_name, FullProduct.class);
                 QuickState quickState = QuickState.build(fullProduct, timestamp);
+                if (Boolean.TRUE.equals(redisTemplate.hasKey("quickState:" + product_name)))
+                    redisTemplate.opsForList().rightPop("quickState:" + product_name);
                 redisTemplate.opsForList().leftPush("quickState:" + product_name, BeanUtil.beanToMap(quickState));
-                redisTemplate.expire("quickState:" + product_name, 1L, TimeUnit.MINUTES);
                 redisTemplate.opsForList().leftPush("product_nm:" + product_name, BeanUtil.beanToMap(ProductNM.build(quickState)));
             } catch (Throwable t) {
                 log.error("{}物品发生异常{}", product_name, t.getMessage());

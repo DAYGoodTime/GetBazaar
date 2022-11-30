@@ -8,7 +8,6 @@ import cn.hutool.json.JSONUtil;
 import cn.hutool.log.Log;
 import cn.hutool.log.LogFactory;
 import com.day.getbazzarspring.config.BazzarConfig;
-import com.day.getbazzarspring.dao.RedisDao;
 import com.day.getbazzarspring.pojo.ProductDAY;
 import com.day.getbazzarspring.pojo.ProductNM;
 import com.day.getbazzarspring.servicesImpl.APIServices;
@@ -21,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
 
+import javax.annotation.Resource;
 import java.io.File;
 import java.math.BigDecimal;
 import java.nio.charset.StandardCharsets;
@@ -34,10 +34,12 @@ class GetBazzarSpringApplicationTests {
     private static final Log log = LogFactory.get();
     @Autowired
     APIServices apiServices;
-    @Autowired
+    @Resource(name = "NormalRedisTemplate")
     RedisTemplate<String, Object> redisTemplate;
-    @Autowired
-    RedisDao redisDao;
+
+    @Resource(name = "StringRedisTemplate")
+    RedisTemplate<String, String> stringRedisTemplate;
+
     @Autowired
     BazzarConfig bzcfg;
 
@@ -70,9 +72,17 @@ class GetBazzarSpringApplicationTests {
 //        JSONObject products = offlineJSON.getJSONObject("products");
 //        Set<String> names = products.keySet();
 //        for (String name : names) {
-//            redisTemplate.opsForList().range()
+//            redisTemplate.opsForValue().set("name:"+formatItemName(name),name);
 //        }
-        System.out.println(redisTemplate.opsForList().range("RAW_FISH:1", 0, -1));
+        String s = stringRedisTemplate.opsForValue().get("name:ABSOLUTE_ENDER_PEARL");
+        System.out.println(s);
+    }
+
+    @Test
+    void get() {
+        List<Object> range = redisTemplate.opsForList().range("quickState:ABSOLUTE_ENDER_PEARL", 0, 0);
+        Object o = range.get(0);
+        System.out.println(o);
     }
 
     @Test
