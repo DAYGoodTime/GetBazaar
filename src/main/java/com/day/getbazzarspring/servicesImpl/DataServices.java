@@ -51,7 +51,6 @@ public class DataServices {
         if (fullJSON == null || fullJSON.isEmpty()) {
             return;
         }
-
         Long timestamp = fullJSON.getLong("lastUpdated");
         if (lastTime != null && lastTime.equals(timestamp)) {
             return;
@@ -64,9 +63,13 @@ public class DataServices {
         }
         JSONObject products = fullJSON.getJSONObject("products");
         Set<String> products_name = products.keySet();
+
         if (times % DAYCount == 0 && times != 0) {
             log.info("执行日统计操作");
             statisticsData_DAY(products_name);
+        }
+        if (Boolean.FALSE.equals(redisTemplate.hasKey("name:" + "ABSOLUTE_ENDER_PEARL"))) {
+            initName(products_name);
         }
         for (String product_name : products_name) {
             if (isDEV) {
@@ -195,6 +198,12 @@ public class DataServices {
             } catch (Throwable t) {
                 log.error("统计{}物品出错:{}", name, t.getMessage());
             }
+        }
+    }
+
+    private void initName(Set<String> products_name) {
+        for (String name : products_name) {
+            redisTemplate.opsForValue().set("name:" + formatItemName(name), name);
         }
     }
 }

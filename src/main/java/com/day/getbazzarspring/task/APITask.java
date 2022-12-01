@@ -36,10 +36,13 @@ public class APITask implements Callable<Void> {
             log.warn("连接失败:{},{}秒开始重连", e.getMessage(), bzcfg.reConnectTime);
             try {
                 Thread.sleep(bzcfg.reConnectTime * 1000L);
+                if (!BazzarConfig.Keep) {
+                    return null;
+                }
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             }
-            return ConnectAPI();
+            return null;
         }
         return stringBuilder;
     }
@@ -49,20 +52,20 @@ public class APITask implements Callable<Void> {
      *
      * @return hutool的JSONObject：BazzarAPI获得的全部数据
      */
-    public JSONObject getJSON() throws InterruptedException {
+    public JSONObject getJSON() {
         //接受输入
         StringBuilder jsonString = ConnectAPI();
-        while (jsonString == null) {
-            log.warn("获取数据失败,{}秒后重新获取", bzcfg.reConnectTime);
-            Thread.sleep(bzcfg.reConnectTime * 1000L);
+        while (jsonString == null && BazzarConfig.Keep) {
+            log.warn("获取数据失败,重新获取");
             jsonString = ConnectAPI();
         }
+        if (!BazzarConfig.Keep) return null;
         return JSONUtil.parseObj(jsonString.toString());
         //return createFile.createJsonFile(json,"E:\\modding\\SmallProject\\GetBazzar\\Bazzar.json");
     }
 
     @Override
-    public Void call() throws Exception {
+    public Void call() {
         dataServices.processJSON(getJSON());
         return null;
     }

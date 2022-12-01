@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
@@ -27,7 +28,7 @@ public class APIServices {
     private ExecutorService executorService = Executors.newFixedThreadPool(1);
 
     //@Scheduled(cron = "0 * * * * ? ")
-    public void TimeTask() {
+    public void TimeTask() throws ExecutionException, InterruptedException {
         log.info("第{}次获取API数据", times++);
         if (task == null) {
             task = executorService.submit(new APITask(bzcfg, dataServices));
@@ -35,11 +36,10 @@ public class APIServices {
         }
         if (!task.isDone()) {
             log.warn("获取数据超时,重新获取");
-            try {
-                task.cancel(true);
-            } catch (Exception ignored) {
-            }
+            BazzarConfig.Keep = false;
         }
+        task.get();
+        BazzarConfig.Keep = true;
         task = executorService.submit(new APITask(bzcfg, dataServices));
     }
 }

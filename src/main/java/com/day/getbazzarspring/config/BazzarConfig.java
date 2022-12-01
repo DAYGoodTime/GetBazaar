@@ -9,4 +9,6 @@ public class BazzarConfig {
 
     public int reConnectTime = 10;
 
+    public static boolean Keep = true;
+
 }

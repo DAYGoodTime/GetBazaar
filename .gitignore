@@ -38,3 +38,7 @@ out/
 
 ### custom profile ###
 !src/main/resources/application-server.properties
+##page
+/page/
+##demo
+/demo/
