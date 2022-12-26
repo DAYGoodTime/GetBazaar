@@ -57,7 +57,7 @@ public class DataServices {
         } else {
             lastTime = timestamp;
         }
-        Long times = redisTemplate.opsForList().size("product_nm");
+        Long times = redisTemplate.opsForList().size("product_nm:" + "INK_SACK:3");
         if (times == null) {
             times = 1L;
         }
