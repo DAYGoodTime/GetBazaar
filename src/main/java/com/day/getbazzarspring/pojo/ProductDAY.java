@@ -14,7 +14,8 @@ import java.math.BigDecimal;
 
 @TableName("product_day")
 public class ProductDAY {
-    @TableId("product_id")
+    @TableId("uni_id")
+    private String uniId;
     private String productId;
     private BigDecimal buyOrderPriceAvg;
     private BigDecimal sellOrderPriceAvg;

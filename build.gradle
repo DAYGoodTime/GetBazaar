@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.day'
-version = '0.2-fix'
+version = '0.2-fix+'
 sourceCompatibility = '1.8'
 
 configurations {

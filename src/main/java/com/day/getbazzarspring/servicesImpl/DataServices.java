@@ -1,6 +1,7 @@
 package com.day.getbazzarspring.servicesImpl;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.lang.id.NanoId;
 import cn.hutool.json.JSONObject;
 import cn.hutool.log.Log;
 import cn.hutool.log.LogFactory;
@@ -41,7 +42,7 @@ public class DataServices {
      * @param products_name 可能存在特殊字符的物品name
      * @return 返回修改后的物品name
      */
-    private static String formatItemName(String products_name) {
+    public static String formatItemName(String products_name) {
         if (products_name.contains(":")) {
             return products_name.replace(":", "-");
         } else return products_name;
@@ -91,80 +92,6 @@ public class DataServices {
         }
     }
 
-    //被废弃的旧设计
-//    public void processJSON2(JSONObject fullJSON){
-//        if(fullJSON==null||fullJSON.isEmpty()){
-//            return;
-//        }
-//        Long timestamp = fullJSON.getLong("lastUpdated");
-//        Long times = redisTemplate.opsForList().size("product_nm");
-//        if(times==null){
-//            times = 1L;
-//        }
-//        if(times % DAYCount==0&&times!=0){
-//            log.info("执行日统计操作");
-//            statisticsData_DAY();
-//        }
-//        if(times>=DAYCount){
-//            redisTemplate.opsForList().rightPop("product_nm");
-//        }
-//        JSONObject products = fullJSON.getJSONObject("products");
-//        Set<String> products_name = products.keySet();
-//        Map<String,Object> RMap = new HashMap<>(products.size());
-//        for (String product_name:products_name) {
-//            if(isDEV){
-//                log.info("处理中:{}",product_name);
-//            }
-//            FullProduct fullProduct = products.get(product_name,FullProduct.class);
-//            QuickState quickState = JSONUtil.toBean(fullProduct.getQuick_status(), QuickState.class);
-//            JSONObject HOrder = Order.EmptyObj();
-//            JSONObject LOrder = Order.EmptyObj();
-//            if(!fullProduct.getSell_summary().isEmpty()) HOrder =fullProduct.getSell_summary().get(0);
-//            if(!fullProduct.getBuy_summary().isEmpty())  LOrder =fullProduct.getBuy_summary().get(0);
-//            Order HighestSellOderPrice = JSONUtil.toBean(HOrder,Order.class);
-//            Order LowestBuyOderPrice = JSONUtil.toBean(LOrder,Order.class);
-//            ProductNM productNM = ProductNM.build(LowestBuyOderPrice,HighestSellOderPrice,timestamp,quickState);
-//            Map<String,Object> productMap = BeanUtil.beanToMap(productNM);
-//            RMap.put(product_name,productMap);
-//        }
-//        redisTemplate.opsForList().leftPush("product_nm",RMap);
-//    }
-
-//    public void statisticsData_DAY(){
-//        List<Object> bigList =redisTemplate.opsForList().range("product_nm",0,DAYCount);
-//
-//        if(bigList==null||bigList.isEmpty()){
-//            log.error("需要统计的数据列表为空");
-//            return;
-//        }
-//        Map<String,Object> m =(Map<String,Object>) bigList.get(0);
-//        Set<String> name_set = m.keySet();
-//        for (String name:name_set) {
-//            int counts = name_set.size();
-//            List<BigDecimal> LowestBuyOderPriceS = new ArrayList<>(counts);
-//            List<BigDecimal> HighestSellOderPriceS = new ArrayList<>(counts);
-//            List<BigDecimal> buyPriceS = new ArrayList<>(counts);
-//            List<BigDecimal> sellPriceS = new ArrayList<>(counts);
-//            for (Object obj :bigList) {
-//                Map<String,Object> map1 = (Map<String,Object>)obj;
-//                Map<String,Object> product = (Map<String,Object>)map1.get(name);
-//                buyPriceS.add((BigDecimal)product.get("buyPrice"));
-//                break;
-//            }
-//            long time = System.currentTimeMillis();
-//            ProductDAY productDAY = new ProductDAY(formatItemName(name),
-//                    ListUtil.getListAvg(LowestBuyOderPriceS),
-//                    ListUtil.getListAvg(HighestSellOderPriceS),
-//                    ListUtil.getListMin(LowestBuyOderPriceS),
-//                    ListUtil.getListMax(HighestSellOderPriceS),
-//                    ListUtil.getListAvg(buyPriceS),
-//                    ListUtil.getListAvg(sellPriceS),
-//                    time);
-//            if(!sqlServices.insertDate(productDAY)) log.error("插入到SQL失败,物品名{}",name);
-//        }
-//
-//    }
-
     public void statisticsData_DAY(Set<String> products_name) {
         for (String name : products_name) {
             try {
@@ -185,7 +112,8 @@ public class DataServices {
                     buyPriceS.add((BigDecimal) map.get("buyPrice"));
                     sellPriceS.add((BigDecimal) map.get("sellPrice"));
                 }
-                ProductDAY productDAY = new ProductDAY(name,
+                String uni_id = NanoId.randomNanoId(30);
+                ProductDAY productDAY = new ProductDAY(uni_id, name,
                         ListUtil.getListAvg(LowestBuyOderPriceS),
                         ListUtil.getListAvg(HighestSellOderPriceS),
                         ListUtil.getListMin(LowestBuyOderPriceS),

@@ -27,7 +27,7 @@ public class APIServices {
 
     private ExecutorService executorService = Executors.newFixedThreadPool(1);
 
-    //@Scheduled(cron = "0 * * * * ? ")
+    @Scheduled(cron = "0 * * * * ? ")
     public void TimeTask() throws ExecutionException, InterruptedException {
         log.info("第{}次获取API数据", times++);
         if (task == null) {
