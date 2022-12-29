@@ -10,6 +10,7 @@ import com.day.getbazzarspring.dto.FullProduct;
 import com.day.getbazzarspring.pojo.ProductDAY;
 import com.day.getbazzarspring.pojo.ProductNM;
 import com.day.getbazzarspring.pojo.QuickState;
+import com.day.getbazzarspring.utils.InitProcess;
 import com.day.getbazzarspring.utils.ListUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -58,7 +59,7 @@ public class DataServices {
         } else {
             lastTime = timestamp;
         }
-        Long times = redisTemplate.opsForList().size("product_nm:" + "INK_SACK:3");
+        Long times = InitProcess.times;
         if (times == null) {
             times = 1L;
         }
@@ -90,6 +91,7 @@ public class DataServices {
                 log.error("{}物品发生异常{}", product_name, t.getMessage());
             }
         }
+        InitProcess.times++;
     }
 
     public void statisticsData_DAY(Set<String> products_name) {
