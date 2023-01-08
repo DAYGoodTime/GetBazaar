@@ -1,0 +1,18 @@
+{
+  "properties": [
+    {
+      "name": "bazaar.api.host",
+      "type": "java.lang.String",
+      "description": "Description for bazaar.api.host."
+    },
+    {
+      "name": "bazaar.api.retryTime",
+      "type": "java.lang.String",
+      "description": "Description for bazaar.api.retryTime."
+    },
+    {
+      "name": "bazaar.api.retryCount",
+      "type": "java.lang.String",
+      "description": "Description for bazaar.api.retryCount."
+    }
+  ] }

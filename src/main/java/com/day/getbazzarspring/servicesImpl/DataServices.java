@@ -29,9 +29,11 @@ public class DataServices {
     RedisTemplate<String, Object> redisTemplate;
 
     private static final int DAYCount = 1440;
+
     @Autowired
     SQLServices sqlServices;
     private Long lastTime;
+
     @Autowired
     ProductDAYMapper productDAYMapper;
 
@@ -50,9 +52,6 @@ public class DataServices {
     }
 
     public void processJSON(JSONObject fullJSON) {
-        if (fullJSON == null || fullJSON.isEmpty()) {
-            return;
-        }
         Long timestamp = fullJSON.getLong("lastUpdated");
         if (lastTime != null && lastTime.equals(timestamp)) {
             return;

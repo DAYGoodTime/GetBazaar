@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.day'
-version = '0.2-fix2'
+version = '0.3.0b'
 sourceCompatibility = '1.8'
 
 configurations {
@@ -24,12 +24,15 @@ dependencies {
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    implementation 'cn.hutool:hutool-all:5.8.10'
+    implementation 'cn.hutool:hutool-all:5.8.11'
     implementation 'mysql:mysql-connector-java:8.0.30'
-    implementation 'com.baomidou:mybatis-plus-boot-starter:3.5.2'
-    implementation 'org.springframework.boot:spring-boot-starter-data-redis:2.7.3'
+    implementation 'com.baomidou:mybatis-plus-boot-starter:3.5.3'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis:2.7.4'
+    implementation 'org.springframework.boot:spring-boot-configuration-processor:2.7.5'
     implementation 'io.springfox:springfox-boot-starter:3.0.0'
-    implementation 'com.github.xiaoymin:knife4j-spring-boot-starter:3.0.3'
+    implementation 'com.github.xiaoymin:knife4j-spring-boot-starter:3.0.2'
+    implementation 'org.springframework.retry:spring-retry:1.3.4'
+    implementation 'org.springframework:spring-context-support:5.3.23'
 }
 
 tasks.named('test') {

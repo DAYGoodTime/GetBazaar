@@ -1,25 +1,16 @@
 package com.day.getbazzarspring.controller;
 
-import cn.hutool.core.bean.BeanUtil;
-import cn.hutool.core.bean.copier.CopyOptions;
-import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
-import com.day.getbazzarspring.pojo.QuickState;
 import com.day.getbazzarspring.utils.R;
-import io.swagger.models.auth.In;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.*;
 
 @RestController
+@CrossOrigin
 public class MainController {
 
     @Resource(name = "NormalRedisTemplate")
@@ -52,17 +43,20 @@ public class MainController {
         List<BigDecimal> HighestSellOderPriceS = new ArrayList<>(length.intValue());
         List<BigDecimal> buyPriceS = new ArrayList<>(length.intValue());
         List<BigDecimal> sellPriceS = new ArrayList<>(length.intValue());
+        List<Long> timeStamp = new ArrayList<>(length.intValue());
         for (Object o : mapList) {
             buyPriceS.add(((Map<String, BigDecimal>) o).get("buyPrice"));
             sellPriceS.add(((Map<String, BigDecimal>) o).get("buyPrice"));
             HighestSellOderPriceS.add(((Map<String, BigDecimal>) o).get("buyPrice"));
             LowestBuyOderPriceS.add(((Map<String, BigDecimal>) o).get("LowestBuyOderPrice"));
+            timeStamp.add(((Map<String, Long>) o).get("timestamp"));
         }
         entries.set("Summary_count", length);
         entries.set("buySummary", buyPriceS);
         entries.set("sellSummary", sellPriceS);
         entries.set("LowestBuyOrderSummary", LowestBuyOderPriceS);
         entries.set("HighestSellOderSummary", HighestSellOderPriceS);
+        entries.set("timestamp",timeStamp);
         return R.OK_json(entries);
     }
 

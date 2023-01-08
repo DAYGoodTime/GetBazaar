@@ -1,45 +1,67 @@
 package com.day.getbazzarspring.servicesImpl;
 
+import cn.hutool.http.HttpUtil;
+import cn.hutool.json.JSONObject;
+import cn.hutool.json.JSONUtil;
 import cn.hutool.log.Log;
 import cn.hutool.log.LogFactory;
-import com.day.getbazzarspring.config.BazzarConfig;
-import com.day.getbazzarspring.task.APITask;
+import com.day.getbazzarspring.config.BazaarConfig;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.retry.annotation.Retryable;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 
 @Service
 public class APIServices {
     private static final Log log = LogFactory.get();
-    public static Long times = 1L;
-    @Autowired
-    BazzarConfig bzcfg;
     @Autowired
     DataServices dataServices;
-
-
-    private Future<Void> task;
-
-    private ExecutorService executorService = Executors.newFixedThreadPool(1);
+    @Autowired
+    BazaarConfig bzcfg;
 
     @Scheduled(cron = "0 * * * * ? ")
-    public void TimeTask() throws ExecutionException, InterruptedException {
-        log.info("第{}次获取API数据", times++);
-        if (task == null) {
-            task = executorService.submit(new APITask(bzcfg, dataServices));
-            return;
+    public void TimeTask() {
+        JSONObject json = getJSON();
+        if (json==null|| json.isEmpty()) return;
+        dataServices.processJSON(json);
+    }
+
+    /**
+     * 内部方法,用于循环请求数据
+     * 如果请求失败就返回空数据
+     *
+     * @return 数据的JSON字符串, 但是可能为NULL
+     */
+    private StringBuilder ConnectAPI() throws RuntimeException{
+        StringBuilder stringBuilder = null;
+        try {
+            stringBuilder = new StringBuilder(HttpUtil.get(bzcfg.SB_BAZAAR_API));
+        }catch (Throwable t){
+            log.warn("api数据获取异常:{},{}秒后重试",t.getMessage(),bzcfg.reConnectTime);
         }
-        if (!task.isDone()) {
-            log.warn("获取数据超时,重新获取");
-            BazzarConfig.Keep = false;
+        return stringBuilder;
+    }
+
+    /**
+     * 从Hpyixel skyblock api当中获取Bazzar的数据，并将数据作为JSON对象返回
+     *
+     * @return hutool的JSONObject：BazzarAPI获得的全部数据
+     */
+    public JSONObject getJSON(){
+        int reC = 1;
+        //接受输入
+        StringBuilder jsonString = ConnectAPI();
+        while (jsonString==null||jsonString.toString().isEmpty()&&reC< bzcfg.retryCounts){
+            try {
+                Thread.sleep(1000L*bzcfg.reConnectTime);
+            } catch (InterruptedException e) {
+                log.error("线程终止异常",e);
+            }
+            jsonString = ConnectAPI();
         }
-        task.get();
-        BazzarConfig.Keep = true;
-        task = executorService.submit(new APITask(bzcfg, dataServices));
+
+        return JSONUtil.parseObj(jsonString.toString());
+        //return createFile.createJsonFile(json,"E:\\modding\\SmallProject\\GetBazzar\\Bazzar.json");
     }
 }
